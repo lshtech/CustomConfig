@@ -1,0 +1,131 @@
+[TLMUpgrade_SCRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Self-Correcting Rounds"
+FriendlyNamePlural="Self-Correcting Rounds"
+BriefSummary="These rounds are derived from the implants we found in the ADVENT Officers and the later adaptations we made to SPARKs. When a SPARK takes a shot and misses, Self-Correcting Rounds send data back to the SPARK to help correct its aim, improving the accuracy of its next shot."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_BleedingRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Stiletto Rounds"
+FriendlyNamePlural="Stiletto Rounds"
+BriefSummary="Designed to burst inside a target once it penetrates, these rounds can cause affected targets to bleed severely."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_MZCurseRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Bloodcursed Rounds"
+FriendlyNamePlural="Bloodcursed Rounds"
+BriefSummary="The Bloodcurse on these rounds is immediatly transfered to any enemy they strike."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_AshPhantomSlayerRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Phantom Slayer Rounds"
+FriendlyNamePlural="Phantom Slayer Rounds"
+BriefSummary = "Phantom Slayer Rounds incorporate a warhead of elerium-laced flechettes that disrupt the psionic energies that control the dead as well as destroying the rotting tissue of The Lost."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_MZMicroRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Micro Rounds"
+FriendlyNamePlural="Micro Rounds"
+BriefSummary="Compact rounds that make it possible to load more into a single clip."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_MZSilveredRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Silvered Rounds"
+FriendlyNamePlural="Silvered Rounds"
+BriefSummary="A peculiar property of silver makes these rounds highly effective against the lost."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_MZExplosiveRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Explosive Rounds"
+FriendlyNamePlural="Explosive Rounds"
+BriefSummary="More akin to miniature rockets, these rounds explode on impact. However, due to thier weight fewer can be loaded per clip."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_NullRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName = "Null Rounds"
+FriendlyNamePlural = "Null Rounds"
+BriefSummary="Ammunition infused with unstable aetheric energies. Causes massive nervous system trauma to psi-sensitives and stress to any organic."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_IRI_Ammo_Sabot X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Sabot Rounds"
+FriendlyNamePlural="Sabot Rounds"
+BriefSummary="These arrow-shaped sub-caliber rounds use discarding sabot to accelerate to hypersonic speeds, making them vastly more effective at long range, and harder for enemies to avoid."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_RadiationRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Radiation Rounds"
+FriendlyNamePlural="Radiation Rounds"
+BriefSummary="Irradiated rounds capable of inflicting radiation effects on targets"
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_KineticLevitationRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Kinetic Levitation Rounds"
+FriendlyNamePlural="Kinetic Levitation Rounds"
+BriefSummary="Kinetic Levitation Rounds contains salvaged extraterrestrial materials that generate a Kinetic energy force filed to Levitate light and small size unit."
+TinySummary="+Ammo Bonus, -Clip size"
+
+[TLMUpgrade_SCRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Self-Correcting Rounds"
+FriendlyNamePlural="Self-Correcting Rounds"
+BriefSummary="These rounds are derived from the implants we found in the ADVENT Officers and the later adaptations we made to SPARKs. When a SPARK takes a shot and misses, Self-Correcting Rounds send data back to the SPARK to help correct its aim, improving the accuracy of its next shot."
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_BleedingRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Stiletto Rounds"
+FriendlyNamePlural="Stiletto Rounds"
+BriefSummary="Designed to burst inside a target once it penetrates, these rounds can cause affected targets to bleed severely."
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_MZCurseRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Bloodcursed Rounds"
+FriendlyNamePlural="Bloodcursed Rounds"
+BriefSummary="The Bloodcurse on these rounds is immediatly transfered to any enemy they strike."
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_AshPhantomSlayerRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Phantom Slayer Rounds"
+FriendlyNamePlural="Phantom Slayer Rounds"
+BriefSummary = "Phantom Slayer Rounds incorporate a warhead of elerium-laced flechettes that disrupt the psionic energies that control the dead as well as destroying the rotting tissue of The Lost."
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_MZMicroRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Micro Rounds"
+FriendlyNamePlural="Micro Rounds"
+BriefSummary="Compact rounds that make it possible to load more into a single clip."
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_MZSilveredRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Silvered Rounds"
+FriendlyNamePlural="Silvered Rounds"
+BriefSummary="A peculiar property of silver makes these rounds highly effective against the lost."
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_MZExplosiveRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Explosive Rounds"
+FriendlyNamePlural="Explosive Rounds"
+BriefSummary="More akin to miniature rockets, these rounds explode on impact. However, due to thier weight fewer can be loaded per clip."
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_NullRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName = "Null Rounds"
+FriendlyNamePlural = "Null Rounds"
+BriefSummary="Ammunition infused with unstable aetheric energies. Causes massive nervous system trauma to psi-sensitives and stress to any organic."
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_IRI_Ammo_SabotAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Sabot Rounds"
+FriendlyNamePlural="Sabot Rounds"
+BriefSummary="These arrow-shaped sub-caliber rounds use discarding sabot to accelerate to hypersonic speeds, making them vastly more effective at long range, and harder for enemies to avoid."
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_RadiationRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Radiation Rounds"
+FriendlyNamePlural="Radiation Rounds"
+BriefSummary="Irradiated rounds capable of inflicting radiation effects on targets"
+TinySummary="+Ammo Bonus, +Clip size"
+
+[TLMUpgrade_KineticLevitationRoundsAdv X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="Kinetic Levitation Rounds"
+FriendlyNamePlural="Kinetic Levitation Rounds"
+BriefSummary="Kinetic Levitation Rounds contains salvaged extraterrestrial materials that generate a Kinetic energy force filed to Levitate light and small size unit."
+TinySummary="+Ammo Bonus, +Clip size"

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>d6e04f73-4855-4f28-b8cd-13e4de328750</Guid>
+    <Name>Custom Config</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>CustomConfig</AssemblyName>
+    <RootNamespace>CustomConfig</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\CustomConfig\" />
+    <Folder Include="Src\CustomConfig\Classes\" />
+    <Folder Include="Src\HighQualityRounds\" />
+    <Folder Include="Src\HighQualityRounds\Classes\" />
+    <Folder Include="Src\ModConfigMenuAPI" />
+    <Folder Include="Src\ModConfigMenuAPI\Classes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComClassData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComCustomConfig.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_WeaponData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComHighQualityRounds.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComInfiltration.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComLivingSpace.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComPGOverhaulExperimentalItems.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComPGOverhaulTechs.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComPlatedVests.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComSparkArsenal.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComSparkClass.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComStrategyTuning.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComUIModificationWOTC.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComWeaponTuning.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\CustomConfig\Classes\X2DownloadableContentInfo_CustomConfig.uc" />
+    <Content Include="Src\HighQualityRounds\Classes\X2Ability_ItemGrantedAbilitySet_HighQualityRounds.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\HighQualityRounds\Classes\X2Effect_HighQualityRounds.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\HighQualityRounds\Classes\X2Item_DefaultAmmo_HighQualityRounds.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\HighQualityRounds\Classes\X2StrategyElement_DefaultTechs_HighQualityRounds.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

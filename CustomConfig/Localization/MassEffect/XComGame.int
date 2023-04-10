@@ -1,0 +1,1483 @@
+[WP_M5Phalanx_CG X2WeaponTemplate]
+FriendlyName="M-5 Phalanx Pistol Mark III"
+FriendlyNamePlural="M-5 Phalanx Heavy Pistols"
+BriefSummary="Advanced Ballistic capabilites allows the VN-98 to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="M-5 Phalanx Heavy Pistol"
+
+[WP_M5Phalanx_LS X2WeaponTemplate]
+FriendlyName="M-5 Phalanx Heavy Pistol Mark IV"
+FriendlyNamePlural="M-5 Phalanx Heavy Pistols"
+BriefSummary="Advanced Beam capabilites allows the VN-98 to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="M-5 Phalanx Heavy Pistol"
+
+[WP_M5Phalanx_BM X2WeaponTemplate]
+FriendlyName="M-5 Phalanx Heavy Pistol Mark V"
+FriendlyNamePlural="M-5 Phalanx Heavy Pistols"
+BriefSummary="Advanced Beam capabilites allows the VN-98 to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="M-5 Phalanx Heavy Pistol"
+
+[WP_COLLECTORRIFLE_CG X2WeaponTemplate]
+FriendlyName="Collector Rifle Mark III"
+FriendlyNamePlural="Collector Rifles Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Collector Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Collector Rifle"
+
+[WP_COLLECTORRIFLE_LS X2WeaponTemplate]
+FriendlyName="Collector Rifle Mark IV"
+FriendlyNamePlural="Collector Rifles Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Collector Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Collector Rifle"
+
+[WP_COLLECTORRIFLE_BM X2WeaponTemplate]
+FriendlyName="Collector Rifle Mark V"
+FriendlyNamePlural="Collector Rifles Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Collector Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Collector Rifle"
+
+[WP_COLLECTORSNIPER_CG X2WeaponTemplate]
+FriendlyName="Collector Sniper Mark III"
+FriendlyNamePlural="Collector Snipers Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Collector Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Collector Sniper"
+
+[WP_COLLECTORSNIPER_LS X2WeaponTemplate]
+FriendlyName="Collector Sniper Mark IV"
+FriendlyNamePlural="Collector Snipers Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Collector Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Collector Sniper"
+
+[WP_COLLECTORSNIPER_BM X2WeaponTemplate]
+FriendlyName="Collector Sniper Mark V"
+FriendlyNamePlural="Collector Snipers Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Collector Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Collector Sniper"
+
+[WP_COLLECTORSMG_CG X2WeaponTemplate]
+FriendlyName="Collector SMG Mark III"
+FriendlyNamePlural="Collector SMGs Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Collector SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Collector SMG"
+
+[WP_COLLECTORSMG_LS X2WeaponTemplate]
+FriendlyName="Collector SMG Mark IV"
+FriendlyNamePlural="Collector SMGs Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Collector SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Collector SMG"
+
+[WP_COLLECTORSMG_BM X2WeaponTemplate]
+FriendlyName="Collector SMG Mark V"
+FriendlyNamePlural="Collector SMGs Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Collector SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Collector SMG"
+
+[WP_PHEASTONRIFLE_CG X2WeaponTemplate]
+FriendlyName="Pheaston Rifle Mark III"
+FriendlyNamePlural="Pheaston Rifles Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Pheaston to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Pheaston Rifle"
+
+[WP_PHEASTONRIFLE_LS X2WeaponTemplate]
+FriendlyName="Pheaston Rifle Mark IV"
+FriendlyNamePlural="Pheaston Rifles Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Pheaston to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Pheaston Rifle"
+
+[WP_PHEASTONRIFLE_BM X2WeaponTemplate]
+FriendlyName="Pheaston Rifle Mark V"
+FriendlyNamePlural="Pheaston Rifles Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Pheaston to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Pheaston Rifle"
+
+[WP_VINDICATORRIFLE_CG X2WeaponTemplate]
+FriendlyName="M-15 Vindicator Rifle Mark III"
+FriendlyNamePlural="M-15 Vindicator Rifles Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-15 Vindicator to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-15 Vindicator Rifle"
+
+[WP_VINDICATORRIFLE_LS X2WeaponTemplate]
+FriendlyName="M-15 Vindicator Rifle Mark IV"
+FriendlyNamePlural="M-15 Vindicator Rifles Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-15 Vindicator to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-15 Vindicator Rifle"
+
+[WP_VINDICATORRIFLE_BM X2WeaponTemplate]
+FriendlyName="M-15 Vindicator Rifle Mark V"
+FriendlyNamePlural="M-15 Vindicator Rifles Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-15 Vindicator to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-15 Vindicator Rifle"
+
+[WP_ADASRIFLE_CG X2WeaponTemplate]
+FriendlyName="Adas Anti-Synthetic Rifle Mark III"
+FriendlyNamePlural="Adas Anti-Synthetic Rifles Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Adas Anti-Synthetic Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Adas Anti-Synthetic Rifle"
+
+[WP_ADASRIFLE_LS X2WeaponTemplate]
+FriendlyName="Adas Anti-Synthetic Rifle Mark IV"
+FriendlyNamePlural="Adas Anti-Synthetic Rifles Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Adas Anti-Synthetic Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Adas Anti-Synthetic Rifle"
+
+[WP_ADASRIFLE_BM X2WeaponTemplate]
+FriendlyName="Adas Anti-Synthetic Rifle Mark V"
+FriendlyNamePlural="Adas Anti-Synthetic Rifles Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Adas Anti-Synthetic Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Adas Anti-Synthetic Rifle"
+
+[WP_REEGARSHOTGUN_CG X2WeaponTemplate]
+FriendlyName="Reegar Carbine Mark III"
+FriendlyNamePlural="Reegar Carbines Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Reegar Carbine to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Reegar Carbine"
+
+[WP_REEGARSHOTGUN_LS X2WeaponTemplate]
+FriendlyName="Reegar Carbine Mark IV"
+FriendlyNamePlural="Reegar Carbines Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Reegar Carbine to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Reegar Carbine"
+
+[WP_REEGARSHOTGUN_BM X2WeaponTemplate]
+FriendlyName="Reegar Carbine Mark V"
+FriendlyNamePlural="Reegar Carbines Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Reegar Carbine to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Reegar Carbine"
+
+[WP_PARTICLERIFLE_CG X2WeaponTemplate]
+FriendlyName="Particle Rifle Mark III"
+FriendlyNamePlural="Particle Rifles Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Particle Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Particle Rifle"
+
+[WP_PARTICLERIFLE_LS X2WeaponTemplate]
+FriendlyName="Particle Rifle Mark IV"
+FriendlyNamePlural="Particle Rifles Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Particle Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Particle Rifle"
+
+[WP_PARTICLERIFLE_BM X2WeaponTemplate]
+FriendlyName="Particle Rifle Mark V"
+FriendlyNamePlural="Particle Rifles Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Particle Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Particle Rifle"
+
+[WP_GETHSPITFIRE_CG X2WeaponTemplate]
+FriendlyName="Geth Spitfire Mark III"
+FriendlyNamePlural="Geth Spitfires Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Spitfire to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Geth Spitfire"
+
+[WP_GETHSPITFIRE_LS X2WeaponTemplate]
+FriendlyName="Geth Spitfire Mark IV"
+FriendlyNamePlural="Geth Spitfires Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Spitfire to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Geth Spitfire"
+
+[WP_GETHSPITFIRE_BM X2WeaponTemplate]
+FriendlyName="Geth Spitfire Mark V"
+FriendlyNamePlural="Geth Spitfires Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Spitfire to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Geth Spitfire"
+
+[WP_GRAALSHOTGUN_CG X2WeaponTemplate]
+FriendlyName="Graal Spike Thrower Mark III"
+FriendlyNamePlural="Graal Spike Throwers Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Graal Spike Thrower to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Graal Spike Thrower"
+
+[WP_GRAALSHOTGUN_LS X2WeaponTemplate]
+FriendlyName="Graal Spike Thrower Mark IV"
+FriendlyNamePlural="Graal Spike Throwers Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Graal Spike Thrower to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Graal Spike Thrower"
+
+[WP_GRAALSHOTGUN_BM X2WeaponTemplate]
+FriendlyName="Graal Spike Thrower Mark V"
+FriendlyNamePlural="Graal Spike Throwers Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Graal Spike Thrower to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Graal Spike Thrower"
+
+[WP_SABERRIFLE_CG X2WeaponTemplate]
+FriendlyName="M-99 Saber Mark III"
+FriendlyNamePlural="M-99 Sabers Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-99 Saber to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-99 Saber"
+
+[WP_SABERRIFLE_LS X2WeaponTemplate]
+FriendlyName="M-99 Saber Mark IV"
+FriendlyNamePlural="M-99 Sabers Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-99 Saber to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-99 Saber"
+
+[WP_SABERRIFLE_BM X2WeaponTemplate]
+FriendlyName="M-99 Saber Mark V"
+FriendlyNamePlural="M-99 Sabers Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-99 Saber to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-99 Saber"
+
+[WP_ARGUSRIFLE_CG X2WeaponTemplate]
+FriendlyName="M-55 Argus Mark III"
+FriendlyNamePlural="M-55 Argus Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-55 Argus to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-55 Argus"
+
+[WP_ARGUSRIFLE_LS X2WeaponTemplate]
+FriendlyName="M-55 Argus Mark IV"
+FriendlyNamePlural="M-55 Argus Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-55 Argus to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-55 Argus"
+
+[WP_ARGUSRIFLE_BM X2WeaponTemplate]
+FriendlyName="M-55 Argus Mark V"
+FriendlyNamePlural="M-55 Argus Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-55 Argus to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-55 Argus"
+
+[WP_GETHSHOTGUN_CG X2WeaponTemplate]
+FriendlyName="Geth Plasma Shotgun Mark III"
+FriendlyNamePlural="Geth Plasma Shotguns Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Plasma Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Geth Plasma Shotgun"
+
+[WP_GETHSHOTGUN_LS X2WeaponTemplate]
+FriendlyName="Geth Plasma Shotgun Mark IV"
+FriendlyNamePlural="Geth Plasma Shotguns Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Plasma Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Geth Plasma Shotgun"
+
+[WP_GETHSHOTGUN_BM X2WeaponTemplate]
+FriendlyName="Geth Plasma Shotgun Mark V"
+FriendlyNamePlural="Geth Plasma Shotguns Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Plasma Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Geth Plasma Shotgun"
+
+[WP_KISHOCKSNIPER_CG X2WeaponTemplate]
+FriendlyName="Kishock Harpoon Gun Mark III"
+FriendlyNamePlural="Kishock Harpoon Guns Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Kishock Harpoon Gun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Kishock Harpoon Gun"
+
+[WP_KISHOCKSNIPER_LS X2WeaponTemplate]
+FriendlyName="Kishock Harpoon Gun Mark IV"
+FriendlyNamePlural="Kishock Harpoon Guns Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Kishock Harpoon Gun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Kishock Harpoon Gun"
+
+[WP_KISHOCKSNIPER_BM X2WeaponTemplate]
+FriendlyName="Kishock Harpoon Gun Mark V"
+FriendlyNamePlural="Kishock Harpoon Guns Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Kishock Harpoon Gun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Kishock Harpoon Gun"
+
+[WP_ARCPISTOL_CG X2WeaponTemplate]
+FriendlyName="Arc Pistol Mark III"
+FriendlyNamePlural="Arc Pistols Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Arc Pistol to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Arc Pistol"
+
+[WP_ARCPISTOL_LS X2WeaponTemplate]
+FriendlyName="Arc Pistol Mark IV"
+FriendlyNamePlural="Arc Pistols Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Arc Pistol to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Arc Pistol"
+
+[WP_ARCPISTOL_BM X2WeaponTemplate]
+FriendlyName="Arc Pistol Mark V"
+FriendlyNamePlural="Arc Pistols Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Arc Pistol to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Arc Pistol"
+
+[WP_ACOLYTEPISTOL_CG X2WeaponTemplate]
+FriendlyName="Acolyte Mark III"
+FriendlyNamePlural="Acolytes Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Acolyte to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Acolyte"
+
+[WP_ACOLYTEPISTOL_LS X2WeaponTemplate]
+FriendlyName="Acolyte Mark IV"
+FriendlyNamePlural="Acolytes Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Acolyte to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Acolyte"
+
+[WP_ACOLYTEPISTOL_BM X2WeaponTemplate]
+FriendlyName="Acolyte Mark V"
+FriendlyNamePlural="Acolytes Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Acolyte to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Acolyte"
+
+[WP_CARNIFEXPISTOL_CG X2WeaponTemplate]
+FriendlyName="M-6 Carnifex Mark III"
+FriendlyNamePlural="M-6 Carnifexes Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-6 Carnifex to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-6 Carnifex"
+
+[WP_CARNIFEXPISTOL_LS X2WeaponTemplate]
+FriendlyName="M-6 Carnifex Mark IV"
+FriendlyNamePlural="M-6 Carnifexes Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-6 Carnifex to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-6 Carnifex"
+
+[WP_CARNIFEXPISTOL_BM X2WeaponTemplate]
+FriendlyName="M-6 Carnifex Mark V"
+FriendlyNamePlural="M-6 Carnifexes Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-6 Carnifex to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-6 Carnifex"
+
+[WP_EXECUTIONERPISTOL_CG X2WeaponTemplate]
+FriendlyName="Executioner Pistol Mark III"
+FriendlyNamePlural="Executioner Pistols Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Executioner Pistol to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Executioner Pistol"
+
+[WP_EXECUTIONERPISTOL_LS X2WeaponTemplate]
+FriendlyName="Executioner Pistol Mark IV"
+FriendlyNamePlural="Executioner Pistols Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Executioner Pistol to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Executioner Pistol"
+
+[WP_EXECUTIONERPISTOL_BM X2WeaponTemplate]
+FriendlyName="Executioner Pistol Mark V"
+FriendlyNamePlural="Executioner Pistols Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Executioner Pistol to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Executioner Pistol"
+
+[WP_M11PISTOL_CG X2WeaponTemplate]
+FriendlyName="M-11 Suppressor Mark III"
+FriendlyNamePlural="M-11 Suppressors Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-11 Suppressor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-11 Suppressor"
+
+[WP_M11PISTOL_LS X2WeaponTemplate]
+FriendlyName="M-11 Suppressor Mark IV"
+FriendlyNamePlural="M-11 Suppressors Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-11 Suppressor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-11 Suppressor"
+
+[WP_M11PISTOL_BM X2WeaponTemplate]
+FriendlyName="M-11 Suppressor Mark V"
+FriendlyNamePlural="M-11 Suppressors Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-11 Suppressor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-11 Suppressor"
+
+[WP_PHALANXPISTOL_CG X2WeaponTemplate]
+FriendlyName="M-5 Phalanx Mark III"
+FriendlyNamePlural="M-5 Phalanxes Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-5 Phalanx to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-5 Phalanx"
+
+[WP_PHALANXPISTOL_LS X2WeaponTemplate]
+FriendlyName="M-5 Phalanx Mark IV"
+FriendlyNamePlural="M-5 Phalanxes Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-5 Phalanx to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-5 Phalanx"
+
+[WP_PHALANXPISTOL_BM X2WeaponTemplate]
+FriendlyName="M-5 Phalanx Mark V"
+FriendlyNamePlural="M-5 Phalanxes Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-5 Phalanx to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-5 Phalanx"
+
+[WP_KRYSEAVEKTOR_CG X2WeaponTemplate]
+FriendlyName="Krysae Sniper Rifle Mark III"
+FriendlyNamePlural="Krysae Sniper Rifles Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Krysae Sniper Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Krysae Sniper Rifle"
+
+[WP_KRYSEAVEKTOR_LS X2WeaponTemplate]
+FriendlyName="Krysae Sniper Rifle Mark IV"
+FriendlyNamePlural="Krysae Sniper Rifles Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Krysae Sniper Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Krysae Sniper Rifle"
+
+[WP_KRYSEAVEKTOR_BM X2WeaponTemplate]
+FriendlyName="Krysae Sniper Rifle Mark V"
+FriendlyNamePlural="Krysae Sniper Rifles Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Krysae Sniper Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Krysae Sniper Rifle"
+
+[WP_GETHSMG_CG X2WeaponTemplate]
+FriendlyName="Geth Plasma SMG Mark III"
+FriendlyNamePlural="Geth Plasma SMGs Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Plasma SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Geth Plasma SMG"
+
+[WP_GETHSMG_LS X2WeaponTemplate]
+FriendlyName="Geth Plasma SMG Mark IV"
+FriendlyNamePlural="Geth Plasma SMGs Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Plasma SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Geth Plasma SMG"
+
+[WP_GETHSMG_BM X2WeaponTemplate]
+FriendlyName="Geth Plasma SMG Mark V"
+FriendlyNamePlural="Geth Plasma SMGs Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Plasma SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Geth Plasma SMG"
+
+[WP_PUNISHERSMG_CG X2WeaponTemplate]
+FriendlyName="Blood Pack Punisher Mark III"
+FriendlyNamePlural="Blood Pack Punishers Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Blood Pack Punisher to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Blood Pack Punisher"
+
+[WP_PUNISHERSMG_LS X2WeaponTemplate]
+FriendlyName="Blood Pack Punisher Mark IV"
+FriendlyNamePlural="Blood Pack Punishers Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Blood Pack Punisher to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Blood Pack Punisher"
+
+[WP_PUNISHERSMG_BM X2WeaponTemplate]
+FriendlyName="Blood Pack Punisher Mark V"
+FriendlyNamePlural="Blood Pack Punishers Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Blood Pack Punisher to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Blood Pack Punisher"
+
+[WP_SHURIKENSMG_CG X2WeaponTemplate]
+FriendlyName="M-4 Shuriken Mark III"
+FriendlyNamePlural="M-4 Shurikens Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-4 Shuriken to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-4 Shuriken"
+
+[WP_SHURIKENSMG_LS X2WeaponTemplate]
+FriendlyName="M-4 Shuriken Mark IV"
+FriendlyNamePlural="M-4 Shurikens Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-4 Shuriken to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-4 Shuriken"
+
+[WP_SHURIKENSMG_BM X2WeaponTemplate]
+FriendlyName="M-4 Shuriken Mark V"
+FriendlyNamePlural="M-4 Shurikens Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-4 Shuriken to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-4 Shuriken"
+
+[WP_TEMPESTSMG_CG X2WeaponTemplate]
+FriendlyName="M-9 Tempest Mark III"
+FriendlyNamePlural="M-9 Tempests Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-9 Tempest to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-9 Tempest"
+
+[WP_TEMPESTSMG_LS X2WeaponTemplate]
+FriendlyName="M-9 Tempest Mark IV"
+FriendlyNamePlural="M-9 Tempests Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-9 Tempest to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-9 Tempest"
+
+[WP_TEMPESTSMG_BM X2WeaponTemplate]
+FriendlyName="M-9 Tempest Mark V"
+FriendlyNamePlural="M-9 Tempests Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-9 Tempest to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-9 Tempest"
+
+[WP_LOCUSTSMG_CG X2WeaponTemplate]
+FriendlyName="M-12 Locust Mark III"
+FriendlyNamePlural="M-12 Locusts Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-12 Locust to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-12 Locust"
+
+[WP_LOCUSTSMG_LS X2WeaponTemplate]
+FriendlyName="M-12 Locust Mark IV"
+FriendlyNamePlural="M-12 Locusts Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-12 Locust to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-12 Locust"
+
+[WP_LOCUSTSMG_BM X2WeaponTemplate]
+FriendlyName="M-12 Locust Mark V"
+FriendlyNamePlural="M-12 Locusts Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-12 Locust to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-12 Locust"
+
+[WP_HURRICANESMG_CG X2WeaponTemplate]
+FriendlyName="N7 Hurricane Mark III"
+FriendlyNamePlural="N7 Hurricanes Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the N7 Hurricane to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="N7 Hurricane"
+
+[WP_HURRICANESMG_LS X2WeaponTemplate]
+FriendlyName="N7 Hurricane Mark IV"
+FriendlyNamePlural="N7 Hurricanes Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the N7 Hurricane to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="N7 Hurricane"
+
+[WP_HURRICANESMG_BM X2WeaponTemplate]
+FriendlyName="N7 Hurricane Mark V"
+FriendlyNamePlural="N7 Hurricanes Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the N7 Hurricane to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="N7 Hurricane"
+
+[WP_SCORPIONPISTOL_CG X2WeaponTemplate]
+FriendlyName="Scorpion Mark III"
+FriendlyNamePlural="Scorpions Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Scorpion to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Scorpion"
+
+[WP_SCORPIONPISTOL_LS X2WeaponTemplate]
+FriendlyName="Scorpion Mark IV"
+FriendlyNamePlural="Scorpions Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Scorpion to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Scorpion"
+
+[WP_SCORPIONPISTOL_BM X2WeaponTemplate]
+FriendlyName="Scorpion Mark V"
+FriendlyNamePlural="Scorpions Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Scorpion to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Scorpion"
+
+[WP_RAIDERSHOTGUN_CG X2WeaponTemplate]
+FriendlyName="AT-12 Raider Mark III"
+FriendlyNamePlural="AT-12 Raiders Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the AT-12 Raider to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="AT-12 Raider"
+
+[WP_RAIDERSHOTGUN_LS X2WeaponTemplate]
+FriendlyName="AT-12 Raider Mark IV"
+FriendlyNamePlural="AT-12 Raiders Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the AT-12 Raider to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="AT-12 Raider"
+
+[WP_RAIDERSHOTGUN_BM X2WeaponTemplate]
+FriendlyName="AT-12 Raider Mark V"
+FriendlyNamePlural="AT-12 Raiders Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the AT-12 Raider to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="AT-12 Raider"
+
+[WP_DISCIPLESHOTGUN_CG X2WeaponTemplate]
+FriendlyName="Disciple Mark III"
+FriendlyNamePlural="Disciples Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Disciple to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Disciple"
+
+[WP_DISCIPLESHOTGUN_LS X2WeaponTemplate]
+FriendlyName="Disciple Mark IV"
+FriendlyNamePlural="Disciples Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Disciple to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Disciple"
+
+[WP_DISCIPLESHOTGUN_BM X2WeaponTemplate]
+FriendlyName="Disciple Mark V"
+FriendlyNamePlural="Disciples Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Disciple to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Disciple"
+
+[WP_SCIMITARSHOTGUN_CG X2WeaponTemplate]
+FriendlyName="M-27 Scimitar Mark III"
+FriendlyNamePlural="M-27 Scimitars Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-27 Scimitar to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-27 Scimitar"
+
+[WP_SCIMITARSHOTGUN_LS X2WeaponTemplate]
+FriendlyName="M-27 Scimitar Mark IV"
+FriendlyNamePlural="M-27 Scimitars Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-27 Scimitar to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-27 Scimitar"
+
+[WP_SCIMITARSHOTGUN_BM X2WeaponTemplate]
+FriendlyName="M-27 Scimitar Mark V"
+FriendlyNamePlural="M-27 Scimitars Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-27 Scimitar to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-27 Scimitar"
+
+[WP_STRIKERRIFLE_CG X2WeaponTemplate]
+FriendlyName="Striker Rifle Mark III"
+FriendlyNamePlural="Striker Rifles Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Striker Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Striker Rifle"
+
+[WP_STRIKERRIFLE_LS X2WeaponTemplate]
+FriendlyName="Striker Rifle Mark IV"
+FriendlyNamePlural="Striker Rifles Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Striker Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Striker Rifle"
+
+[WP_STRIKERRIFLE_BM X2WeaponTemplate]
+FriendlyName="Striker Rifle Mark V"
+FriendlyNamePlural="Striker Rifles Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Striker Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Striker Rifle"
+
+[WP_CHAKRAMRIFLE_CG X2WeaponTemplate]
+FriendlyName="Chakram Launcher Mark III"
+FriendlyNamePlural="Chakram Launchers Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Chakram Launcher to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Chakram Launcher"
+
+[WP_CHAKRAMRIFLE_LS X2WeaponTemplate]
+FriendlyName="Chakram Launcher Mark IV"
+FriendlyNamePlural="Chakram Launchers Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Chakram Launcher to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Chakram Launcher"
+
+[WP_CHAKRAMRIFLE_BM X2WeaponTemplate]
+FriendlyName="Chakram Launcher Mark V"
+FriendlyNamePlural="Chakram Launchers Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Chakram Launcher to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Chakram Launcher"
+
+[WP_MANTISSNIPER_CG X2WeaponTemplate]
+FriendlyName="M-92 Mantis Mark III"
+FriendlyNamePlural="M-92 Mantises Mark III"
+BriefSummary="Advancwed Ballistic capabilites allows the M-92 Mantis to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-92 Mantis"
+
+[WP_MANTISSNIPER_LS X2WeaponTemplate]
+FriendlyName="M-92 Mantis Mark IV"
+FriendlyNamePlural="M-92 Mantises Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-92 Mantis to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-92 Mantis"
+
+[WP_MANTISSNIPER_BM X2WeaponTemplate]
+FriendlyName="M-92 Mantis Mark V"
+FriendlyNamePlural="M-92 Mantises Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-92 Mantis to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-92 Mantis"
+
+[WP_JAVELINSNIPER_CG X2WeaponTemplate]
+FriendlyName="Javelin Mark III"
+FriendlyNamePlural="Javelins Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Javelin to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Javelin"
+
+[WP_JAVELINSNIPER_LS X2WeaponTemplate]
+FriendlyName="Javelin Mark IV"
+FriendlyNamePlural="Javelins Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Javelin to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Javelin"
+
+[WP_JAVELINSNIPER_BM X2WeaponTemplate]
+FriendlyName="Javelin Mark V"
+FriendlyNamePlural="Javelins Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Javelin to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Javelin"
+
+[WP_INCISORSNIPER_CG X2WeaponTemplate]
+FriendlyName="M-29 Incisor Mark III"
+FriendlyNamePlural="M-29 Incisors Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-29 Incisor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-29 Incisor"
+
+[WP_INCISORSNIPER_LS X2WeaponTemplate]
+FriendlyName="M-29 Incisor Mark IV"
+FriendlyNamePlural="M-29 Incisors Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-29 Incisor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-29 Incisor"
+
+[WP_INCISORSNIPER_BM X2WeaponTemplate]
+FriendlyName="M-29 Incisor Mark V"
+FriendlyNamePlural="M-29 Incisors Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-29 Incisor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-29 Incisor"
+
+[WP_BLACKWIDOWSNIPER_CG X2WeaponTemplate]
+FriendlyName="Black Widow Mark III"
+FriendlyNamePlural="Black Widows Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Black Widow to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Black Widow"
+
+[WP_BLACKWIDOWSNIPER_LS X2WeaponTemplate]
+FriendlyName="Black Widow Mark IV"
+FriendlyNamePlural="Black Widows Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Black Widow to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Black Widow"
+
+[WP_BLACKWIDOWSNIPER_BM X2WeaponTemplate]
+FriendlyName="Black Widow Mark V"
+FriendlyNamePlural="Black Widows Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Black Widow to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Black Widow"
+
+[WP_INDRAVEKTOR_CG X2WeaponTemplate]
+FriendlyName="M-90 Indra Mark III"
+FriendlyNamePlural="M-90 Indras Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-90 Indra to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-90 Indra"
+
+[WP_INDRAVEKTOR_LS X2WeaponTemplate]
+FriendlyName="M-90 Indra Mark IV"
+FriendlyNamePlural="M-90 Indras Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-90 Indra to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-90 Indra"
+
+[WP_INDRAVEKTOR_BM X2WeaponTemplate]
+FriendlyName="M-90 Indra Mark V"
+FriendlyNamePlural="M-90 Indras Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-90 Indra to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-90 Indra"
+
+[WP_RUZADSHOTGUN_CG X2WeaponTemplate]
+FriendlyName="Ruzad Shotgun Mark III"
+FriendlyNamePlural="Ruzad Shotguns Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Ruzad Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Ruzad Shotgun"
+
+[WP_RUZADSHOTGUN_LS X2WeaponTemplate]
+FriendlyName="Ruzad Shotgun Mark IV"
+FriendlyNamePlural="Ruzad Shotguns Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Ruzad Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Ruzad Shotgun"
+
+[WP_RUZADSHOTGUN_BM X2WeaponTemplate]
+FriendlyName="Ruzad Shotgun Mark V"
+FriendlyNamePlural="Ruzad Shotguns Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Ruzad Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Ruzad Shotgun"
+
+[WP_FALCONRIFLE_CG X2WeaponTemplate]
+FriendlyName="M-37 Falcon Mark III"
+FriendlyNamePlural="M-37 Falcons Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the M-37 Falcon to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-37 Falcon"
+
+[WP_FALCONRIFLE_LS X2WeaponTemplate]
+FriendlyName="M-37 Falcon Mark IV"
+FriendlyNamePlural="M-37 Falcons Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the M-37 Falcon to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-37 Falcon"
+
+[WP_FALCONRIFLE_BM X2WeaponTemplate]
+FriendlyName="M-37 Falcon Mark V"
+FriendlyNamePlural="M-37 Falcons Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the M-37 Falcon to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="M-37 Falcon"
+
+[WP_DEACONRIFLE_CG X2WeaponTemplate]
+FriendlyName="Deacon Mark III"
+FriendlyNamePlural="Deacons Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Deacon to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Deacon"
+
+[WP_DEACONRIFLE_LS X2WeaponTemplate]
+FriendlyName="Deacon Mark IV"
+FriendlyNamePlural="Deacons Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Deacon to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Deacon"
+
+[WP_DEACONRIFLE_BM X2WeaponTemplate]
+FriendlyName="Deacon Mark V"
+FriendlyNamePlural="Deacons Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Deacon to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Deacon"
+
+[WP_POISONRIFLE_CG X2WeaponTemplate]
+FriendlyName="Poison Mark III"
+FriendlyNamePlural="Poisons Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Poison to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Poison"
+
+[WP_POISONRIFLE_LS X2WeaponTemplate]
+FriendlyName="Poison Mark IV"
+FriendlyNamePlural="Poisons Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Poison to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Poison"
+
+[WP_POISONRIFLE_BM X2WeaponTemplate]
+FriendlyName="Poison Mark V"
+FriendlyNamePlural="Poisons Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Poison to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Poison"
+
+[WP_VENOMSHOTGUN_CG X2WeaponTemplate]
+FriendlyName="Venom Shotgun Mark III"
+FriendlyNamePlural="Venom Shotguns Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Venom Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Venom Shotgun"
+
+[WP_VENOMSHOTGUN_LS X2WeaponTemplate]
+FriendlyName="Venom Shotgun Mark IV"
+FriendlyNamePlural="Venom Shotguns Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Venom Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Venom Shotgun"
+
+[WP_VENOMSHOTGUN_BM X2WeaponTemplate]
+FriendlyName="Venom Shotgun Mark V"
+FriendlyNamePlural="Venom Shotguns Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Venom Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Venom Shotgun"
+
+[WP_PHENTISPISTOL_CG X2WeaponTemplate]
+FriendlyName="Phentis Pistol Mark III"
+FriendlyNamePlural="Phentis Pistols Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Phentis Pistol to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Phentis Pistol"
+
+[WP_PHENTISPISTOL_LS X2WeaponTemplate]
+FriendlyName="Phentis Pistol Mark IV"
+FriendlyNamePlural="Phentis Pistols Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Phentis Pistol to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Phentis Pistol"
+
+[WP_PHENTISPISTOL_BM X2WeaponTemplate]
+FriendlyName="Phentis Pistol Mark V"
+FriendlyNamePlural="Phentis Pistols Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Phentis Pistol to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Phentis Pistol"
+
+[WP_BANESMG_CG X2WeaponTemplate]
+FriendlyName="Bane SMG Mark III"
+FriendlyNamePlural="Bane SMGs Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Bane SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Bane SMG"
+
+[WP_BANESMG_LS X2WeaponTemplate]
+FriendlyName="Bane SMG Mark IV"
+FriendlyNamePlural="Bane SMGs Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Bane SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Bane SMG"
+
+[WP_BANESMG_BM X2WeaponTemplate]
+FriendlyName="Bane SMG Mark V"
+FriendlyNamePlural="Bane SMGs Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Bane SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Bane SMG"
+
+[WP_BISHOPSMG_CG X2WeaponTemplate]
+FriendlyName="Bishop SMG Mark III"
+FriendlyNamePlural="Bishop SMGs Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Bishop SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Bishop SMG"
+
+[WP_BISHOPSMG_LS X2WeaponTemplate]
+FriendlyName="Bishop SMG Mark IV"
+FriendlyNamePlural="Bishop SMGs Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Bishop SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Bishop SMG"
+
+[WP_BISHOPSMG_BM X2WeaponTemplate]
+FriendlyName="Bishop SMG Mark V"
+FriendlyNamePlural="Bishop SMGs Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Bishop SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Bishop SMG"
+
+[WP_GRANNANSMG_CG X2WeaponTemplate]
+FriendlyName="Grannan SMG Mark III"
+FriendlyNamePlural="Grannan SMGs Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Grannan SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Grannan SMG"
+
+[WP_GRANNANSMG_LS X2WeaponTemplate]
+FriendlyName="Grannan SMG Mark IV"
+FriendlyNamePlural="Grannan SMGs Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Grannan SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Grannan SMG"
+
+[WP_GRANNANSMG_BM X2WeaponTemplate]
+FriendlyName="Grannan SMG Mark V"
+FriendlyNamePlural="Grannan SMGs Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Grannan SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Grannan SMG"
+
+[WP_KAARANSMG_CG X2WeaponTemplate]
+FriendlyName="Kaaran SMG Mark III"
+FriendlyNamePlural="Kaaran SMGs Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Kaaran SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Kaaran SMG"
+
+[WP_KAARANSMG_LS X2WeaponTemplate]
+FriendlyName="Kaaran SMG Mark IV"
+FriendlyNamePlural="Kaaran SMGs Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Kaaran SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Kaaran SMG"
+
+[WP_KAARANSMG_BM X2WeaponTemplate]
+FriendlyName="Kaaran SMG Mark V"
+FriendlyNamePlural="Kaaran SMGs Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Kaaran SMG to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Kaaran SMG"
+
+[WP_ELDERSNIPER_CG X2WeaponTemplate]
+FriendlyName="Elder Sniper Mark III"
+FriendlyNamePlural="Elder Snipers Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Elder Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Elder Sniper"
+
+[WP_ELDERSNIPER_LS X2WeaponTemplate]
+FriendlyName="Elder Sniper Mark IV"
+FriendlyNamePlural="Elder Snipers Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Elder Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Elder Sniper"
+
+[WP_ELDERSNIPER_BM X2WeaponTemplate]
+FriendlyName="Elder Sniper Mark V"
+FriendlyNamePlural="Elder Snipers Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Elder Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Elder Sniper"
+
+[WP_KRAENNTELSNIPER_CG X2WeaponTemplate]
+FriendlyName="Kraenntel Sniper Mark III"
+FriendlyNamePlural="Kraenntel Snipers Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Kraenntel Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Kraenntel Sniper"
+
+[WP_KRAENNTELSNIPER_LS X2WeaponTemplate]
+FriendlyName="Kraenntel Sniper Mark IV"
+FriendlyNamePlural="Kraenntel Snipers Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Kraenntel Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Kraenntel Sniper"
+
+[WP_KRAENNTELSNIPER_BM X2WeaponTemplate]
+FriendlyName="Kraenntel Sniper Mark V"
+FriendlyNamePlural="Kraenntel Snipers Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Kraenntel Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Kraenntel Sniper"
+
+[WP_SEEGARSNIPER_CG X2WeaponTemplate]
+FriendlyName="Seegar Sniper Mark III"
+FriendlyNamePlural="Seegar Snipers Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Seegar Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Seegar Sniper"
+
+[WP_SEEGARSNIPER_LS X2WeaponTemplate]
+FriendlyName="Seegar Sniper Mark IV"
+FriendlyNamePlural="Seegar Snipers Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Seegar Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Seegar Sniper"
+
+[WP_SEEGARSNIPER_BM X2WeaponTemplate]
+FriendlyName="Seegar Sniper Mark V"
+FriendlyNamePlural="Seegar Snipers Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Seegar Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Seegar Sniper"
+
+[WP_TOXINSNIPER_CG X2WeaponTemplate]
+FriendlyName="Toxin Sniper Mark III"
+FriendlyNamePlural="Toxin Snipers Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Toxin Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Toxin Sniper"
+
+[WP_TOXINSNIPER_LS X2WeaponTemplate]
+FriendlyName="Toxin Sniper Mark IV"
+FriendlyNamePlural="Toxin Snipers Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Toxin Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Toxin Sniper"
+
+[WP_TOXINSNIPER_BM X2WeaponTemplate]
+FriendlyName="Toxin Sniper Mark V"
+FriendlyNamePlural="Toxin Snipers Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Toxin Sniper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Toxin Sniper"
+
+[WP_TRENNIENSHOTGUN_CG X2WeaponTemplate]
+FriendlyName="Trennien Shotgun Mark III"
+FriendlyNamePlural="Trennien Shotguns Mark III"
+BriefSummary="Advanced Ballistic capabilites allows the Trennien Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Trennien Shotgun"
+
+[WP_TRENNIENSHOTGUN_LS X2WeaponTemplate]
+FriendlyName="Trennien Shotgun Mark IV"
+FriendlyNamePlural="Trennien Shotguns Mark IV"
+BriefSummary="Advanced Ballistic capabilites allows the Trennien Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Trennien Shotgun"
+
+[WP_TRENNIENSHOTGUN_BM X2WeaponTemplate]
+FriendlyName="Trennien Shotgun Mark V"
+FriendlyNamePlural="Trennien Shotguns Mark V"
+BriefSummary="Advanced Ballistic capabilites allows the Trennien Shotgun to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing the primary weapon ends the soldier's turn, in the absence of special training.\n<Bullet/>"
+AbilityDescName="Trennien Shotgun"
+
+[WP_M300Claymore_CG X2WeaponTemplate]
+FriendlyName="M-300 Claymore Coil Shotguns"
+FriendlyNamePlural="M-300 Claymore Coil Shotguns"
+BriefSummary="Advanced Coil capabilites allows the M-300 Claymore to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="M-300 Claymore shotgun"
+
+[WP_M300Claymore_LS X2WeaponTemplate]
+FriendlyName="M-300 Claymore Laser Shotguns"
+FriendlyNamePlural="M-300 Claymore Laser Shotguns"
+BriefSummary="Advanced Laser capabilites allows the M-300 Claymore to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="M-300 Claymore shotgun"
+
+[WP_M98Widow_CG X2WeaponTemplate]
+FriendlyName="M-98 Widow Coil Sniper Rifle"
+FriendlyNamePlural="M-98 Widow Coil Sniper Rifles"
+BriefSummary="Advanced Coil capabilites allows the M-98 Widow to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="M-98 Widow sniper rifle"
+
+[WP_M98Widow_LS X2WeaponTemplate]
+FriendlyName="M-98 Widow Laser Sniper Rifle"
+FriendlyNamePlural="M-98 Widow Laser Sniper Rifles"
+BriefSummary="Advanced Laser capabilites allows the M-98 Widow to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="M-98 Widow sniper rifle"
+
+[WP_M76Revenant_CG X2WeaponTemplate]
+FriendlyName="M-76 Revenant Coil Rifle"
+FriendlyNamePlural="M-76 Revenant Coil Rifles"
+BriefSummary="Advanced Coil capabilites allows the M-76 Revenant to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="M-76 Revenant rifle"
+
+[WP_M76Revenant_LS X2WeaponTemplate]
+FriendlyName="M-76 Revenant Laser Rifle"
+FriendlyNamePlural="M-76 Revenant Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the M-76 Revenant to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="M-76 Revenant rifle"
+
+[WP_Harrier_CG X2WeaponTemplate]
+FriendlyName="Cerberus Harrier Coil Rifle"
+FriendlyNamePlural="Cerberus Harrier Coil Rifles"
+BriefSummary="Advanced Coil capabilites allows the Cerberus Harrier to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus Harrier Assault Rifle Coil"
+
+[WP_Harrier_LS X2WeaponTemplate]
+FriendlyName="Cerberus Harrier Laser Rifle"
+FriendlyNamePlural="Cerberus Harrier Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the Cerberus Harrier to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus Harrier Assault Rifle Laser"
+
+[WP_Harrier_Bullpup_CG X2WeaponTemplate]
+FriendlyName="Cerberus Harrier Coil Bullpup"
+FriendlyNamePlural="Cerberus Harrier Coil Bullpups"
+BriefSummary="Advanced Coil capabilites allows the Cerberus Harrier to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus Harrier Bullpup Coil"
+
+[WP_Harrier_Bullpup_LS X2WeaponTemplate]
+FriendlyName="Cerberus Harrier Laser Bullpup"
+FriendlyNamePlural="Cerberus Harrier Laser Bullpups"
+BriefSummary="Advanced Laser capabilites allows the Cerberus Harrier to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus Harrier Bullpup Laser"
+
+[WP_Harrier_Cannon_CG X2WeaponTemplate]
+FriendlyName="Cerberus Harrier Coil Cannon"
+FriendlyNamePlural="Cerberus Harrier Coil Cannons"
+BriefSummary="Advanced Coil capabilites allows the Cerberus Harrier to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus Harrier Assault Cannon Coil"
+
+[WP_Harrier_Cannon_LS X2WeaponTemplate]
+FriendlyName="Cerberus Harrier Laser Cannon"
+FriendlyNamePlural="Cerberus Harrier Laser Cannons"
+BriefSummary="Advanced Laser capabilites allows the Cerberus Harrier to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus Harrier Assault Cannon Laser"
+
+[WP_M13Raptor_CG X2WeaponTemplate]
+FriendlyName="Cerberus M-13 Raptor Coil Rifle"
+FriendlyNamePlural="Cerberus M-13 Raptor Coil Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the Cerberus M-13 Raptor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-13 Raptor Sniper Rifle Coil"
+
+[WP_M13Raptor_LS X2WeaponTemplate]
+FriendlyName="Cerberus M-13 Raptor Laser Rifle"
+FriendlyNamePlural="Cerberus M-13 Raptor Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the Cerberus M-13 Raptor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-13 Raptor Sniper Rifle Laser"
+
+[WP_M13Raptor_Vektor_CG X2WeaponTemplate]
+FriendlyName="Cerberus M-13 Raptor Coil Rifle"
+FriendlyNamePlural="Cerberus M-13 Raptor Coil Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the Cerberus M-13 Raptor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-13 Raptor Vektor Rifle Coil"
+
+[WP_M13Raptor_Vektor_LS X2WeaponTemplate]
+FriendlyName="Cerberus M-13 Raptor Laser Rifle"
+FriendlyNamePlural="Cerberus M-13 Raptor Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the Cerberus M-13 Raptor to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-13 Raptor Vektor Rifle Laser"
+
+[WP_M22Eviscerator_CG X2WeaponTemplate]
+FriendlyName="Cerberus M-22 Eviscerator Coil Shotgun"
+FriendlyNamePlural="Cerberus M-22 Eviscerator Coil Shotguns"
+BriefSummary="Advanced Ballistic capabilites allows the Cerberus M-22 Eviscerator to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-22 Eviscerator Coil Shotgun"
+
+[WP_M22Eviscerator_LS X2WeaponTemplate]
+FriendlyName="Cerberus M-22 Eviscerator Laser Shotgun"
+FriendlyNamePlural="Cerberus M-22 Eviscerator Laser Shotguns"
+BriefSummary="Advanced Laser capabilites allows the Cerberus M-22 Eviscerator to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-22 Eviscerator Laser Shotgun"
+
+[WP_M25Hornet_AR_CG X2WeaponTemplate]
+FriendlyName="Cerberus M-25 Hornet Coil Rifle"
+FriendlyNamePlural="Cerberus M-25 Hornet Coil Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the Cerberus M-25 Hornet to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-25 Hornet Coil Rifle"
+
+[WP_M25Hornet_AR_LS X2WeaponTemplate]
+FriendlyName="Cerberus M-25 Hornet Laser Rifle"
+FriendlyNamePlural="Cerberus M-25 Hornet Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the Cerberus M-25 Hornet to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-25 Hornet Laser Rifle"
+
+[WP_M358Talon_CG X2WeaponTemplate]
+FriendlyName="Cerberus M-358 Talon Coil Pistol"
+FriendlyNamePlural="Cerberus M-358 Talon Coil Pistols"
+BriefSummary="Advanced Ballistic capabilites allows the Cerberus M-358 Talon to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-358 Talon Coil Pistol"
+
+[WP_M358Talon_LS X2WeaponTemplate]
+FriendlyName="Cerberus M-358 Talon Laser Pistol"
+FriendlyNamePlural="Cerberus M-358 Talon Laser Pistols"
+BriefSummary="Advanced Laser capabilites allows the Cerberus M-358 Talon to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus M-358 Talon Laser Pistol"
+
+[WP_PhantomSword_CG X2WeaponTemplate]
+FriendlyName="Cerberus Phantom Coil Sword"
+FriendlyNamePlural="Cerberus Phantom Coil Swords"
+BriefSummary="Advanced Ballistic capabilites allows the Cerberus M-25 Hornet to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus Phantom Coil Sword"
+
+[WP_PhantomSword_LS X2WeaponTemplate]
+FriendlyName="Cerberus Phantom Laser Sword"
+FriendlyNamePlural="Cerberus Phantom Laser Swords"
+BriefSummary="Advanced Laser capabilites allows the Cerberus M-25 Hornet to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+AbilityDescName="Cerberus Phantom Laser Sword"
+
+[WP_GethPulseRIfle_CG X2WeaponTemplate]
+FriendlyName="Geth Pulse Coil Rifle"
+FriendlyNamePlural="Geth Pulse Coil Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the Geth Pulse Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_GethPulseRIfle_LS X2WeaponTemplate]
+FriendlyName="Geth Pulse Laser Rifle"
+FriendlyNamePlural="Geth Pulse Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the Geth Pulse Rifle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Crusader_CG X2WeaponTemplate]
+FriendlyName="N7 Crusader Coil Shotguns"
+FriendlyNamePlural="N7 Crusader Coil Shotguns"
+BriefSummary="Advanced Ballistic capabilites allows the N7 Crusader to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Crusader_LS X2WeaponTemplate]
+FriendlyName="N7 Crusader Laser Shotguns"
+FriendlyNamePlural="N7 Crusader Laser Shotguns"
+BriefSummary="Advanced Laser capabilites allows the N7 Crusader to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Eagle X2WeaponTemplate]
+FriendlyName="N7 Eagle Pistol"
+FriendlyNamePlural="N7 Eagle Magnetic Pistols"
+
+[WP_N7Eagle_MG X2WeaponTemplate]
+FriendlyName="N7 Eagle Magnetic Pistol"
+FriendlyNamePlural="N7 Eagle Magnetic Pistols"
+
+[WP_N7Eagle_CG X2WeaponTemplate]
+FriendlyName="N7 Eagle Coil Pistol"
+FriendlyNamePlural="N7 Eagle Coil Pistols"
+BriefSummary="Advanced Ballistic capabilites allows the N7 Eagle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Eagle_LS X2WeaponTemplate]
+FriendlyName="N7 Eagle Laser Pistol"
+FriendlyNamePlural="N7 Eagle Laser Pistols"
+BriefSummary="Advanced Laser capabilites allows the N7 Eagle to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Eagle_BM X2WeaponTemplate]
+FriendlyName="N7 Eagle Beam Pistol"
+FriendlyNamePlural="N7 Eagle Beam Pistols"
+
+[WP_N7Piranha_CG X2WeaponTemplate]
+FriendlyName="N7 Piranha Coil Shotguns"
+FriendlyNamePlural="N7 Piranha Coil Shotguns"
+BriefSummary="Advanced Ballistic capabilites allows the N7 Piranha to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Piranha_LM X2WeaponTemplate]
+FriendlyName="N7 Piranha Laser Shotguns"
+FriendlyNamePlural="N7 Piranha Laser Shotguns"
+BriefSummary="Advanced Laser capabilites allows the N7 Piranha to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Typhoon_CG X2WeaponTemplate]
+FriendlyName="N7 Typhoon Coil Light Machine Gun"
+FriendlyNamePlural="N7 Typhoon Coil Light Machine Guns"
+BriefSummary="Advanced Ballistic capabilites allows the N7 Piranha to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Typhoon_LM X2WeaponTemplate]
+FriendlyName="N7 Typhoon Laser Light Machine Gun"
+FriendlyNamePlural="N7 Typhoon Laser Light Machine Guns"
+BriefSummary="Advanced Laser capabilites allows the N7 Piranha to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Valiant_CG X2WeaponTemplate]
+FriendlyName="N7 Valiant Coil Sniper Rifle"
+FriendlyNamePlural="N7 Valiant Coil Sniper Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the N7 Valiant to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Valiant_LS X2WeaponTemplate]
+FriendlyName="N7 Valiant Laser Sniper Rifle"
+FriendlyNamePlural="N7 Valiant Laser Sniper Rifles"
+BriefSummary="Advanced Laser capabilites allows the N7 Valiant to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Valkyrie_CG X2WeaponTemplate]
+FriendlyName="N7 Valkyrie Coil Rifle"
+FriendlyNamePlural="N7 Valkyrie Coil Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the N7 Valkyrie to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_N7Valkyrie_LS X2WeaponTemplate]
+FriendlyName="N7 Valkyrie Laser Rifle"
+FriendlyNamePlural="N7 Valkyrie Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the N7 Valkyrie to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[Omniblade_CG X2WeaponTemplate]
+FriendlyName="Reinfoced Omni-Blade"
+FriendlyNamePlural="Reinfoced Omni-Blades"
+BriefSummary="While our efforts to improve the Omni-Blade on base of Stun Lancer's weapon were fruitless, those prototype Unstable Omni-Blades are able to discharge the excess energy on hit, improving its short-term damage potential."
+TacticalText="<Bullet/> Soldiers, who install this software on their Omni-Tool, can attack adjacent enemies with the weapon even after using both their actions to move or dash to the extent of their movement range. <Bullet/> The decision to engage the enemy in melee combat can be a decisive one; excercise caution."
+AbilityDescName="omni-blade"
+
+[Omniblade_LS X2WeaponTemplate]
+FriendlyName="Energized Omni-Blade"
+FriendlyNamePlural="Energized Omni-Blades"
+BriefSummary="By mixing the Omni-Gel used to fabricate the blade with traces of Elerium, our engineers were able to improve Omni-Blades' performance, allowing them to deal additional heat damage."
+TacticalText="<Bullet/> Soldiers, who install this software on their Omni-Tool, can attack adjacent enemies with the weapon even after using both their actions to move or dash to the extent of their movement range. <Bullet/> The decision to engage the enemy in melee combat can be a decisive one; excercise caution."
+AbilityDescName="omni-blade"
+
+[WP_M22Cyclone_CG X2WeaponTemplate]
+FriendlyName="M-22 Cyclone Coil Rifle"
+FriendlyNamePlural="M-22 Cyclone Coil Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the M-22 Cyclone to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M22Cyclone_LS X2WeaponTemplate]
+FriendlyName="M-22 Cyclone Laser Rifle"
+FriendlyNamePlural="M-22 Cyclone Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the M-22 Cyclone to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M3Predator_CG X2WeaponTemplate]
+FriendlyName="M-3 Predator Coil Pistol"
+FriendlyNamePlural="M-3 Predator Coil Pistols"
+BriefSummary="Advanced Ballistic capabilites allows the M-3 Predator to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M3Predator_LS X2WeaponTemplate]
+FriendlyName="M-3 Predator Laser Pistol"
+FriendlyNamePlural="M-3 Predator Laser Pistols"
+BriefSummary="Advanced Laser capabilites allows the M-3 Predator to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M97Viper_CG X2WeaponTemplate]
+FriendlyName="M-97 Viper Coil Rifle"
+FriendlyNamePlural="M-97 Viper Coil Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the M-97 Viper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M97Viper_LS X2WeaponTemplate]
+FriendlyName="M-97 Viper Laser Rifle"
+FriendlyNamePlural="M-97 Viper Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the M-97 Viper to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M23Katana_CG X2WeaponTemplate]
+FriendlyName="M-23 Katana Coil Shotgun"
+FriendlyNamePlural="M-23 Katana Coil Shotguns"
+BriefSummary="Advanced Ballistic capabilites allows the M-23 Katana to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M23Katana_LS X2WeaponTemplate]
+FriendlyName="M-23 Katana Laser Shotgun"
+FriendlyNamePlural="M-23 Katana Laser Shotguns"
+BriefSummary="Advanced Laser capabilites allows the M-23 Katana to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M96Mattock_CG X2WeaponTemplate]
+FriendlyName="M-96 Mattock Coil Rifle"
+FriendlyNamePlural="M-96 Mattock Coil Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the M-96 Mattock to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M96Mattock_LS X2WeaponTemplate]
+FriendlyName="M-96 Mattock Laser Rifle"
+FriendlyNamePlural="M-96 Mattock Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the M-96 Mattock to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M8Avenger_CG X2WeaponTemplate]
+FriendlyName="M-8 Avenger Coil Rifle"
+FriendlyNamePlural="M-8 Avenger Coil Rifles"
+BriefSummary="Advanced Ballistic capabilites allows the M-8 Avenger to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
+
+[WP_M8Avenger_LS X2WeaponTemplate]
+FriendlyName="M-8 Avenger Laser Rifle"
+FriendlyNamePlural="M-8 Avenger Laser Rifles"
+BriefSummary="Advanced Laser capabilites allows the M-8 Avenger to shoot higher velocity rounds with greater penetration power."
+TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
