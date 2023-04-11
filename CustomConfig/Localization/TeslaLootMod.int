@@ -129,3 +129,20 @@ FriendlyName="Kinetic Levitation Rounds"
 FriendlyNamePlural="Kinetic Levitation Rounds"
 BriefSummary="Kinetic Levitation Rounds contains salvaged extraterrestrial materials that generate a Kinetic energy force filed to Levitate light and small size unit."
 TinySummary="+Ammo Bonus, +Clip size"
+
+[UIChooseClass_TLM]
+CatLabels[eCatCustom2]="Hunter Rifle"
+CatDescriptions[eCatCustom2] = "Pathfinders love these Hunter Rifles"
+CatImages[eCatCustom2]="UILibrary_InvCatImages.Inv_Rifle_TLM"						;"Assault Rifle"
+
+CatLabels[eCatCustom3]="Boltcaster"
+CatDescriptions[eCatCustom3] = "A mysterious weapon"
+CatImages[eCatCustom3]="UILibrary_InvCatImages.Inv_Rifle_TLM"						;"Assault Rifle"
+
+CatLabels[eCatCustom4]="Strike Rifle"
+CatDescriptions[eCatCustom4] = "A Strike Rifle"
+CatImages[eCatCustom4]="UILibrary_InvCatImages.Inv_Rifle_TLM"						;"Assault Rifle"
+
+CatLabels[eCatCustom5]="Battle Rifle"
+CatDescriptions[eCatCustom5] = "A Battle Rifle"
+CatImages[eCatCustom5]="UILibrary_InvCatImages.Inv_Rifle_TLM"						;"Assault Rifle"
