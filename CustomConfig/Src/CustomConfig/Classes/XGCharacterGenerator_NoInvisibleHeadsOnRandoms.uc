@@ -5,11 +5,11 @@ var config int Tries;
 
 function bool PartIsGood(Name PartName)
 {
-    local name Name;
+    local name MatchName;
     
-    foreach default.MatchNames(Name)
+    foreach default.MatchNames(MatchName)
     {
-        if (Name == PartName)
+        if (MatchName == PartName)
             return false;      
     }
     

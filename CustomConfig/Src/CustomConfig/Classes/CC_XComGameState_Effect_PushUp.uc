@@ -7,14 +7,12 @@ function EventListenerReturn CCKineticPlatingListener(Object EventData, Object E
 	local XComGameStateContext_Ability AbilityContext;
 	local XComGameState NewGameState;
 	local XComGameState_Unit UnitState;
-	local CC_X2Effect_PushUpVestPersonalKineticShield PlatingEffect;
 	
 	AbilityContext = XComGameStateContext_Ability(GameState.GetContext());
 	if (AbilityContext != none && AbilityContext.InterruptionStatus != eInterruptionStatus_Interrupt)
 	{
         if (AbilityContext.InputContext.SourceObject == ApplyEffectParameters.TargetStateObjectRef)
 		{
-			PlatingEffect = CC_X2Effect_PushUpVestPersonalKineticShield(GetX2Effect());
 			UnitState = XComGameState_Unit(GameState.GetGameStateForObjectID(ApplyEffectParameters.TargetStateObjectRef.ObjectID));
 			if (UnitState != none)
 			{

@@ -156,7 +156,6 @@ static function FixHeavyBarrelUpgrade()
 	local X2ItemTemplateManager ItemTemplateMananger;
 	local array<X2DataTemplate> Templates;
 	local X2DataTemplate Template;
-
 	local array<name> TemplateNames;
 	local name TemplateName;
 	local X2WeaponUpgradeTemplate UpgradeTemplate;
@@ -212,6 +211,6 @@ static function bool CanApplyUpgradeToWeaponPatched(X2WeaponUpgradeTemplate Upgr
 		return class'X2Item_DefaultUpgrades'.static.CanApplyUpgradeToWeapon(UpgradeTemplate, Weapon, SlotIndex);
 	}
 
-	`LOG(default.Class.Name @ GetFuncName() @ WeaponTemplate.DataName @ "bail no ranged weapon",, 'ConfigureUpgradeSlots');
+	`LOG(default.Class.Name @ GetFuncName() @ WeaponTemplate.DataName @ "bail no ranged weapon",, 'CC');
 	return false;
 }
