@@ -189,7 +189,7 @@ static function bool CanApplyUpgradeToWeaponPatched(X2WeaponUpgradeTemplate Upgr
 	local array<name> DefaultRangedWeaponCategories;
 
 	WeaponTemplate = X2WeaponTemplate(Weapon.GetMyTemplate());
-
+	`LOG("CanApplyUpgradeToWeaponPatched: " $ WeaponTemplate.Name,,'CC');
 	DefaultRangedWeaponCategories.AddItem('pistol');
 	DefaultRangedWeaponCategories.AddItem('rifle');
 	DefaultRangedWeaponCategories.AddItem('shotgun');
@@ -203,11 +203,13 @@ static function bool CanApplyUpgradeToWeaponPatched(X2WeaponUpgradeTemplate Upgr
 
 	if (WeaponTemplate != none && WeaponTemplate.RangeAccuracy.Length > 0 && WeaponTemplate.iRange == INDEX_NONE)
 	{
+		`LOG(WeaponTemplate.Name $ " | " $ WeaponTemplate.RangeAccuracy.Length $ " | " $ WeaponTemplate.iRange,,'CC');
 		return class'X2Item_DefaultUpgrades'.static.CanApplyUpgradeToWeapon(UpgradeTemplate, Weapon, SlotIndex);
 	}
 
 	if (WeaponTemplate != none && DefaultRangedWeaponCategories.Find(WeaponTemplate.WeaponCat) != INDEX_NONE)
 	{
+		`LOG(WeaponTemplate.Name $ " | " $ WeaponTemplate.WeaponCat $ " | " $ DefaultRangedWeaponCategories.Find(WeaponTemplate.WeaponCat),,'CC');
 		return class'X2Item_DefaultUpgrades'.static.CanApplyUpgradeToWeapon(UpgradeTemplate, Weapon, SlotIndex);
 	}
 
