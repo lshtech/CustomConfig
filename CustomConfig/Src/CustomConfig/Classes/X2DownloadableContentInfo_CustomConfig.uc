@@ -177,7 +177,7 @@ static function FixHeavyBarrelUpgrade()
 			if (InStr(string(UpgradeTemplate.DataName), "SNHeavyBarrel") != INDEX_NONE)
 			{
 				UpgradeTemplate.CanApplyUpgradeToWeaponFn = CanApplyUpgradeToWeaponPatched;
-				`LOG("Patch" @ UpgradeTemplate.DataName @ "CanApplyUpgradeToWeaponFn",, 'CC');
+				`LOG("Patch" @ UpgradeTemplate.DataName @ " | " @ UpgradeTemplate.CanApplyUpgradeToWeaponFn,, 'CC');
 			}
 		}
 	}

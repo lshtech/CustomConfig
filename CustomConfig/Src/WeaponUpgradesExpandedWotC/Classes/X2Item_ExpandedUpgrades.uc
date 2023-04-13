@@ -56,6 +56,7 @@ static function X2DataTemplate CreatePrototypeCritUpgrade()
 
 	SetUpCritUpgrade(Template);
 	SetUpTier4Upgrade(Template);
+	Template.CanApplyUpgradeToWeaponFn =CanApplyUpgradeToWeaponPatched;
 
 	Template.BonusAbilities.AddItem('LaserSight_Prt');
 	Template.BonusAbilities.AddItem('LaserSight_BonusSkill');
@@ -78,6 +79,7 @@ static function X2DataTemplate CreatePrototypeAimUpgrade()
 
 	SetUpAimBonusUpgrade(Template);
 	SetUpTier4Upgrade(Template);
+	Template.CanApplyUpgradeToWeaponFn =CanApplyUpgradeToWeaponPatched;
 
 	Template.GetBonusAmountFn = none;
 	Template.AddHitChanceModifierFn = none;
@@ -102,6 +104,7 @@ static function X2DataTemplate CreatePrototypeClipSizeUpgrade()
 
 	SetUpClipSizeBonusUpgrade(Template);
 	SetUpTier4Upgrade(Template);
+	Template.CanApplyUpgradeToWeaponFn =CanApplyUpgradeToWeaponPatched;
 
 	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.BeamAssaultRifle_MagB_inv";
 	Template.ClipSizeBonus = default.CLIP_SIZE_PRT;
@@ -122,6 +125,7 @@ static function X2DataTemplate CreatePrototypeFreeFireUpgrade()
 
 	SetUpFreeFireBonusUpgrade(Template);
 	SetUpTier4Upgrade(Template);
+	Template.CanApplyUpgradeToWeaponFn =CanApplyUpgradeToWeaponPatched;
 
 	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.MagSniper_TriggerB_inv";
 	Template.FreeFireChance = default.FREE_FIRE_PRT;
@@ -147,6 +151,7 @@ static function X2DataTemplate CreatePrototypeReloadUpgrade()
 
 	SetUpReloadUpgrade(Template);
 	SetUpTier4Upgrade(Template);
+	Template.CanApplyUpgradeToWeaponFn =CanApplyUpgradeToWeaponPatched;
 
 	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.BeamAssaultRifle_AutoLoader_inv";
 	Template.NumFreeReloads = default.FREE_RELOADS_PRT;
@@ -166,6 +171,8 @@ static function X2DataTemplate CreatePrototypeMissDamageUpgrade()
 
 	SetUpMissDamageUpgrade(Template);
 	SetUpTier4Upgrade(Template);
+	Template.CanApplyUpgradeToWeaponFn =CanApplyUpgradeToWeaponPatched;
+
 	Template.GetBonusAmountFn = none;
 	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.BeamAssaultRifle_HeatsinkB_inv";
 	Template.BonusAbilities.AddItem('EverVigilant');
@@ -186,6 +193,7 @@ static function X2DataTemplate CreatePrototypeFreeKillUpgrade()
 
 	SetUpFreeKillUpgrade(Template);
 	SetUpTier4Upgrade(Template);
+	Template.CanApplyUpgradeToWeaponFn =CanApplyUpgradeToWeaponPatched;
 
 	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.BeamAssaultRifle_SupressorB_inv";
 	Template.FreeKillChance = 0;
@@ -209,6 +217,7 @@ static function X2DataTemplate CreatePrototypeSNHeavyBarrel()
 
 	SetUpHeavyBarrelUpgrade(Template);
 	SetUpTier4Upgrade(Template);
+	Template.CanApplyUpgradeToWeaponFn =CanApplyUpgradeToWeaponPatched;
 
 	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.BeamAssaultRifle_SupressorB_inv";
 	Template.BonusAbilities.AddItem('SNHeavyBarrel_Prt_Ability');
@@ -317,4 +326,38 @@ static function SetUpHeavyBarrelUpgrade(out X2WeaponUpgradeTemplate Template)
 	Template.AddUpgradeAttachment('Suppressor', '', "", "", 'ChosenRifle_XCOM', , "", "", "img:///UILibrary_StrategyImages.X2InventoryIcons.Inv_weaponIcon_barrel");
 	Template.AddUpgradeAttachment('Suppressor', '', "", "", 'ChosenSniperRifle_XCOM', , "", "", "img:///UILibrary_StrategyImages.X2InventoryIcons.Inv_weaponIcon_barrel");
 	Template.AddUpgradeAttachment('Suppressor', '', "", "", 'ChosenShotgun_XCOM', , "", "", "img:///UILibrary_StrategyImages.X2InventoryIcons.Inv_weaponIcon_barrel");
+}
+
+static function bool CanApplyUpgradeToWeaponPatched(X2WeaponUpgradeTemplate UpgradeTemplate, XComGameState_Item Weapon, int SlotIndex)
+{
+	local X2WeaponTemplate WeaponTemplate;
+	local array<name> DefaultRangedWeaponCategories;
+
+	WeaponTemplate = X2WeaponTemplate(Weapon.GetMyTemplate());
+	`LOG("CanApplyUpgradeToWeaponPatched: " $ WeaponTemplate.Name,,'CC');
+	DefaultRangedWeaponCategories.AddItem('pistol');
+	DefaultRangedWeaponCategories.AddItem('rifle');
+	DefaultRangedWeaponCategories.AddItem('shotgun');
+	DefaultRangedWeaponCategories.AddItem('cannon');
+	DefaultRangedWeaponCategories.AddItem('sniper_rifle');
+	DefaultRangedWeaponCategories.AddItem('vektor_rifle');
+	DefaultRangedWeaponCategories.AddItem('bullpup');
+	DefaultRangedWeaponCategories.AddItem('sidearm');
+
+	//`LOG(default.Class.Name @ GetFuncName() @ WeaponTemplate.DataName,, 'ConfigureUpgradeSlots');
+
+	if (WeaponTemplate != none && WeaponTemplate.RangeAccuracy.Length > 0 && WeaponTemplate.iRange == INDEX_NONE)
+	{
+		`LOG(WeaponTemplate.Name $ " | " $ WeaponTemplate.RangeAccuracy.Length $ " | " $ WeaponTemplate.iRange,,'CC');
+		return class'X2Item_DefaultUpgrades'.static.CanApplyUpgradeToWeapon(UpgradeTemplate, Weapon, SlotIndex);
+	}
+
+	if (WeaponTemplate != none && DefaultRangedWeaponCategories.Find(WeaponTemplate.WeaponCat) != INDEX_NONE)
+	{
+		`LOG(WeaponTemplate.Name $ " | " $ WeaponTemplate.WeaponCat $ " | " $ DefaultRangedWeaponCategories.Find(WeaponTemplate.WeaponCat),,'CC');
+		return class'X2Item_DefaultUpgrades'.static.CanApplyUpgradeToWeapon(UpgradeTemplate, Weapon, SlotIndex);
+	}
+
+	`LOG(default.Class.Name @ GetFuncName() @ WeaponTemplate.DataName @ "bail no ranged weapon",, 'CC');
+	return false;
 }
