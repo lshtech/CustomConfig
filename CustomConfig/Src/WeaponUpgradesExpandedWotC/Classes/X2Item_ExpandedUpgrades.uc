@@ -241,6 +241,11 @@ static function PatchWeaponUpgrades()
 		SetUpHeavyBarrelUpgrade(SecondTemplate);
 		SecondTemplate.UpgradeAttachments = FirstTemplate.UpgradeAttachments;
 		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SNHeavyBarrel_Prt');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Bsc');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Adv');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Sup');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Prt');
 	}
 
 	FirstTemplate = X2WeaponUpgradeTemplate(ItemTemplateManager.FindItemTemplate('FreeKillUpgrade_Adv'));
@@ -251,6 +256,11 @@ static function PatchWeaponUpgrades()
 		SetUpHeavyBarrelUpgrade(SecondTemplate);
 		SecondTemplate.UpgradeAttachments = FirstTemplate.UpgradeAttachments;
 		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SNHeavyBarrel_Prt');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Bsc');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Adv');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Sup');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Prt');
 	}
 
 	FirstTemplate = X2WeaponUpgradeTemplate(ItemTemplateManager.FindItemTemplate('FreeKillUpgrade_Sup'));
@@ -261,6 +271,11 @@ static function PatchWeaponUpgrades()
 		SetUpHeavyBarrelUpgrade(SecondTemplate);
 		SecondTemplate.UpgradeAttachments = FirstTemplate.UpgradeAttachments;
 		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SNHeavyBarrel_Prt');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Bsc');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Adv');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Sup');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Prt');
 	}
 
 	FirstTemplate = X2WeaponUpgradeTemplate(ItemTemplateManager.FindItemTemplate('FreeKillUpgrade_Prt'));
@@ -273,6 +288,11 @@ static function PatchWeaponUpgrades()
 		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SNHeavyBarrel_Adv');
 		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SNHeavyBarrel_Sup');
 		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SNHeavyBarrel_Prt');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Bsc');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Adv');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Sup');
+		FirstTemplate.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Prt');
 	}
 }
 
@@ -290,6 +310,11 @@ static function SetUpHeavyBarrelUpgrade(out X2WeaponUpgradeTemplate Template)
 	Template.MutuallyExclusiveUpgrades.AddItem('SNHeavyBarrel_Adv');
 	Template.MutuallyExclusiveUpgrades.AddItem('SNHeavyBarrel_Sup');
 	Template.MutuallyExclusiveUpgrades.AddItem('SNHeavyBarrel_Prt');
+	Template.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade');
+	Template.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Bsc');
+	Template.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Adv');
+	Template.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Sup');
+	Template.MutuallyExclusiveUpgrades.AddItem('SilencerUpgrade_Prt');
 	
 	// Assault Rifles
 	Template.AddUpgradeAttachment('Suppressor', 'UIPawnLocation_WeaponUpgrade_AssaultRifle_Suppressor', "ConvAssaultRifle.Meshes.SM_ConvAssaultRifle_SuppressorB", "", 'AssaultRifle_CV', , "img:///UILibrary_Common.ConvAssaultRifle.ConvAssault_SuppressorB", "img:///UILibrary_StrategyImages.X2InventoryIcons.ConvAssault_SuppressorB_inv", "img:///UILibrary_StrategyImages.X2InventoryIcons.Inv_weaponIcon_barrel");

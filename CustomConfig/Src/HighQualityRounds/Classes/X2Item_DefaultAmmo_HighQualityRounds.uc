@@ -18,7 +18,6 @@ static function X2AmmoTemplate HighQualityRounds()
 {
 	local X2AmmoTemplate 	Template;
 	local WeaponDamageValue DamageValue;
-	local int 				Roll;
 
 	`CREATE_X2TEMPLATE(class'X2AmmoTemplate', Template, 'HighQualityRounds');
 	Template.strImage = "img:///HighQualityRounds_UILibrary_StrategyImages.Inv_Hq_Rounds";

@@ -24,7 +24,6 @@ static function X2AbilityTemplate HighQualityRoundsBonusAbility()
 {
 	local X2AbilityTemplate             Template;
 	local X2Effect_HighQualityRounds    Effect;
-	local int							Roll;
 
 	`CREATE_X2ABILITY_TEMPLATE(Template, 'HighQualityRoundsBonusAbility');
 

@@ -8,7 +8,6 @@ static event OnPostTemplatesCreated()
 	//UpdateAlloyweveVest();
 	//HideItem('ReinforcedVest');
 	//HideItem('SavLightVest');
-	FixHeavyBarrelUpgrade();
 }
 
 static function UpdateKineticVests()
@@ -149,70 +148,4 @@ static function HideItem(name TemplateName)
 			Template.CreatorTemplateName = '';
 		}
 	}
-}
-
-static function FixHeavyBarrelUpgrade()
-{
-	local X2ItemTemplateManager ItemTemplateMananger;
-	local array<X2DataTemplate> Templates;
-	local X2DataTemplate Template;
-	local array<name> TemplateNames;
-	local name TemplateName;
-	local X2WeaponUpgradeTemplate UpgradeTemplate;
-	
-	ItemTemplateMananger = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
-	
-	ItemTemplateMananger.GetTemplateNames(TemplateNames);
-
-	foreach TemplateNames(TemplateName)
-	{
-		ItemTemplateMananger.FindDataTemplateAllDifficulties(TemplateName, Templates);
-
-		foreach Templates(Template)
-		{
-			UpgradeTemplate = X2WeaponUpgradeTemplate(Template);
-			if (UpgradeTemplate == none)
-				continue;
-
-			if (InStr(string(UpgradeTemplate.DataName), "SNHeavyBarrel") != INDEX_NONE)
-			{
-				UpgradeTemplate.CanApplyUpgradeToWeaponFn = CanApplyUpgradeToWeaponPatched;
-				`LOG("Patch" @ UpgradeTemplate.DataName @ " | " @ UpgradeTemplate.CanApplyUpgradeToWeaponFn,, 'CC');
-			}
-		}
-	}
-}
-
-static function bool CanApplyUpgradeToWeaponPatched(X2WeaponUpgradeTemplate UpgradeTemplate, XComGameState_Item Weapon, int SlotIndex)
-{
-	local X2WeaponTemplate WeaponTemplate;
-	local array<name> DefaultRangedWeaponCategories;
-
-	WeaponTemplate = X2WeaponTemplate(Weapon.GetMyTemplate());
-	`LOG("CanApplyUpgradeToWeaponPatched: " $ WeaponTemplate.Name,,'CC');
-	DefaultRangedWeaponCategories.AddItem('pistol');
-	DefaultRangedWeaponCategories.AddItem('rifle');
-	DefaultRangedWeaponCategories.AddItem('shotgun');
-	DefaultRangedWeaponCategories.AddItem('cannon');
-	DefaultRangedWeaponCategories.AddItem('sniper_rifle');
-	DefaultRangedWeaponCategories.AddItem('vektor_rifle');
-	DefaultRangedWeaponCategories.AddItem('bullpup');
-	DefaultRangedWeaponCategories.AddItem('sidearm');
-
-	//`LOG(default.Class.Name @ GetFuncName() @ WeaponTemplate.DataName,, 'ConfigureUpgradeSlots');
-
-	if (WeaponTemplate != none && WeaponTemplate.RangeAccuracy.Length > 0 && WeaponTemplate.iRange == INDEX_NONE)
-	{
-		`LOG(WeaponTemplate.Name $ " | " $ WeaponTemplate.RangeAccuracy.Length $ " | " $ WeaponTemplate.iRange,,'CC');
-		return class'X2Item_DefaultUpgrades'.static.CanApplyUpgradeToWeapon(UpgradeTemplate, Weapon, SlotIndex);
-	}
-
-	if (WeaponTemplate != none && DefaultRangedWeaponCategories.Find(WeaponTemplate.WeaponCat) != INDEX_NONE)
-	{
-		`LOG(WeaponTemplate.Name $ " | " $ WeaponTemplate.WeaponCat $ " | " $ DefaultRangedWeaponCategories.Find(WeaponTemplate.WeaponCat),,'CC');
-		return class'X2Item_DefaultUpgrades'.static.CanApplyUpgradeToWeapon(UpgradeTemplate, Weapon, SlotIndex);
-	}
-
-	`LOG(default.Class.Name @ GetFuncName() @ WeaponTemplate.DataName @ "bail no ranged weapon",, 'CC');
-	return false;
 }
