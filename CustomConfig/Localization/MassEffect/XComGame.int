@@ -1366,7 +1366,7 @@ FriendlyNamePlural="N7 Typhoon Coil Light Machine Guns"
 BriefSummary="Advanced Ballistic capabilites allows the N7 Piranha to shoot higher velocity rounds with greater penetration power."
 TacticalText="<Bullet/> Firing this gun will the end soldiers turn, unless they have special training.\n<Bullet/>\n<Bullet/>"
 
-[WP_N7Typhoon_LM X2WeaponTemplate]
+[WP_N7Typhoon_LS X2WeaponTemplate]
 FriendlyName="N7 Typhoon Laser Light Machine Gun"
 FriendlyNamePlural="N7 Typhoon Laser Light Machine Guns"
 BriefSummary="Advanced Laser capabilites allows the N7 Piranha to shoot higher velocity rounds with greater penetration power."

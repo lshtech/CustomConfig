@@ -24,6 +24,7 @@ static function AddLootTables()
 			foreach LootBag.Loots(Entry)
 			{
 				class'X2LootTableManager'.static.AddEntryStatic(LootBag.TableName, Entry, false);
+				`LOG("Adding " @ Entry.TableRef @ " to " @ LootBag.TableName,,'WeaponUpgradesExpandedWotC');
 			}
 		}	
 	}

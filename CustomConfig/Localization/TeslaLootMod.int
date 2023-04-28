@@ -130,6 +130,12 @@ FriendlyNamePlural="Kinetic Levitation Rounds"
 BriefSummary="Kinetic Levitation Rounds contains salvaged extraterrestrial materials that generate a Kinetic energy force filed to Levitate light and small size unit."
 TinySummary="+Ammo Bonus, +Clip size"
 
+[TLMUpgrade_HighQualityRounds X2WeaponUpgradeTemplate_TLMAmmo]
+FriendlyName="High Quality Rounds"
+FriendlyNamePlural="High Quality Rounds"
+BriefSummary="These High Quality Rounds have been custom made by XCOM to fit their purposes."
+TinySummary="+Ammo Bonus, -Clip size"
+
 [UIChooseClass_TLM]
 CatLabels[eCatCustom2]="Hunter Rifle"
 CatDescriptions[eCatCustom2] = "Pathfinders love these Hunter Rifles"

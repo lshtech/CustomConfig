@@ -1,7 +1,7 @@
 class BRSR_BattleRifles extends X2Item_DefaultWeapons config(BRSR_BattleRifles_Options);
 
-// Variables from config - GameData_WeaponData.ini
-// ***** Damage arrays for attack actions  *****
+//ï¿½Variablesï¿½fromï¿½configï¿½-ï¿½GameData_WeaponData.ini
+//ï¿½*****ï¿½Damageï¿½arraysï¿½forï¿½attackï¿½actionsï¿½ï¿½*****
 
 var config WeaponDamageValue BRSR_BATTLERIFLE_CONVENTIONAL_BASEDAMAGE;
 var config WeaponDamageValue BRSR_BATTLERIFLE_LASER_BASEDAMAGE;
@@ -11,7 +11,7 @@ var config WeaponDamageValue BRSR_BATTLERIFLE_BEAM_BASEDAMAGE;
 
 var config array<int> BRSR_BATTLERIFLE_RANGE;
 
-// ***** Core properties and variables for weapons *****
+//ï¿½*****ï¿½Core properties and variablesï¿½forï¿½weaponsï¿½*****
 var config int BRSR_BATTLERIFLE_CONVENTIONAL_AIM;
 var config int BRSR_BATTLERIFLE_CONVENTIONAL_CRITCHANCE;
 var config int BRSR_BATTLERIFLE_CONVENTIONAL_ICLIPSIZE;
@@ -148,12 +148,12 @@ static function X2DataTemplate CreateTemplate_BRSR_BATTLERIFLE_Laser()
 	`CREATE_X2TEMPLATE(class'X2WeaponTemplate', Template, 'BRSR_BATTLERIFLE_LASER');
 
 	Template.WeaponCat = 'cannon';
-	Template.WeaponTech = 'laser_lw';
+	Template.WeaponTech = 'laser';
 	Template.ItemCat = 'weapon';
 	Template.strImage = "img:///UILibrary_WolfWeaponPack.UI_Laser_Battle_Rifle";  
 	Template.WeaponPanelImage = "_MagneticRifle";                       // used by the UI. Probably determines iconview of the weapon.
 	Template.EquipSound = "Beam_Weapon_Equip";
-	Template.Tier = 2;
+	Template.Tier = 4;
 
 	Template.RangeAccuracy = default.BRSR_BATTLERIFLE_RANGE;
 	Template.BaseDamage = default.BRSR_BATTLERIFLE_LASER_BASEDAMAGE;
@@ -221,7 +221,7 @@ static function X2DataTemplate CreateTemplate_BRSR_BATTLERIFLE_Magnetic()
 	Template.strImage = "img:///UILibrary_WolfWeaponPack.UI_Mag_Battle_Rifle";  
 	Template.WeaponPanelImage = "_MagneticRifle";                       // used by the UI. Probably determines iconview of the weapon.
 	Template.EquipSound = "Magnetic_Weapon_Equip";
-	Template.Tier = 3;
+	Template.Tier = 2;
 
 	Template.RangeAccuracy = default.BRSR_BATTLERIFLE_RANGE;
 	Template.BaseDamage = default.BRSR_BATTLERIFLE_MAGNETIC_BASEDAMAGE;
@@ -285,12 +285,12 @@ static function X2DataTemplate CreateTemplate_BRSR_BATTLERIFLE_Coil()
 	`CREATE_X2TEMPLATE(class'X2WeaponTemplate', Template, 'BRSR_BATTLERIFLE_COIL');
 
 	Template.WeaponCat = 'cannon';
-	Template.WeaponTech = 'coilgun_lw';
+	Template.WeaponTech = 'coil';
 	Template.ItemCat = 'weapon';
 	Template.strImage = "img:///UILibrary_WolfWeaponPack.UI_Coil_Battle_Rifle";  
 	Template.WeaponPanelImage = "_MagneticRifle";                       // used by the UI. Probably determines iconview of the weapon.
 	Template.EquipSound = "Magnetic_Weapon_Equip";
-	Template.Tier = 4;
+	Template.Tier = 3;
 
 	Template.RangeAccuracy = default.BRSR_BATTLERIFLE_RANGE;
 	Template.BaseDamage = default.BRSR_BATTLERIFLE_COIL_BASEDAMAGE;
@@ -342,12 +342,6 @@ static function X2DataTemplate CreateTemplate_BRSR_BATTLERIFLE_Coil()
 	Template.DamageTypeTemplateName = 'Projectile_BeamXCom';
 
 	return Template;
-}
-
-
-defaultproperties
-{
-	bShouldCreateDifficultyVariants = true
 }
 
 static function X2DataTemplate CreateTemplate_BRSR_BATTLERIFLE_Beam()
@@ -419,3 +413,9 @@ static function X2DataTemplate CreateTemplate_BRSR_BATTLERIFLE_Beam()
 
 	return Template;
 }
+
+defaultproperties
+{
+	bShouldCreateDifficultyVariants = true
+}
+

@@ -1,0 +1,11 @@
+[TRArmorUpgrade_ReinforcedVestBonus X2ArmorUpgradeTemplate]
+LocFriendlyName="Reinforced Vest"
+FriendlyNamePlural="Reinforced Vests"
+BriefSummary="Provides the wearer with enhanced defence and 10% crit resistance at the cost of 1 mobility."
+LootTooltip="Provides the wearer with enhanced defence and 10% crit resistance at the cost of 1 mobility."
+
+[TRArmorUpgrade_SavLightVestBonus X2ArmorUpgradeTemplate]
+LocFriendlyName="Light Vest"
+FriendlyNamePlural="Light Vests"
+BriefSummary="Privides better mobility but increases the chance of being seriously injured when hit. Adds 2 mobility. The chance of being crit is increased by 20%."
+LootTooltip="Privides better mobility but increases the chance of being seriously injured when hit. Adds 2 mobility. The chance of being crit is increased by 20%."
