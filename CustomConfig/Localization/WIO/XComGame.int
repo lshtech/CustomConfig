@@ -1,0 +1,741 @@
+; - Weapon Upgrade Templates -
+
+[WOTC_APA_Basic_LightweightFrame X2WeaponUpgradeTemplate]
+FriendlyName="Basic Lightweight Frame"
+FriendlyNamePlural="Basic Lightweight Frames"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:LIGHTWEIGHT_FRAME_BASIC_MOBILITY_BONUS/></font> Mobility."
+TinySummary="+Soldier Mobility"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Mobility by <font color='#3ABD23'>+<Ability:LIGHTWEIGHT_FRAME_BASIC_MOBILITY_BONUS/></font>."
+
+[WOTC_APA_Advanced_LightweightFrame X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Lightweight Frame"
+FriendlyNamePlural="Advanced Lightweight Frames"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:LIGHTWEIGHT_FRAME_ADVANCED_MOBILITY_BONUS/></font> Mobility, but suffer <font color='#CA7200'><Ability:LIGHTWEIGHT_FRAME_ADVANCED_AIM_PENALTY/>%</font> Aim for the rest of the turn after moving."
+TinySummary="+Soldier Mobility"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Mobility by <font color='#3ABD23'>+<Ability:LIGHTWEIGHT_FRAME_ADVANCED_MOBILITY_BONUS/></font>, but they will suffer <font color='#CA7200'><Ability:LIGHTWEIGHT_FRAME_ADVANCED_AIM_PENALTY/>%</font> Aim for the rest of the turn after moving."
+
+[WOTC_APA_Superior_LightweightFrame X2WeaponUpgradeTemplate]
+FriendlyName="Superior Lightweight Frame"
+FriendlyNamePlural="Superior Lightweight Frames"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:LIGHTWEIGHT_FRAME_ADVANCED_MOBILITY_BONUS/></font> Mobility."
+TinySummary="+Soldier Mobility"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Mobility by <font color='#3ABD23'>+<Ability:LIGHTWEIGHT_FRAME_ADVANCED_MOBILITY_BONUS/></font> with no downsides."
+
+[WOTC_APA_Prototype_LightweightFrame X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Lightweight Frame"
+FriendlyNamePlural="Prototype Lightweight Frames"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:LIGHTWEIGHT_FRAME_PROTOTYPE_MOBILITY_BONUS/></font> Mobility and a bonus move action after firing."
+TinySummary="+Soldier Mobility"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Mobility by <font color='#3ABD23'>+<Ability:LIGHTWEIGHT_FRAME_PROTOTYPE_MOBILITY_BONUS/></font> with no downsides."
+
+[WOTC_APA_Basic_BeddedStock X2WeaponUpgradeTemplate]
+FriendlyName="Basic Bedded Stock"
+FriendlyNamePlural="Basic Bedded Stocks"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:BEDDED_STOCK_BASIC_AIM_BONUS/>%</font> Aim on additional attacks against the last target."
+TinySummary="+Offense vs. Same Target"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:BEDDED_STOCK_BASIC_AIM_BONUS/>%</font> on additional attacks against the last target."
+
+[WOTC_APA_Advanced_BeddedStock X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Bedded Stock"
+FriendlyNamePlural="Advanced Bedded Stocks"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS/>%</font> Aim and Crit Chance on additional attacks against the last target, but suffer <font color='#CA7200'><Ability:BEDDED_STOCK_ADVANCED_AIM_PENALTY/>%</font> Aim on Reaction Shots against others."
+TinySummary="+Offense vs. Same Target"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim and Crit Chance by <font color='#3ABD23'>+<Ability:BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS/>%</font> on additional attacks against the last target, but they will suffer <font color='#CA7200'><Ability:BEDDED_STOCK_ADVANCED_AIM_PENALTY/>%</font> Aim on Reaction Shots against a new target."
+
+[WOTC_APA_Superior_BeddedStock X2WeaponUpgradeTemplate]
+FriendlyName="Superior Bedded Stock"
+FriendlyNamePlural="Superior Bedded Stocks"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS/>%</font> Aim and Crit Chance on additional attacks against the last target."
+TinySummary="+Offense vs. Same Target"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim and Crit Chance by <font color='#3ABD23'>+<Ability:BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS/>%</font> on additional attacks against the last target with no downsides."
+
+[WOTC_APA_Prototype_BeddedStock X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Bedded Stock"
+FriendlyNamePlural="Prototype Bedded Stocks"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:BEDDED_STOCK_PROTOTYPE_AIM_CRIT_BONUS/>%</font> Aim and Crit Chance on additional attacks against the last target as well as the Covering Fire ability."
+TinySummary="+Offense vs. Same Target"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim and Crit Chance by <font color='#3ABD23'>+<Ability:BEDDED_STOCK_PROTOTYPE_AIM_CRIT_BONUS/>%</font> on additional attacks against the last target with no downsides."
+
+[WOTC_APA_Bullpup_Stock X2WeaponUpgradeTemplate]
+FriendlyName = "Prototype Bullpup Stock"
+FriendlyNamePlural = "Prototype Bullpup Stocks"
+BriefSummary = "<font color='#E1BDFF'>Special Body Weapon Upgrade for Bullpups:</font><br/>Gain <font color='#3ABD23'>+<Ability:BULLPUP_STOCK_MOBILITY_BONUS/></font> Mobility and <font color='#3ABD23'>+<Ability:BULLPUP_STOCK_REACTION_BONUS/>%</font> chance to hit on Reaction shots."
+TinySummary="+Soldier Mobility, +Reaction Chance"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Mobility by <font color='#3ABD23'>+<Ability:BULLPUP_STOCK_MOBILITY_BONUS/></font> and Reaction Chance by <font color='#3ABD23'>+<Ability:BULLPUP_STOCK_REACTION_BONUS/>%</font>."
+
+[WOTC_APA_Vektor_SkeletonizedStock X2WeaponUpgradeTemplate]
+FriendlyName = "Prototype Skeletonized Stock"
+FriendlyNamePlural = "Prototype Skeletonized Stocks"
+BriefSummary = "<font color='#E1BDFF'>Special Body Weapon Upgrade for Vektor Rifles:</font><br/>Gain <font color='#3ABD23'>+<Ability:SKELETONIZED_STOCK_MOBILITY_BONUS/></font> Mobility and a <font color='#3ABD23'><Ability:SKELETONIZED_STOCK_DETECTION_RADIUS_BONUS/>%</font> reduction to concealed detection radius."
+TinySummary = "+Soldier Mobility, -Detection Radius"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Mobility by <font color='#3ABD23'>+<Ability:SKELETONIZED_STOCK_MOBILITY_BONUS/></font> and decrease Detection Radius by <font color='#3ABD23'>+<Ability:SKELETONIZED_STOCK_DETECTION_RADIUS_BONUS/>%</font>."
+
+
+[WOTC_APA_Basic_Scope X2WeaponUpgradeTemplate]
+FriendlyName="Basic Scope"
+FriendlyNamePlural="Basic Scopes"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SCOPE_BASIC_DIRECT_SHOT_AIM_BONUS/>%</font> Aim (Direct Shots) and increased Long Range accuracy."
+TinySummary="+Direct Shot Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:SCOPE_BASIC_DIRECT_SHOT_AIM_BONUS/>%</font> when taking Direct shots and will slightly improve Long Range accuracy."
+
+[WOTC_APA_Advanced_Scope X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Scope"
+FriendlyNamePlural="Advanced Scopes"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SCOPE_ADVANCED_DIRECT_SHOT_AIM_BONUS/>%</font> Aim (Direct Shots) and increased Long Range accuracy, but decreased Short Range accuracy."
+TinySummary="+Direct Shot Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:SCOPE_ADVANCED_DIRECT_SHOT_AIM_BONUS/>%</font> when taking Direct shots and will slightly improve Long Range accuracy, though Short Range accuracy will suffer a penalty."
+
+[WOTC_APA_Superior_Scope X2WeaponUpgradeTemplate]
+FriendlyName="Superior Scope"
+FriendlyNamePlural="Superior Scopes"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SCOPE_ADVANCED_DIRECT_SHOT_AIM_BONUS/>%</font> Aim (Direct Shots) and increased Long Range accuracy."
+TinySummary="+Direct Shot Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:SCOPE_ADVANCED_DIRECT_SHOT_AIM_BONUS/>%</font> when taking Direct shots and will slightly improve Long Range accuracy with no downsides."
+
+[WOTC_APA_Prototype_Scope X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Scope"
+FriendlyNamePlural="Prototype Scopes"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SCOPE_PROTOTYPE_DIRECT_SHOT_AIM_BONUS/>%</font> Aim (Direct Shots) and increased Long Range accuracy."
+TinySummary="+Direct Shot Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:SCOPE_PROTOTYPE_DIRECT_SHOT_AIM_BONUS/>%</font> when taking Direct shots and will slightly improve Long Range accuracy with no downsides."
+
+[WOTC_APA_Sniper_Scope X2WeaponUpgradeTemplate]
+FriendlyName = "Prototype Sniper Scope"
+FriendlyNamePlural="Prototype Sniper Scopes"
+BriefSummary = "<font color='#E1BDFF'>Special Optic Weapon Upgrade for Sniper Rifles:</font><br/>Direct shots gain <font color='#3ABD23'>+<Ability:SNIPER_SCOPE_AIM_CRIT_CHANCE_BONUS/>%</font> chance to Hit and Crit."
+TinySummary = "+Chance to Hit and Crit"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's chance to Hit and Crit by <font color='#3ABD23'>+<Ability:SNIPER_SCOPE_AIM_CRIT_CHANCE_BONUS/>%</font> when taking Direct shots and will slightly improve Long Range accuracy with no downsides."
+
+[WOTC_APA_Basic_ReflexSight X2WeaponUpgradeTemplate]
+FriendlyName="Basic Reflex Sight"
+FriendlyNamePlural="Basic Reflex Sights"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:REFLEX_SIGHT_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> Aim (Reaction Shots) and increased Short Range accuracy."
+TinySummary="+Reaction Shot Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:REFLEX_SIGHT_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> when taking Reaction shots and will slightly improve Short Range accuracy."
+
+[WOTC_APA_Advanced_ReflexSight X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Reflex Sight"
+FriendlyNamePlural="Advanced Reflex Sights"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:REFLEX_SIGHT_ADVANCED_REACTION_SHOT_AIM_BONUS/>%</font> Aim (Reaction Shots) and increased Short Range accuracy, but decreased Long Range accuracy."
+TinySummary="+Reaction Shot Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:REFLEX_SIGHT_ADVANCED_REACTION_SHOT_AIM_BONUS/>%</font> when taking Reaction shots and will slightly improve Short Range accuracy, though Long Range accuracy will suffer a penalty."
+
+[WOTC_APA_Superior_ReflexSight X2WeaponUpgradeTemplate]
+FriendlyName="Superior Reflex Sight"
+FriendlyNamePlural="Superior Reflex Sights"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:REFLEX_SIGHT_ADVANCED_REACTION_SHOT_AIM_BONUS/>%</font> Aim (Reaction Shots) and increased Short Range accuracy."
+TinySummary="+Reaction Shot Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:REFLEX_SIGHT_ADVANCED_REACTION_SHOT_AIM_BONUS/>%</font> when taking Reaction shots and will slightly improve Short Range accuracy with no downsides."
+
+[WOTC_APA_Prototype_ReflexSight X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Reflex Sight"
+FriendlyNamePlural="Prototype Reflex Sights"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:REFLEX_SIGHT_PROTOTYPE_REACTION_SHOT_AIM_BONUS/>%</font> Aim (Reaction Shots) and increased Short Range accuracy."
+TinySummary="+Reaction Shot Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:REFLEX_SIGHT_PROTOTYPE_REACTION_SHOT_AIM_BONUS/>%</font> when taking Reaction shots and will slightly improve Short Range accuracy with no downsides."
+
+[WOTC_APA_Pistol_IronSights X2WeaponUpgradeTemplate]
+FriendlyName = "Prototype Iron Sights"
+FriendlyNamePlural="Prototype Iron Sights"
+BriefSummary = "<font color='#E1BDFF'>Special Optic Weapon Upgrade for Pistols:</font><br/>Damage increase by <font color='#3ABD23'>+<Ability:IRON_SIGHTS_DAMAGE_BONUS/></font> but loses the chance to Crit."
+TinySummary = "+Damage, No Crits"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Damage by <font color='#3ABD23'>+<Ability:IRON_SIGHTS_DAMAGE_BONUS/></font> but loses the chance to Crit."
+
+[WOTC_APA_Basic_LaserSight X2WeaponUpgradeTemplate]
+FriendlyName="Basic Laser Sight"
+FriendlyNamePlural="Basic Laser Sights"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:LASER_SIGHT_BASIC_CRIT_CHANCE_BONUS/>%</font> Crit Chance within <font color='#3ABD23'><Ability:LASER_SIGHT_EFFECTIVE_TILE_RANGE/></font> Tiles and increased Short Range accuracy."
+TinySummary="+Close-Range Crit Chance"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Crit Chance by <font color='#3ABD23'>+<Ability:LASER_SIGHT_BASIC_CRIT_CHANCE_BONUS/>%</font> when within <font color='#3ABD23'><Ability:LASER_SIGHT_EFFECTIVE_TILE_RANGE/></font> Tiles and will slightly improve Short Range accuracy."
+
+[WOTC_APA_Advanced_LaserSight X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Laser Sight"
+FriendlyNamePlural="Advanced Laser Sights"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS/>%</font> Crit Chance within <font color='#3ABD23'><Ability:LASER_SIGHT_EFFECTIVE_TILE_RANGE/></font> Tiles and increased Short Range accuracy, but decreased Long Range accuracy."
+TinySummary="+Close-Range Crit Chance"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Crit Chance by <font color='#3ABD23'>+<Ability:LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS/>%</font> when within <font color='#3ABD23'><Ability:LASER_SIGHT_EFFECTIVE_TILE_RANGE/></font> Tiles and will slightly improve Short Range accuracy, though Long Range accuracy will suffer a penalty."
+
+[WOTC_APA_Superior_LaserSight X2WeaponUpgradeTemplate]
+FriendlyName="Superior Laser Sight"
+FriendlyNamePlural="Superior Laser Sights"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS/>%</font> Crit Chance within <font color='#3ABD23'><Ability:LASER_SIGHT_EFFECTIVE_TILE_RANGE/></font> Tiles and increased Short Range accuracy."
+TinySummary="+Close-Range Crit Chance"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Crit Chance by <font color='#3ABD23'>+<Ability:LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS/>%</font> when within <font color='#3ABD23'><Ability:LASER_SIGHT_EFFECTIVE_TILE_RANGE/></font> Tiles and will slightly improve Short Range accuracy with no downsides."
+
+[WOTC_APA_Prototype_LaserSight X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Laser Sight"
+FriendlyNamePlural="Prototype Laser Sights"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:LASER_SIGHT_PROTOTYPE_CRIT_CHANCE_BONUS/>%</font> Crit Chance within <font color='#3ABD23'><Ability:LASER_SIGHT_EFFECTIVE_TILE_RANGE/></font> Tiles and increased Short Range accuracy."
+TinySummary="+Close-Range Crit Chance"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Crit Chance by <font color='#3ABD23'>+<Ability:LASER_SIGHT_PROTOTYPE_CRIT_CHANCE_BONUS/>%</font> when within <font color='#3ABD23'><Ability:LASER_SIGHT_EFFECTIVE_TILE_RANGE/></font> Tiles and will slightly improve Short Range accuracy with no downsides."
+
+
+[WOTC_APA_Basic_Bipod X2WeaponUpgradeTemplate]
+FriendlyName="Basic Bipod"
+FriendlyNamePlural="Basic Bipods"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:BIPOD_TILE_RANGE_BONUS/></font> Tiles Weapon Range and reduce Long-Range/Squadsight Aim penalties by <font color='#3ABD23'><Ability:BIPOD_BASIC_RANGE_ACCURACY_MOD/>%</font> if the unit didn't move the previous turn."
+TinySummary="+Setup Range and Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Weapon Range by <font color='#3ABD23'>+<Ability:BIPOD_TILE_RANGE_BONUS/></font> Tiles and reduce Long-Range/Squadsight Aim penalties by <font color='#3ABD23'><Ability:BIPOD_BASIC_RANGE_ACCURACY_MOD/>%</font> if the soldier did not move the previous turn."
+
+[WOTC_APA_Advanced_Bipod X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Bipod"
+FriendlyNamePlural="Advanced Bipods"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:BIPOD_TILE_RANGE_BONUS/></font> Tiles Weapon Range and reduce Long-Range/Squadsight Aim penalties by <font color='#3ABD23'><Ability:BIPOD_ADVANCED_RANGE_ACCURACY_MOD/>%</font> if the unit didn't move the last turn; <font color='#CA7200'><Ability:BIPOD_ADVANCED_MOBILITY_PENALTY/></font> Mobility."
+TinySummary="+Setup Range and Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Weapon Range by <font color='#3ABD23'>+<Ability:BIPOD_TILE_RANGE_BONUS/></font> Tiles and reduce Long-Range/Squadsight Aim penalties by <font color='#3ABD23'><Ability:BIPOD_ADVANCED_RANGE_ACCURACY_MOD/>%</font> if the soldier did not move the previous turn, but Mobility is decreased by <font color='#CA7200'><Ability:BIPOD_ADVANCED_MOBILITY_PENALTY/></font>."
+
+[WOTC_APA_Superior_Bipod X2WeaponUpgradeTemplate]
+FriendlyName="Superior Bipod"
+FriendlyNamePlural="Superior Bipods"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:BIPOD_TILE_RANGE_BONUS/></font> Tiles Weapon Range and reduce Long-Range/Squadsight Aim penalties by <font color='#3ABD23'><Ability:BIPOD_ADVANCED_RANGE_ACCURACY_MOD/>%</font> if the unit didn't move the previous turn."
+TinySummary="+Setup Range and Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Weapon Range by <font color='#3ABD23'>+<Ability:BIPOD_TILE_RANGE_BONUS/></font> Tiles and reduce Long-Range/Squadsight Aim penalties by <font color='#3ABD23'><Ability:BIPOD_ADVANCED_RANGE_ACCURACY_MOD/>%</font> if the soldier did not move the previous turn with no downsides."
+
+[WOTC_APA_Prototype_Bipod X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Bipod"
+FriendlyNamePlural="Prototype Bipods"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:BIPOD_TILE_RANGE_BONUS/></font> Tiles Weapon Range and reduce Long-Range/Squadsight Aim penalties by <font color='#3ABD23'><Ability:BIPOD_PROTOTYPE_RANGE_ACCURACY_MOD/>%</font> if the unit didn't move the previous turn."
+TinySummary="+Setup Range and Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Weapon Range by <font color='#3ABD23'>+<Ability:BIPOD_TILE_RANGE_BONUS/></font> Tiles and reduce Long-Range/Squadsight Aim penalties by <font color='#3ABD23'><Ability:BIPOD_PROTOTYPE_RANGE_ACCURACY_MOD/>%</font> if the soldier did not move the previous turn with no downsides."
+
+[WOTC_APA_Basic_Suppressor X2WeaponUpgradeTemplate]
+FriendlyName="Basic Suppressor"
+FriendlyNamePlural="Basic Suppressors"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SUPPRESSOR_BASIC_CONCEALED_CRIT_CHANCE/>%</font> Crit Chance while concealed. Reduces weapon sound radius by <font color='#3ABD23'><Ability:SUPPRESSOR_SOUND_RANGE_REDUCTION/></font> Tiles."
+TinySummary="+Concealed Crit Chance"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Critical Hit Chance while concealed by <font color='#3ABD23'>+<Ability:SUPPRESSOR_BASIC_CONCEALED_CRIT_CHANCE/>%</font>. Reduces weapon sound radius by <font color='#3ABD23'><Ability:SUPPRESSOR_SOUND_RANGE_REDUCTION/></font> Tiles."
+
+[WOTC_APA_Advanced_Suppressor X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Suppressor"
+FriendlyNamePlural="Advanced Suppressors"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SUPPRESSOR_ADVANCED_CONCEALED_CRIT_CHANCE/>%</font> Crit Chance while concealed, but reduces Aim on Reaction Shots by <font color='#CA7200'><Ability:SUPPRESSOR_ADVANCED_REACTION_SHOT_AIM_PENALTY/>%</font>. Reduces weapon sound radius by <font color='#3ABD23'><Ability:SUPPRESSOR_SOUND_RANGE_REDUCTION/></font> Tiles."
+TinySummary="+Concealed Crit Chance"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Critical Hit Chance while concealed by <font color='#3ABD23'>+<Ability:SUPPRESSOR_ADVANCED_CONCEALED_CRIT_CHANCE/>%</font>, but reduces Aim on Reaction Shots by <font color='#CA7200'><Ability:SUPPRESSOR_ADVANCED_REACTION_SHOT_AIM_PENALTY/>%</font>. Reduces weapon sound radius by <font color='#3ABD23'><Ability:SUPPRESSOR_SOUND_RANGE_REDUCTION/></font> Tiles."
+
+[WOTC_APA_Superior_Suppressor X2WeaponUpgradeTemplate]
+FriendlyName="Superior Suppressor"
+FriendlyNamePlural="Superior Suppressors"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SUPPRESSOR_ADVANCED_CONCEALED_CRIT_CHANCE/>%</font> Crit Chance while concealed. Reduces weapon sound radius by <font color='#3ABD23'><Ability:SUPPRESSOR_SOUND_RANGE_REDUCTION/></font> Tiles."
+TinySummary="+Concealed Crit Chance"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Critical Hit Chance while concealed by <font color='#3ABD23'>+<Ability:SUPPRESSOR_ADVANCED_CONCEALED_CRIT_CHANCE/>%</font> with no downsides. Reduces weapon sound radius by <font color='#3ABD23'><Ability:SUPPRESSOR_SOUND_RANGE_REDUCTION/></font> Tiles."
+
+[WOTC_APA_Prototype_Suppressor X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Suppressor"
+FriendlyNamePlural="Prototype Suppressors"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SUPPRESSOR_PROTOTYPE_CONCEALED_CRIT_CHANCE/>%</font> Crit Chance while concealed. Reduces weapon sound radius by <font color='#3ABD23'><Ability:SUPPRESSOR_SOUND_RANGE_REDUCTION/></font> Tiles."
+TinySummary="+Concealed Crit Chance"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Critical Hit Chance while concealed by <font color='#3ABD23'>+<Ability:SUPPRESSOR_PROTOTYPE_CONCEALED_CRIT_CHANCE/>%</font> with no downsides. Reduces weapon sound radius by <font color='#3ABD23'><Ability:SUPPRESSOR_SOUND_RANGE_REDUCTION/></font> Tiles."
+
+[WOTC_APA_Cannon_HeavyBarrel X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Heavy Cannon Barrel"
+FriendlyNamePlural="Prototype Heavy Cannon Barrels"
+BriefSummary="<font color='#E1BDFF'>Special Barrel Weapon Upgrade for Cannons:</font><br/>Cannon/Machinegun shots shred <font color='#3ABD23'><Ability:HEAVY_CANNON_BARREL_SHRED_BONUS/></font> point of Armor, but the extra weight of the weapon and its increased munitions give the soldier a <font color='#CA7200'><Ability:HEAVY_CANNON_BARREL_MOBILITY_PENALTY/></font> Mobility penalty."
+TinySummary="+Shred, -Soldier Mobility"
+LootTooltip="This weapon upgrade, when installed, will give a soldier <font color='#3ABD23'><Ability:HEAVY_CANNON_BARREL_SHRED_BONUS/></font> point of Armor Shred but decrease their Mobility by <font color='#3ABD23'>+<Ability:HEAVY_CANNON_BARREL_MOBILITY_PENALTY/></font>."
+
+[WOTC_APA_Rifle_FullboreBarrel X2WeaponUpgradeTemplate]
+FriendlyName = "Prototype Fullbore Barrel"
+FriendlyNamePlural="Prototype Fullbore Barrels"
+BriefSummary = "<font color='#E1BDFF'>Special Magazine Weapon Upgrade for Rifles:</font><br/>Rifle shots pierce <font color='#3ABD23'><Ability:FULLBORE_BARREL_PIERCE_BONUS/></font> point of Armor, have <font color='#3ABD23'>+<Ability:LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS/>%</font> chance to Crit."
+TinySummary = "+Armor Pierce, +Crit Chance"
+LootTooltip="This weapon upgrade, when installed, will give a soldier <font color='#3ABD23'><Ability:FULLBORE_BARREL_PIERCE_BONUS/></font> point of Armor Pierce and Crit Chance by <font color='#3ABD23'>+<Ability:LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS/>%</font>."
+
+[WOTC_APA_Shotgun_SmoothboreBarrel X2WeaponUpgradeTemplate]
+FriendlyName = "Prototype Smoothbore Barrel"
+FriendlyNamePlural="Prototype Smoothbore Barrels"
+BriefSummary = "<font color='#E1BDFF'>Special Barrel Weapon Upgrade for Shotguns:</font><br/>Missed shots deal <font color='#3ABD23'><Ability:SMOOTHBORE_BARREL_MISSED_SHOT_DAMAGE/></font> point of damage to the target, but each point of unmitigated Armor on the target reduces the chance to Crit and increases the chance to Graze by <font color='#CA7200'><Ability:SMOOTHBORE_BARREL_CHANCE_MOD_PER_ARMOR/>%</font>."
+LocHelpText = "Missed shots deal damage"
+BriefSummary = "This weapon upgrade, when installed, will give a solider Missed shots deal <font color='#3ABD23'><Ability:SMOOTHBORE_BARREL_MISSED_SHOT_DAMAGE/></font> point of damage to the target, but each point of unmitigated Armor on the target reduces the chance to Crit and increases the chance to Graze by <font color='#CA7200'><Ability:SMOOTHBORE_BARREL_CHANCE_MOD_PER_ARMOR/>%</font>."
+
+[WOTC_APA_Basic_Foregrip X2WeaponUpgradeTemplate]
+FriendlyName="Basic Foregrip"
+FriendlyNamePlural="Basic Foregrips"
+BriefSummary="Reaction Shots gain <font color='#3ABD23'>+<Ability:FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> Aim within <font color='#3ABD23'><Ability:FOREGRIP_EFFECTIVE_TILE_RANGE/></font> Tiles."
+TinySummary="+Reaction/Nearby Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> when taking Reaction shots at targets within <font color='#3ABD23'><Ability:FOREGRIP_EFFECTIVE_TILE_RANGE/></font> Tiles."
+
+[WOTC_APA_Advanced_Foregrip X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Foregrip"
+FriendlyNamePlural="Advanced Foregrips"
+BriefSummary="Reaction Shots gain <font color='#3ABD23'>+<Ability:FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> Aim and close-range accuracy is increased within <font color='#3ABD23'><Ability:FOREGRIP_EFFECTIVE_TILE_RANGE/></font> Tiles, but all shots beyond this suffer a <font color='#CA7200'><Ability:FOREGRIP_ADVANCED_AIM_PENALTY/>%</font> Aim penalty."
+TinySummary="+Reaction/Nearby Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> when taking Reaction shots at targets within <font color='#3ABD23'><Ability:FOREGRIP_EFFECTIVE_TILE_RANGE/></font> Tiles and improve weapon's short-range modifiers by <font color='#3ABD23'><Ability:FOREGRIP_ADVANCED_RANGE_ACCURACY_MOD/>%</font>, but all shots taken beyond this range will suffer <font color='#CA7200'><Ability:FOREGRIP_ADVANCED_AIM_PENALTY/>%</font> penalties to Aim."
+
+[WOTC_APA_Superior_Foregrip X2WeaponUpgradeTemplate]
+FriendlyName="Superior Foregrip"
+FriendlyNamePlural="Superior Foregrips"
+BriefSummary="Reaction Shots gain <font color='#3ABD23'>+<Ability:FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> Aim and close-range accuracy is increased within <font color='#3ABD23'><Ability:FOREGRIP_EFFECTIVE_TILE_RANGE/></font> Tiles."
+TinySummary="+Reaction/Nearby Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> when taking Reaction shots at targets within <font color='#3ABD23'><Ability:FOREGRIP_EFFECTIVE_TILE_RANGE/></font> Tiles and improve weapon's short-range modifiers by <font color='#3ABD23'><Ability:FOREGRIP_ADVANCED_RANGE_ACCURACY_MOD/>%</font> with no downsides."
+
+[WOTC_APA_Prototype_Foregrip X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Foregrip"
+FriendlyNamePlural="Prototype Foregrips"
+BriefSummary="Reaction Shots gain <font color='#3ABD23'>+<Ability:FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> Aim and close-range accuracy is increased within <font color='#3ABD23'><Ability:FOREGRIP_EFFECTIVE_TILE_RANGE/></font> Tiles."
+TinySummary="+Reaction/Nearby Accuracy"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Aim by <font color='#3ABD23'>+<Ability:FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS/>%</font> when taking Reaction shots at targets within <font color='#3ABD23'><Ability:FOREGRIP_EFFECTIVE_TILE_RANGE/></font> Tiles and improve weapon's short-range modifiers by <font color='#3ABD23'><Ability:FOREGRIP_PROTOTYPE_RANGE_ACCURACY_MOD/>%</font> with no downsides."
+
+
+[WOTC_APA_Basic_Speedloader X2WeaponUpgradeTemplate]
+FriendlyName="Basic Speedloader"
+FriendlyNamePlural="Basic Speedloaders"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SPEEDLOADER_BASIC_FREE_RELOADS/></font> Free Reload that does not cost an action."
+TinySummary="+Free Reloads"
+LootTooltip="This weapon upgrade, when installed, will give a soldier <font color='#3ABD23'>+<Ability:SPEEDLOADER_BASIC_FREE_RELOADS/></font> Free Reload that does not cost an action."
+
+[WOTC_APA_Advanced_Speedloader X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Speedloader"
+FriendlyNamePlural="Advanced Speedloaders"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SPEEDLOADER_ADVANCED_FREE_RELOADS/></font> Free Reloads that do not cost an action, but these free reloads can only be used when the weapon's magazine is empty."
+TinySummary="+Free Reloads"
+LootTooltip="This weapon upgrade, when installed, will give a soldier <font color='#3ABD23'>+<Ability:SPEEDLOADER_ADVANCED_FREE_RELOADS/></font> Free Reloads that do not cost an action, but these free reloads can only be used when the weapon's magazine is completely empty."
+
+[WOTC_APA_Superior_Speedloader X2WeaponUpgradeTemplate]
+FriendlyName="Superior Speedloader"
+FriendlyNamePlural="Superior Speedloaders"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SPEEDLOADER_ADVANCED_FREE_RELOADS/></font> Free Reloads that do not cost an action."
+TinySummary="+Free Reloads"
+LootTooltip="This weapon upgrade, when installed, will give a soldier <font color='#3ABD23'>+<Ability:SPEEDLOADER_ADVANCED_FREE_RELOADS/></font> Free Reloads that do not cost an action with no downsides."
+
+[WOTC_APA_Prototype_Speedloader X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Speedloader"
+FriendlyNamePlural="Prototype Speedloaders"
+BriefSummary="Gain <font color='#3ABD23'>+<Ability:SPEEDLOADER_PROTOTYPE_FREE_RELOADS/></font> Free Reloads that do not cost an action."
+TinySummary="+Free Reloads"
+LootTooltip="This weapon upgrade, when installed, will give a soldier <font color='#3ABD23'>+<Ability:SPEEDLOADER_PROTOTYPE_FREE_RELOADS/></font> Free Reloads that do not cost an action with no downsides."
+
+[WOTC_APA_Basic_ExpandedMag X2WeaponUpgradeTemplate]
+FriendlyName="Basic Expanded Magazine"
+FriendlyNamePlural="Basic Expanded Magazines"
+BriefSummary="Increases Weapon Ammo Capacity by <font color='#3ABD23'>+<Ability:EXPANDED_MAGAZINE_BASIC_AMMO_BONUS/></font> round of ammunition."
+TinySummary="+Weapon Ammo Capacity"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Weapon Ammo Capacity by <font color='#3ABD23'>+<Ability:EXPANDED_MAGAZINE_BASIC_AMMO_BONUS/></font> rounds."
+
+[WOTC_APA_Advanced_ExpandedMag X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Expanded Magazine"
+FriendlyNamePlural="Advanced Expanded Magazines"
+BriefSummary="Increases Weapon Ammo Capacity by <font color='#3ABD23'>+<Ability:EXPANDED_MAGAZINE_ADVANCED_AMMO_BONUS/></font> round of ammunition, but reduces soldier Mobility by <font color='#CA7200'><Ability:EXPANDED_MAGAZINE_ADVANCED_MOBILITY_PENALTY/></font>."
+TinySummary="+Weapon Ammo Capacity"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Weapon Ammo Capacity by <font color='#3ABD23'>+<Ability:EXPANDED_MAGAZINE_ADVANCED_AMMO_BONUS/></font> rounds, but reduces soldier Mobility by <font color='#CA7200'><Ability:EXPANDED_MAGAZINE_ADVANCED_MOBILITY_PENALTY/></font>."
+
+[WOTC_APA_Superior_ExpandedMag X2WeaponUpgradeTemplate]
+FriendlyName="Superior Expanded Magazine"
+FriendlyNamePlural="Superior Expanded Magazines"
+BriefSummary="Increases Weapon Ammo Capacity by <font color='#3ABD23'>+<Ability:EXPANDED_MAGAZINE_ADVANCED_AMMO_BONUS/></font> round of ammunition."
+TinySummary="+Weapon Ammo Capacity"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Weapon Ammo Capacity by <font color='#3ABD23'>+<Ability:EXPANDED_MAGAZINE_ADVANCED_AMMO_BONUS/></font> rounds with no downsides."
+
+[WOTC_APA_Prototype_ExpandedMag X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Expanded Magazine"
+FriendlyNamePlural="Prototype Expanded Magazines"
+BriefSummary="Increases Weapon Ammo Capacity by <font color='#3ABD23'>+<Ability:EXPANDED_MAGAZINE_PROTOTYPE_AMMO_BONUS/></font> round of ammunition."
+TinySummary="+Weapon Ammo Capacity"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's Weapon Ammo Capacity by <font color='#3ABD23'>+<Ability:EXPANDED_MAGAZINE_PROTOTYPE_AMMO_BONUS/></font> rounds with no downsides."
+
+[WOTC_APA_Basic_WildcatCartridges X2WeaponUpgradeTemplate]
+FriendlyName="Basic Wildcat Cartridges"
+FriendlyNamePlural="Basic Wildcat Cartridges"
+BriefSummary="Gain a <font color='#3ABD23'><Ability:WILDCAT_CARTRIDGE_BASIC_CRIT_DAMAGE_CHANCE/>%</font> chance to deal <font color='#3ABD23'>+<Ability:WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE/></font> Damage on Critical Hits."
+TinySummary="+Critical Hit Damage"
+LootTooltip="This weapon upgrade, when installed, will give a soldier a <font color='#3ABD23'><Ability:WILDCAT_CARTRIDGE_BASIC_CRIT_DAMAGE_CHANCE/>%</font> chance to deal <font color='#3ABD23'>+<Ability:WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE/></font> Damage on Critical Hits."
+
+[WOTC_APA_Advanced_WildcatCartridges X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Wildcat Cartridges"
+FriendlyNamePlural="Advanced Wildcat Cartridges"
+BriefSummary="Gain a <font color='#3ABD23'><Ability:WILDCAT_CARTRIDGE_ADVANCED_CRIT_DAMAGE_CHANCE/>%</font> chance to deal <font color='#3ABD23'>+<Ability:WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE/></font> Damage on Critical Hits, but increases the chance to Graze on non-Critical hits by <font color='#CA7200'><Ability:WILDCAT_CARTRIDGE_ADVANCED_GRAZE_CHANCE/>%</font>."
+TinySummary="+Critical Hit Damage"
+LootTooltip="This weapon upgrade, when installed, will give a soldier a <font color='#3ABD23'><Ability:WILDCAT_CARTRIDGE_ADVANCED_CRIT_DAMAGE_CHANCE/>%</font> chance to deal <font color='#3ABD23'>+<Ability:WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE/></font> Damage on Critical Hits, but increases the chance to Graze on non-Critical hits by <font color='#CA7200'><Ability:WILDCAT_CARTRIDGE_ADVANCED_GRAZE_CHANCE/>%</font>."
+
+[WOTC_APA_Superior_WildcatCartridges X2WeaponUpgradeTemplate]
+FriendlyName="Superior Wildcat Cartridges"
+FriendlyNamePlural="Superior Wildcat Cartridges"
+BriefSummary="Gain a <font color='#3ABD23'><Ability:WILDCAT_CARTRIDGE_ADVANCED_CRIT_DAMAGE_CHANCE/>%</font> chance to deal <font color='#3ABD23'>+<Ability:WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE/></font> Damage on Critical Hits."
+TinySummary="+Critical Hit Damage"
+LootTooltip="This weapon upgrade, when installed, will give a soldier a <font color='#3ABD23'><Ability:WILDCAT_CARTRIDGE_ADVANCED_CRIT_DAMAGE_CHANCE/>%</font> chance to deal <font color='#3ABD23'>+<Ability:WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE/></font> Damage on Critical Hits with no downsides."
+
+[WOTC_APA_Prototype_WildcatCartridges X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Wildcat Cartridges"
+FriendlyNamePlural="Prototype Wildcat Cartridges"
+BriefSummary="Gain a <font color='#3ABD23'><Ability:WILDCAT_CARTRIDGE_PROTOTYPE_CRIT_DAMAGE_CHANCE/>%</font> chance to deal <font color='#3ABD23'>+<Ability:WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE/></font> Damage on Critical Hits."
+TinySummary="+Critical Hit Damage"
+LootTooltip="This weapon upgrade, when installed, will give a soldier a <font color='#3ABD23'><Ability:WILDCAT_CARTRIDGE_PROTOTYPE_CRIT_DAMAGE_CHANCE/>%</font> chance to deal <font color='#3ABD23'>+<Ability:WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE/></font> Damage on Critical Hits with no downsides."
+
+[WOTC_APA_Basic_HairTrigger X2WeaponUpgradeTemplate]
+FriendlyName="Basic Hair Trigger"
+FriendlyNamePlural="Basic Hair Triggers"
+BriefSummary="Reaction Fire deals <font color='#3ABD23'>+<Ability:HAIRTRIGGER_BASIC_DAMAGE_VALUE/></font> damage."
+TinySummary="Bonus Reaction Fire Damage"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's damage on Reaction Fire by <font color='#3ABD23'>+<Ability:HAIRTRIGGER_BASIC_DAMAGE_VALUE/></font>."
+
+[WOTC_APA_Advanced_HairTrigger X2WeaponUpgradeTemplate]
+FriendlyName="Advanced Hair Trigger"
+FriendlyNamePlural="Advanced Hair Triggers"
+BriefSummary="Reaction Fire deals <font color='#3ABD23'>+<Ability:HAIRTRIGGER_ADVANCED_DAMAGE_VALUE/></font> damage but suffers a <font color='#3ABD23'>+<Ability:HAIRTRIGGER_ADVANCED_AIM_PENALTY/></font> Aim penalty."
+TinySummary="Bonus Reaction Fire Damage"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's damage on Reaction Fire by <font color='#3ABD23'>+<Ability:HAIRTRIGGER_ADVANCED_DAMAGE_VALUE/></font> but suffers a <font color='#3ABD23'>+<Ability:HAIRTRIGGER_ADVANCED_AIM_PENALTY/></font> Aim penalty.."
+
+[WOTC_APA_Superior_HairTrigger X2WeaponUpgradeTemplate]
+FriendlyName="Superior Hair Trigger"
+FriendlyNamePlural="Superior Hair Triggers"
+BriefSummary="Reaction Fire deals <font color='#3ABD23'>+<Ability:HAIRTRIGGER_ADVANCED_DAMAGE_VALUE/></font> damage."
+TinySummary="Bonus Reaction Fire Damage"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's damage on Reaction Fire by <font color='#3ABD23'>+<Ability:HAIRTRIGGER_ADVANCED_DAMAGE_VALUE/></font>."
+
+[WOTC_APA_Prototype_HairTrigger X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Hair Trigger"
+FriendlyNamePlural = "Prototype Heavy Trigger"="Prototype Hair Triggers"
+BriefSummary="Reaction Fire deals <font color='#3ABD23'>+<Ability:HAIRTRIGGER_PROTOTYPE_DAMAGE_VALUE/></font> damage."
+TinySummary="Bonus Reaction Fire Damage"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's damage on Reaction Fire by <font color='#3ABD23'>+<Ability:HAIRTRIGGER_PROTOTYPE_DAMAGE_VALUE/></font>."
+
+[WOTC_APA_Sidearm_HeavyTrigger X2WeaponUpgradeTemplate]
+FriendlyName="Prototype Heavy Trigger"
+FriendlyNamePlural="Prototype Heavy Triggers"
+BriefSummary="<font color='#E1BDFF'>Special Trigger Upgrade for Autopistols:</font><br/>Reaction Fire deals <font color='#3ABD23'>+<Ability:HAIRTRIGGER_BASIC_DAMAGE_VALUE/></font> damage as well as increase Aim for Reaction shots."
+TinySummary="Bonus Reaction Fire Damage"
+LootTooltip="This weapon upgrade, when installed, will increase a soldier's damage on Reaction Fire by <font color='#3ABD23'>+<Ability:HAIRTRIGGER_BASIC_DAMAGE_VALUE/></font> as well as increase Aim for Reaction shots."
+
+; - Weapon Upgrade Ability Templates -
+
+[WOTC_APA_BeddedStock_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Bedded Stock"
+
+[WOTC_APA_BeddedStock_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Bedded Stock"
+
+[WOTC_APA_BeddedStock_SuperiorBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Bedded Stock"
+
+[WOTC_APA_BeddedStock_PrototypeBonus X2AbilityTemplate]
+LocFriendlyName = "Prt+ Bedded Stock"
+
+[WOTC_APA_Scope_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Scope"
+LocHelpText = "Scope (Range)"
+
+[WOTC_APA_Scope_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Scope"
+LocHelpText = "Scope (Range)"
+
+[WOTC_APA_Scope_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Scope (Range)"
+
+[WOTC_APA_Scope_PrototypeBonus X2AbilityTemplate]
+LocFriendlyName = "Prt+ Scope"
+LocHelpText = "Scope (Range)"
+
+[WOTC_APA_ReflexSight_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Reflex Sight"
+
+[WOTC_APA_ReflexSight_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Reflex Sight"
+
+[WOTC_APA_ReflexSight_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Adv. Reflex Sight"
+
+[WOTC_APA_ReflexSight_PrototypeBonus X2AbilityTemplate]
+LocFriendlyName = "Prt+ Reflex Sight"
+
+[WOTC_APA_LaserSight_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Laser Sight"
+
+[WOTC_APA_LaserSight_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Laser Sight"
+
+[WOTC_APA_LaserSight_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Adv. Laser Sight"
+
+[WOTC_APA_LaserSight_PrototypeBonus X2AbilityTemplate]
+LocFriendlyName = "Prt+ Laser Sight"
+
+[WOTC_APA_Bipod_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Bipod"
+
+[WOTC_APA_Bipod_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Bipod"
+
+[WOTC_APA_Bipod_PrototypeBonus X2AbilityTemplate]
+LocFriendlyName = "Prt+ Bipod"
+
+[WOTC_APA_Suppressor_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Suppressor"
+
+[WOTC_APA_Suppressor_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Suppressor"
+
+[WOTC_APA_Suppressor_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Adv. Suppressor"
+
+[WOTC_APA_Suppressor_PrototypeBonus X2AbilityTemplate]
+LocFriendlyName = "Prt+ Suppressor"
+
+[WOTC_APA_Foregrip_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Foregrip"
+
+[WOTC_APA_Foregrip_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Foregrip"
+
+[WOTC_APA_Foregrip_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Adv. Foregrip"
+
+[WOTC_APA_Foregrip_PrototypeBonus X2AbilityTemplate]
+LocFriendlyName = "Prt+ Foregrip"
+
+[WOTC_APA_WildcatCartridges_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Wildcat Cartridges"
+
+[WOTC_APA_WildcatCartridges_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Wildcat Cartridges"
+
+[WOTC_APA_WildcatCartridges_SuperiorBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Wildcat Cartridges"
+
+[WOTC_APA_WildcatCartridges_PrototypeBonus X2AbilityTemplate]
+LocFriendlyName = "Prt+ Wildcat Cartridges"
+
+;* Lightweight Frame
+[RetrofitLightweightFrame_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Lightweight Frame"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitLightweightFrame_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Lightweight Frame"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitLightweightFrame_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Lightweight Frame"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Bedded Stock
+[RetrofitBeddedStock_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Bedded stock"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitBeddedStock_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Bedded stock"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitBeddedStock_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Bedded stock"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Scope
+[RetrofitScope_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Scope"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitScope_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Scope"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitScope_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Scope"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Reflex Sight
+[RetrofitReflexSight_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Reflex Sight"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitReflexSight_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Reflex Sight"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitReflexSight_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Reflex Sight"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Laser Sight
+[RetrofitLaserSight_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Laser Sight"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitLaserSight_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Laser Sight"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitLaserSight_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Laser Sight"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Bipod
+[RetrofitBipod_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Bipod"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitBipod_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Bipod"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitBipod_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Bipod"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Suppressor
+[RetrofitSuppressor_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Suppressor"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitSuppressor_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Suppressor"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitSuppressor_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Suppressor"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Foregrip
+[RetrofitForegrip_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Foregrip"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitForegrip_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Foregrip"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitForegrip_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Foregrip"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Speedloader
+[RetrofitSpeedloader_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Speedloader"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitSpeedloader_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Speedloader"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitSpeedloader_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Speedloader"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Expanded Magazine
+[RetrofitExpandedmag_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Expanded Magazine"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitExpandedmag_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Expanded Magazine"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitExpandedmag_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Expanded Magazine"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Wild Cartridges
+[RetrofitWildcatCartridges_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Wild Cartridges"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitWildcatCartridges_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Wild Cartridges"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitWildcatCartridges_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Wild Cartridges"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+;* Hair Trigger
+[RetrofitHairTrigger_BscToAdv X2TechTemplate]
+DisplayName="Retrofit Basic Hair Trigger"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitHairTrigger_BscToSup X2TechTemplate]
+DisplayName="Retrofit Basic Hair Trigger"
+Summary="Based on our newly developped magnetic weapons design, it should be possible to improve our stock of basic weapon upgrades."
+
+[RetrofitHairTrigger_AdvToSup X2TechTemplate]
+DisplayName="Retrofit Advanced Hair Trigger"
+Summary="Enhancing our existing weapon upgrades with Elerium-based technologies should greatly increase their stability and performance."
+
+; - Weapon Upgrade Ability Templates -
+
+[WOTC_APA_BeddedStock_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Bedded Stock"
+
+[WOTC_APA_BeddedStock_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Bedded Stock"
+
+[WOTC_APA_BeddedStock_SuperiorBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Bedded Stock"
+
+[WOTC_APA_Scope_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Scope"
+LocHelpText = "Scope (Range)"
+
+[WOTC_APA_Scope_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Scope"
+LocHelpText = "Scope (Range)"
+
+[WOTC_APA_Scope_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Scope (Range)"
+
+[WOTC_APA_ReflexSight_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Reflex Sight"
+
+[WOTC_APA_ReflexSight_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Reflex Sight"
+
+[WOTC_APA_ReflexSight_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Adv. Reflex Sight"
+
+[WOTC_APA_LaserSight_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Laser Sight"
+
+[WOTC_APA_LaserSight_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Laser Sight"
+
+[WOTC_APA_LaserSight_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Adv. Laser Sight"
+
+[WOTC_APA_Bipod_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Bipod"
+
+[WOTC_APA_Bipod_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Bipod"
+
+[WOTC_APA_Suppressor_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Suppressor"
+
+[WOTC_APA_Suppressor_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Suppressor"
+
+[WOTC_APA_Suppressor_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Adv. Suppressor"
+
+[WOTC_APA_Foregrip_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Foregrip"
+
+[WOTC_APA_Foregrip_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Foregrip"
+
+[WOTC_APA_Foregrip_AdvancedPenalty X2AbilityTemplate]
+LocFriendlyName = "Adv. Foregrip"
+
+[WOTC_APA_WildcatCartridges_BasicBonus X2AbilityTemplate]
+LocFriendlyName = "Wildcat Cartridges"
+
+[WOTC_APA_WildcatCartridges_AdvancedBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Wildcat Cartridges"
+
+[WOTC_APA_WildcatCartridges_SuperiorBonus X2AbilityTemplate]
+LocFriendlyName = "Adv+ Wildcat Cartridges"
+
+
+
+
+
+; - Spark Arsenal Templates -
+
+[IRI_SpeedLoader_Passive X2AbilityTemplate]
+LocFriendlyName="Mechanized Speed Loader"
+LocFlyOverText="Mechanized Speed Loader"
+
+[IRI_SpeedLoader_Reload X2AbilityTemplate]
+LocFriendlyName="Mechanized Speed Loader"
+LocFlyOverText="Mechanized Speed Loader"
+
+[IRI_SpeedLoader_Upgrade X2WeaponUpgradeTemplate]
+FriendlyName="Mechanized Speed Loader"
+FriendlyNamePlural="Mechanized Speed Loaders"

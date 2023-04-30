@@ -1,4 +1,4 @@
-class X2Effect_BonusReactionFireDamage extends X2Effect_Persistent
+class X2Effect_WOTC_APA_BonusReactionFireDamage extends X2Effect_Persistent
 	config (WUE);
 
 var config bool bBHT_Log; // Logging
