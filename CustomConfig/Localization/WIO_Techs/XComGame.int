@@ -1,0 +1,115 @@
+[BreakthroughCoilWeaponDamage X2TechTemplate]
+DisplayName="Improved Coil Weapons"
+Summary="By integrating new components devised during our recent breakthrough, we've increased the damage output of all Coil Weapons by +1."
+
+[BreakthroughLasereaponDamage X2TechTemplate]
+DisplayName="Improved Laser Weapons"
+Summary="Our recent breakthrough has led to immediate refinements in the manufacturing process for all Laser Weapons, improving their damage output by +1."
+
+[BreakthroughMedikitBonus X2TechTemplate]
+DisplayName="Improved Medikits"
+Summary="Our recent breakthrough has led to immediate improvements in the efficacy of Medikits, improving their healing by +1."
+
+[BreakthroughNanoMedikitBonus X2TechTemplate]
+DisplayName="Further Improved Medikits"
+Summary="Our recent breakthrough has led to immediate improvements in the efficacy of Medikits, improving their healing by +1."
+
+[BreakthroughMediumArmorHealth X2TechTemplate]
+DisplayName="Reinforced Medium Armor"
+Summary="A previously unrealized breakthrough in our Medium Armor development will allow our standard variants to provide +1 HP going forward."
+
+[BreakthroughSparkArmorHealth X2TechTemplate]
+DisplayName="Reinforced SPARK Armor"
+Summary="A previously unrealized breakthrough in our SPARK Armor development will provide SPARKs +1 HP going forward."
+
+[BreakthroughReaperArmorHealth X2TechTemplate]
+DisplayName="Reinforced Reaper Armor"
+Summary="A previously unrealized breakthrough in our Reaper Armor development will provide Reapers +1 HP going forward."
+
+[BreakthroughSkirmisherArmorHealth X2TechTemplate]
+DisplayName="Reinforced Skirmisher Armor"
+Summary="A previously unrealized breakthrough in our Skirmisher Armor development will provide Skirmishers +1 HP going forward."
+
+[BreakthroughTemplarArmorHealth X2TechTemplate]
+DisplayName="Reinforced Templar Armor"
+Summary="A previously unrealized breakthrough in our Templar Armor development will provide Templars +1 HP going forward."
+
+[BreakthroughConventionalArmorHealth X2TechTemplate]
+DisplayName="Reinforced Conventional Armor"
+Summary="A previously unrealized breakthrough in our Medium Armor development will allow our conventional variants to provide +1 HP going forward."
+
+[BreakthroughPlatedArmorHealth X2TechTemplate]
+DisplayName="Reinforced Plated Armor"
+Summary="A previously unrealized breakthrough in our Plated Armor development will allow our plated variants to provide +1 HP going forward."
+
+[BreakthroughPoweredArmorHealth X2TechTemplate]
+DisplayName="Reinforced Powered Armor"
+Summary="A previously unrealized breakthrough in our Powered Armor development will allow our powered variants to provide +1 HP going forward."
+
+[BreakthroughSparkRifleDamage X2TechTemplate]
+DisplayName="Improved Heavy Autocannons"
+Summary="By creating a heavier barrel cross section for our Heavy Autocannons, we were able to increase stability and improve damage output by +1."
+
+[BreakthroughSparkRifleWeaponUpgrade X2TechTemplate]
+DisplayName="Modular Heavy Autocannons"
+Summary="Our breakthrough has allowed us to add an additional upgrade slot to all Heavy Autocannons without sacrificing balance or firepower."
+
+[BreakthroughClaymoreDamage X2TechTemplate]
+DisplayName="Improved Claymores"
+Summary="Breakthroughs in both our manufacturing and finishing processes should further improve the balance of our claymores, increasing their damage by +1."
+
+[BreakthroughWristBladeDamage X2TechTemplate]
+DisplayName="Improved Ripjacks"
+Summary="Breakthroughs in both our manufacturing and finishing processes should further improve the balance of our ripjacks, increasing their damage by +1."
+
+[BreakthroughGauntletDamage X2TechTemplate]
+DisplayName="Improved Shard Gauntlets"
+Summary="Breakthroughs in both our manufacturing and finishing processes should further improve the balance of our shard gauntlets, increasing their damage by +1."
+
+[BreakthroughGrenadeDamage X2TechTemplate]
+DisplayName="Improved Grenades"
+Summary="Breakthroughs in both our manufacturing and finishing processes should further improve the balance of our grenades, increasing their damage by +2."
+
+[BreakthroughHeavyDamage X2TechTemplate]
+DisplayName="Improved Heavy Weapons"
+Summary="Breakthroughs in both our manufacturing and finishing processes should further improve the balance of our heavy weapons, increasing their damage by +2."
+
+[BreakthroughLightArmorHealth X2TechTemplate]
+DisplayName="Reinforced Light Armor"
+Summary="A previously unrealized breakthrough in our Light Armor development will allow our lightest variants to provide +1 Armor going forward."
+
+[BreakthroughHeavyArmorHealth X2TechTemplate]
+DisplayName="Reinforced Heavy Armor"
+Summary="Our research breakthrough has yielded a new means of reinforcing the durability of our Heavy Armor without increasing weight, providing an increase of +1 Armor."
+
+[BreakthroughMediumArmorHealth X2TechTemplate]
+DisplayName="Reinforced Medium Armor"
+Summary="A previously unrealized breakthrough in our Medium Armor development will allow our standard variants to provide +1 Armor going forward."
+
+[BreakthroughSparkArmorHealth X2TechTemplate]
+DisplayName="Reinforced SPARK Armor"
+Summary="Our research breakthrough has yielded a new means of reinforcing the durability of our SPARK Armor without increasing weight, providing an increase of +1 Armor."
+
+[BreakthroughReaperArmorHealth X2TechTemplate]
+DisplayName="Reinforced Reaper Armor"
+Summary="A previously unrealized breakthrough in our Reaper Armor development will provide Reapers +1 Armor going forward."
+
+[BreakthroughSkirmisherArmorHealth X2TechTemplate]
+DisplayName="Reinforced Skirmisher Armor"
+Summary="A previously unrealized breakthrough in our Skirmisher Armor development will provide Skirmishers +1 Armor going forward."
+
+[BreakthroughTemplarArmorHealth X2TechTemplate]
+DisplayName="Reinforced Templar Armor"
+Summary="A previously unrealized breakthrough in our Templar Armor development will provide Templars +1 Armor going forward."
+
+[BreakthroughConventionalArmorHealth X2TechTemplate]
+DisplayName="Reinforced Conventional Armor"
+Summary="A previously unrealized breakthrough in our Medium Armor development will allow our conventional variants to provide +1 Armor going forward."
+
+[BreakthroughPlatedArmorHealth X2TechTemplate]
+DisplayName="Reinforced Plated Armor"
+Summary="A previously unrealized breakthrough in our Plated Armor development will allow our plated variants to provide +1 Armor going forward."
+
+[BreakthroughPoweredArmorHealth X2TechTemplate]
+DisplayName="Reinforced Powered Armor"
+Summary="A previously unrealized breakthrough in our Powered Armor development will allow our powered variants to provide +1 Armor going forward."

@@ -1,4 +1,4 @@
-class X2BreakthroughCondition_Medikit extends X2BreakthroughCondition_WeaponType
+class WIO_X2BreakthroughCondition_Medikit extends X2BreakthroughCondition_WeaponType
 	editinlinenew
 	hidecategories(Object);
 

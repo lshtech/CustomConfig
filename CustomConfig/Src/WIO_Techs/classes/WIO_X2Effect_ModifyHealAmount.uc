@@ -1,5 +1,4 @@
-
-class X2Effect_ModifyHealAmount extends X2Effect_Persistent;
+class WIO_X2Effect_ModifyHealAmount extends X2Effect_Persistent;
 
 // Variables to pass into the effect:
 var int		HealModifier;		//»» Modify healing effects by this many HP
@@ -33,7 +32,7 @@ static function EventListenerReturn ModifyMedikitHeal(Object EventData, Object E
 	local XComGameState_Unit					TargetUnit, SourceUnit, ExpectedSourceUnit;
 	local XComGameState_Effect					EffectState;
 	local XComGameStateContext_Ability			AbilityContext;
-	local X2Effect_ModifyHealAmount	Effect;
+	local WIO_X2Effect_ModifyHealAmount	Effect;
 	local bool									bLog;
 
 	`LOG("On Modify Heal - Event Fired", bLog);
@@ -60,7 +59,7 @@ static function EventListenerReturn ModifyMedikitHeal(Object EventData, Object E
 	`LOG("On Modify Heal - Expected SourceUnit found.", bLog);
 	
 	// Activating extra healing on Target Unit
-	Effect = X2Effect_ModifyHealAmount(EffectState.GetX2Effect());
+	Effect = WIO_X2Effect_ModifyHealAmount(EffectState.GetX2Effect());
 	TargetUnit.ModifyCurrentStat(eStat_HP, Effect.HealModifier);
 	`LOG("On Modify Heal - Heal Modifier is:" @ Effect.HealModifier, bLog);
 
@@ -79,7 +78,7 @@ static function EventListenerReturn ModifyMedikitHeal(Object EventData, Object E
 static function ModifyHealAmount_BuildVisualization(XComGameState VisualizeGameState)
 {
 	local XComGameStateContext_Ability			AbilityContext;
-	local X2Effect_ModifyHealAmount				Effect;
+	local WIO_X2Effect_ModifyHealAmount				Effect;
 	local XComGameState_Effect					EffectState;
 	local int									HealerID;
 	local VisualizationActionMetadata			Metadata;
@@ -89,7 +88,7 @@ static function ModifyHealAmount_BuildVisualization(XComGameState VisualizeGameS
 	AbilityContext = XComGameStateContext_Ability(VisualizeGameState.GetContext());
 	HealerID = AbilityContext.InputContext.SourceObject.ObjectID;
 	EffectState = XComGameState_Unit(`XCOMHISTORY.GetGameStateForObjectID(HealerID)).GetUnitAffectedByEffectState(default.EffectName);
-	Effect = X2Effect_ModifyHealAmount(EffectState.GetX2Effect());
+	Effect = WIO_X2Effect_ModifyHealAmount(EffectState.GetX2Effect());
 	
 	Metadata.StateObject_OldState = `XCOMHISTORY.GetGameStateForObjectID(HealerID, eReturnType_Reference, VisualizeGameState.HistoryIndex - 1);
 	Metadata.StateObject_NewState = VisualizeGameState.GetGameStateForObjectID(HealerID);
