@@ -10,6 +10,40 @@ static event OnPostTemplatesCreated()
 	//HideItem('SavLightVest');
 }
 
+static event InstallNewCampaign(XComGameState StartState)
+{
+	DisableVests();
+}
+
+static event OnLoadedSavedGame()
+{
+	DisableVests();
+}
+
+static function DisableVests()
+{
+	local X2ItemTemplateManager		ItemMgr;
+	local X2DataTemplate			DataTemplate;
+	local X2WeaponUpgradeTemplate	WeaponUpgradeTemplate;
+
+	// Access Item Template Manager
+	ItemMgr = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
+
+	// Access all Data Templates
+	foreach ItemMgr.IterateTemplates(DataTemplate, none)
+	{
+		if (DataTemplate.Class.Name == 'X2EquipmentTemplate')
+		{
+			`LOG("Trying to update" @ WeaponUpgradeTemplate.name @ "|" @ WeaponUpgradeTemplate.bInfiniteItem @ "|" @ WeaponUpgradeTemplate.StartingItem,,'CC');
+			if (WeaponUpgradeTemplate != none && (WeaponUpgradeTemplate.Name == 'ReinforcedVest' || WeaponUpgradeTemplate.Name == 'SavLightVest'))
+			{
+				WeaponUpgradeTemplate.bInfiniteItem = false;
+				WeaponUpgradeTemplate.StartingItem = false;
+			}
+		}
+	}
+}
+
 static function UpdateKineticVests()
 {
 	local X2AbilityTemplateManager						AbilityMgr;

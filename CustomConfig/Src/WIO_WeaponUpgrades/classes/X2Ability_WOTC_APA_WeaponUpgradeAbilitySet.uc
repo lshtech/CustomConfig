@@ -1,4 +1,4 @@
-class X2Ability_WOTC_APA_WeaponUpgradeAbilitySet extends X2Ability config(WOTC_APA_WeaponUpgrades);
+class X2Ability_WOTC_APA_WeaponUpgradeAbilitySet extends X2Ability config(WIO_WeaponUpgrades);
 
 // Body Upgrade Variables:
 var config int				LIGHTWEIGHT_FRAME_BASIC_MOBILITY_BONUS;
@@ -10,8 +10,10 @@ var config int				BEDDED_STOCK_BASIC_AIM_BONUS;
 var config int				BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS;
 var config int				BEDDED_STOCK_ADVANCED_AIM_PENALTY;
 var config int				BEDDED_STOCK_PROTOTYPE_AIM_CRIT_BONUS;
+
 var config int				SKELETONIZED_STOCK_MOBILITY_BONUS;
 var config float			SKELETONIZED_STOCK_DETECTION_RADIUS_BONUS;
+
 var config int				BULLPUP_STOCK_MOBILITY_BONUS;
 var config int				BULLPUP_STOCK_REACTION_BONUS;
 
@@ -19,11 +21,13 @@ var config int				BULLPUP_STOCK_REACTION_BONUS;
 var config int				SCOPE_BASIC_DIRECT_SHOT_AIM_BONUS;
 var config int				SCOPE_ADVANCED_DIRECT_SHOT_AIM_BONUS;
 var config int				SCOPE_PROTOTYPE_DIRECT_SHOT_AIM_BONUS;
+
 var config int				SNIPER_SCOPE_AIM_CRIT_CHANCE_BONUS;
 
 var config int				REFLEX_SIGHT_BASIC_REACTION_SHOT_AIM_BONUS;
 var config int				REFLEX_SIGHT_ADVANCED_REACTION_SHOT_AIM_BONUS;
 var config int				REFLEX_SIGHT_PROTOTYPE_REACTION_SHOT_AIM_BONUS;
+
 var config int				IRON_SIGHTS_DAMAGE_BONUS;
 var config int				IRON_SIGHTS_CRIT_CHANCE_PENALTY;
 
@@ -85,6 +89,17 @@ var config int 				HAIRTRIGGER_BASIC_DAMAGE_VALUE;
 var config int 				HAIRTRIGGER_ADVANCED_DAMAGE_VALUE;
 var config int 				HAIRTRIGGER_ADVANCED_AIM_PENALTY;
 var config int 				HAIRTRIGGER_PROTOTYPE_DAMAGE_VALUE;
+
+// Empowered bonuses
+var config int				MOBILITY_EMPOWER_BONUS;
+var config int				AIM_EMPOWER_BONUS;
+var config int				CRIT_EMPOWER_BONUS;
+var config float			DETECTION_RADIUS_EMPOWER_BONUS;
+var config int				DAMAGE_EMPOWER_BONUS;
+var config int				TILE_RANGE_EMPOWER_BONUS;
+var config float			RANGE_ACCURACY_EMPOWER_BONUS;
+var config int				CHANCE_PER_ARMOR_EMPOWER_BONUS;
+var config int				SHRED_EMPOWER_BONUS;
 
 static function array<X2DataTemplate> CreateTemplates()
 {
@@ -200,11 +215,13 @@ static function X2AbilityTemplate WOTC_APA_LightweightFrame_BasicBonus()
 	// Create a persistent stat change effect that adds [default: 1] mobility
 	Effect = new class 'X2Effect_PersistentStatChange';
 	Effect.BuildPersistentEffect(1, true, false, false);
-	Effect.AddPersistentStatChange(eStat_Mobility, default.LIGHTWEIGHT_FRAME_BASIC_MOBILITY_BONUS);
+	Effect.AddPersistentStatChange(eStat_Mobility, default.LIGHTWEIGHT_FRAME_BASIC_MOBILITY_BONUS 
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
 	Template.AddTargetEffect(Effect);
 
 	// Add UI stat markups corresponding to effect stat boosts
-	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.LIGHTWEIGHT_FRAME_BASIC_MOBILITY_BONUS);
+	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.LIGHTWEIGHT_FRAME_BASIC_MOBILITY_BONUS 
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
 
 	return Template;
 }
@@ -220,11 +237,13 @@ static function X2AbilityTemplate WOTC_APA_LightweightFrame_AdvancedBonus()
 	// Create a persistent stat change effect that adds [default: 2] mobility
 	Effect = new class 'X2Effect_PersistentStatChange';
 	Effect.BuildPersistentEffect(1, true, false, false);
-	Effect.AddPersistentStatChange(eStat_Mobility, default.LIGHTWEIGHT_FRAME_ADVANCED_MOBILITY_BONUS);
+	Effect.AddPersistentStatChange(eStat_Mobility, default.LIGHTWEIGHT_FRAME_ADVANCED_MOBILITY_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
 	Template.AddTargetEffect(Effect);
 
 	// Add UI stat markups corresponding to effect stat boosts
-	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.LIGHTWEIGHT_FRAME_ADVANCED_MOBILITY_BONUS);
+	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.LIGHTWEIGHT_FRAME_ADVANCED_MOBILITY_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
 
 	return Template;
 }
@@ -270,11 +289,13 @@ static function X2AbilityTemplate WOTC_APA_LightweightFrame_PrototypeBonus()
 	// Create a persistent stat change effect that adds [default: 4] mobility
 	Effect = new class 'X2Effect_PersistentStatChange';
 	Effect.BuildPersistentEffect(1, true, false, false);
-	Effect.AddPersistentStatChange(eStat_Mobility, default.LIGHTWEIGHT_FRAME_Prototype_MOBILITY_BONUS);
+	Effect.AddPersistentStatChange(eStat_Mobility, default.LIGHTWEIGHT_FRAME_Prototype_MOBILITY_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
 	Template.AddTargetEffect(Effect);
 
 	// Add UI stat markups corresponding to effect stat boosts
-	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.LIGHTWEIGHT_FRAME_PROTOTYPE_MOBILITY_BONUS);
+	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.LIGHTWEIGHT_FRAME_PROTOTYPE_MOBILITY_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
 
 	return Template;
 }
@@ -292,7 +313,8 @@ static function X2AbilityTemplate WOTC_APA_BeddedStock_BasicBonus()
 	// Create a persistent stat change effect that adds [default: 1] mobility
 	HitEffect = new class'X2Effect_WOTC_APA_BeddedStockModifier';
 	HitEffect.BuildPersistentEffect(1, true, false, false);
-	HitEffect.AimModifier = default.BEDDED_STOCK_BASIC_AIM_BONUS;
+	HitEffect.AimModifier = default.BEDDED_STOCK_BASIC_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
 	HitEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitEffect);
 
@@ -310,8 +332,10 @@ static function X2AbilityTemplate WOTC_APA_BeddedStock_AdvancedBonus()
 	// Create a persistent stat change effect that adds [default: 1] mobility
 	HitEffect = new class'X2Effect_WOTC_APA_BeddedStockModifier';
 	HitEffect.BuildPersistentEffect(1, true, false, false);
-	HitEffect.AimModifier = default.BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS;
-	HitEffect.CritModifier = default.BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS;
+	HitEffect.AimModifier = default.BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
+	HitEffect.CritModifier = default.BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	HitEffect.PenalizeAimModifier = default.BEDDED_STOCK_ADVANCED_AIM_PENALTY;
 	HitEffect.bPenalizeDifferentTarget = true;
 	HitEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
@@ -331,8 +355,10 @@ static function X2AbilityTemplate WOTC_APA_BeddedStock_SuperiorBonus()
 	// Create a persistent stat change effect that adds [default: 1] mobility
 	HitEffect = new class'X2Effect_WOTC_APA_BeddedStockModifier';
 	HitEffect.BuildPersistentEffect(1, true, false, false);
-	HitEffect.AimModifier = default.BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS;
-	HitEffect.CritModifier = default.BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS;
+	HitEffect.AimModifier = default.BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
+	HitEffect.CritModifier = default.BEDDED_STOCK_ADVANCED_AIM_CRIT_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	HitEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitEffect);
 
@@ -350,8 +376,10 @@ static function X2AbilityTemplate WOTC_APA_BeddedStock_PrototypeBonus()
 	// Create a persistent stat change effect that adds [default: 1] mobility
 	HitEffect = new class'X2Effect_WOTC_APA_BeddedStockModifier';
 	HitEffect.BuildPersistentEffect(1, true, false, false);
-	HitEffect.AimModifier = default.BEDDED_STOCK_PROTOTYPE_AIM_CRIT_BONUS;
-	HitEffect.CritModifier = default.BEDDED_STOCK_PROTOTYPE_AIM_CRIT_BONUS;
+	HitEffect.AimModifier = default.BEDDED_STOCK_PROTOTYPE_AIM_CRIT_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
+	HitEffect.CritModifier = default.BEDDED_STOCK_PROTOTYPE_AIM_CRIT_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	HitEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitEffect);
 
@@ -369,11 +397,14 @@ static function X2AbilityTemplate WOTC_APA_SkeletonizedStock()
 	// Create a persistent stat change effect that handles built-in stat modifiers
 	StatEffect = new class 'X2Effect_PersistentStatChange';
 	StatEffect.BuildPersistentEffect(1, true, false, false);
-	StatEffect.AddPersistentStatChange(eStat_Mobility, default.SKELETONIZED_STOCK_MOBILITY_BONUS);
-	StatEffect.AddPersistentStatChange(eStat_DetectionModifier, default.SKELETONIZED_STOCK_DETECTION_RADIUS_BONUS);
+	StatEffect.AddPersistentStatChange(eStat_Mobility, default.SKELETONIZED_STOCK_MOBILITY_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
+	StatEffect.AddPersistentStatChange(eStat_DetectionModifier, default.SKELETONIZED_STOCK_DETECTION_RADIUS_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DETECTION_RADIUS_EMPOWER_BONUS : 0.0));
 	Template.AddTargetEffect(StatEffect);
 
-	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.SKELETONIZED_STOCK_MOBILITY_BONUS);
+	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.SKELETONIZED_STOCK_MOBILITY_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
 
 	return Template;
 }
@@ -390,16 +421,19 @@ static function X2AbilityTemplate WOTC_APA_BullpupStock()
 	// Create a persistent stat change effect that handles built-in stat modifiers
 	StatEffect = new class 'X2Effect_PersistentStatChange';
 	StatEffect.BuildPersistentEffect(1, true, false, false);
-	StatEffect.AddPersistentStatChange(eStat_Mobility, default.BULLPUP_STOCK_MOBILITY_BONUS);
+	StatEffect.AddPersistentStatChange(eStat_Mobility, default.BULLPUP_STOCK_MOBILITY_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
 	Template.AddTargetEffect(StatEffect);
 
-	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.BULLPUP_STOCK_MOBILITY_BONUS);
+	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.BULLPUP_STOCK_MOBILITY_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.MOBILITY_EMPOWER_BONUS : 0));
 
 	// Create a persistent effect to increase chance to hit for Reaction Attacks
 	AimEffect = new class 'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.AimModifier = default.BULLPUP_STOCK_REACTION_BONUS;
+	AimEffect.AimModifier = default.BULLPUP_STOCK_REACTION_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -421,7 +455,8 @@ static function X2AbilityTemplate WOTC_APA_Scope_BasicBonus()
 	AimEffect = new class'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToDirectShots = true;
-	AimEffect.AimModifier = default.SCOPE_BASIC_DIRECT_SHOT_AIM_BONUS;
+	AimEffect.AimModifier = default.SCOPE_BASIC_DIRECT_SHOT_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -448,7 +483,8 @@ static function X2AbilityTemplate WOTC_APA_Scope_AdvancedBonus()
 	AimEffect = new class'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToDirectShots = true;
-	AimEffect.AimModifier = default.SCOPE_ADVANCED_DIRECT_SHOT_AIM_BONUS;
+	AimEffect.AimModifier = default.SCOPE_ADVANCED_DIRECT_SHOT_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -493,7 +529,8 @@ static function X2AbilityTemplate WOTC_APA_Scope_PrototypeBonus()
 	AimEffect = new class'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToDirectShots = true;
-	AimEffect.AimModifier = default.SCOPE_PROTOTYPE_DIRECT_SHOT_AIM_BONUS;
+	AimEffect.AimModifier = default.SCOPE_PROTOTYPE_DIRECT_SHOT_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -519,8 +556,10 @@ static function X2AbilityTemplate WOTC_APA_SniperScope()
 	AimEffect = new class 'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToDirectShots = true;
-	AimEffect.AimModifier = default.SNIPER_SCOPE_AIM_CRIT_CHANCE_BONUS;
-	AimEffect.CritModifier = default.SNIPER_SCOPE_AIM_CRIT_CHANCE_BONUS;
+	AimEffect.AimModifier = default.SNIPER_SCOPE_AIM_CRIT_CHANCE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
+	AimEffect.CritModifier = default.SNIPER_SCOPE_AIM_CRIT_CHANCE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -542,7 +581,8 @@ static function X2AbilityTemplate WOTC_APA_ReflexSight_BasicBonus()
 	AimEffect = new class'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.AimModifier = default.REFLEX_SIGHT_BASIC_REACTION_SHOT_AIM_BONUS;
+	AimEffect.AimModifier = default.REFLEX_SIGHT_BASIC_REACTION_SHOT_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -569,7 +609,8 @@ static function X2AbilityTemplate WOTC_APA_ReflexSight_AdvancedBonus()
 	AimEffect = new class'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.AimModifier = default.REFLEX_SIGHT_ADVANCED_REACTION_SHOT_AIM_BONUS;
+	AimEffect.AimModifier = default.REFLEX_SIGHT_ADVANCED_REACTION_SHOT_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -614,7 +655,8 @@ static function X2AbilityTemplate WOTC_APA_ReflexSight_PrototypeBonus()
 	AimEffect = new class'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.AimModifier = default.REFLEX_SIGHT_PROTOTYPE_REACTION_SHOT_AIM_BONUS;
+	AimEffect.AimModifier = default.REFLEX_SIGHT_PROTOTYPE_REACTION_SHOT_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -639,7 +681,8 @@ static function X2AbilityTemplate WOTC_APA_IronSights()
 	// Create a persistent stat change effect that adds chance to increase Crit damage
 	HitEffect = new class'X2Effect_WOTC_APA_WildcatCartridges';
 	HitEffect.BuildPersistentEffect(1, true, false, false);
-	HitEffect.BonusDmg = default.IRON_SIGHTS_DAMAGE_BONUS;
+	HitEffect.BonusDmg = default.IRON_SIGHTS_DAMAGE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DAMAGE_EMPOWER_BONUS : 0);
 	HitEffect.BonusCritDmg = 0;
 	HitEffect.BonusChance = default.IRON_SIGHTS_CRIT_CHANCE_PENALTY;
 	HitEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
@@ -664,8 +707,10 @@ static function X2AbilityTemplate WOTC_APA_LaserSight_BasicBonus()
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToDirectShots = true;
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.TileLimitCeiling = default.LASER_SIGHT_EFFECTIVE_TILE_RANGE;
-	AimEffect.CritModifier = default.LASER_SIGHT_BASIC_CRIT_CHANCE_BONUS;
+	AimEffect.TileLimitCeiling = default.LASER_SIGHT_EFFECTIVE_TILE_RANGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0);
+	AimEffect.CritModifier = default.LASER_SIGHT_BASIC_CRIT_CHANCE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -693,8 +738,10 @@ static function X2AbilityTemplate WOTC_APA_LaserSight_AdvancedBonus()
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToDirectShots = true;
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.TileLimitCeiling = default.LASER_SIGHT_EFFECTIVE_TILE_RANGE;
-	AimEffect.CritModifier = default.LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS;
+	AimEffect.TileLimitCeiling = default.LASER_SIGHT_EFFECTIVE_TILE_RANGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0);
+	AimEffect.CritModifier = default.LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -740,8 +787,10 @@ static function X2AbilityTemplate WOTC_APA_LaserSight_PrototypeBonus()
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToDirectShots = true;
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.TileLimitCeiling = default.LASER_SIGHT_EFFECTIVE_TILE_RANGE + 2;
-	AimEffect.CritModifier = default.LASER_SIGHT_PROTOTYPE_CRIT_CHANCE_BONUS;
+	AimEffect.TileLimitCeiling = default.LASER_SIGHT_EFFECTIVE_TILE_RANGE + 2
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0);
+	AimEffect.CritModifier = default.LASER_SIGHT_PROTOTYPE_CRIT_CHANCE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -774,7 +823,8 @@ static function X2AbilityTemplate WOTC_APA_Bipod_BasicBonus()
 	HitModEffect.BuildPersistentEffect(1, true, false, false);
 	HitModEffect.RequiredEffectNames.AddItem('WOTC_APA_BasicBipodEffect');
 	HitModEffect.bLimitToLongRange = true;
-	HitModEffect.RangePenaltyPercentNegated = default.BIPOD_BASIC_RANGE_ACCURACY_MOD;
+	HitModEffect.RangePenaltyPercentNegated = default.BIPOD_BASIC_RANGE_ACCURACY_MOD
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.RANGE_ACCURACY_EMPOWER_BONUS : 0.0);
 	HitModEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocLongDescription, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitModEffect);
 
@@ -787,7 +837,8 @@ static function X2AbilityTemplate WOTC_APA_Bipod_BasicBonus()
 	StatChangeEffect = new class'X2Effect_WOTC_APA_RemovedOnMoveStatChange';
 	StatChangeEffect.EffectName = 'WOTC_APA_BasicBipodEffect';
 	StatChangeEffect.BuildPersistentEffect(1, false, true, false, eGameRule_PlayerTurnBegin);
-	StatChangeEffect.AddPersistentStatChange(eStat_SightRadius, default.BIPOD_TILE_RANGE_BONUS);
+	StatChangeEffect.AddPersistentStatChange(eStat_SightRadius, default.BIPOD_TILE_RANGE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0));
 	StatChangeEffect.SetDisplayInfo(ePerkBuff_Bonus, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, true);
 	
 	// This condition check that the unit did not move last turn before allowing the bonus to be applied
@@ -824,7 +875,8 @@ static function X2AbilityTemplate WOTC_APA_Bipod_AdvancedBonus()
 	HitModEffect.BuildPersistentEffect(1, true, false, false);
 	HitModEffect.RequiredEffectNames.AddItem('WOTC_APA_AdvancedBipodEffect');
 	HitModEffect.bLimitToLongRange = true;
-	HitModEffect.RangePenaltyPercentNegated = default.BIPOD_ADVANCED_RANGE_ACCURACY_MOD;
+	HitModEffect.RangePenaltyPercentNegated = default.BIPOD_ADVANCED_RANGE_ACCURACY_MOD
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.RANGE_ACCURACY_EMPOWER_BONUS : 0.0);
 	HitModEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocLongDescription, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitModEffect);
 
@@ -838,7 +890,8 @@ static function X2AbilityTemplate WOTC_APA_Bipod_AdvancedBonus()
 	StatChangeEffect = new class'X2Effect_WOTC_APA_RemovedOnMoveStatChange';
 	StatChangeEffect.EffectName = 'WOTC_APA_AdvancedBipodEffect';
 	StatChangeEffect.BuildPersistentEffect(1, false, true, false, eGameRule_PlayerTurnBegin);
-	StatChangeEffect.AddPersistentStatChange(eStat_SightRadius, default.BIPOD_TILE_RANGE_BONUS);
+	StatChangeEffect.AddPersistentStatChange(eStat_SightRadius, default.BIPOD_TILE_RANGE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0));
 	StatChangeEffect.SetDisplayInfo(ePerkBuff_Bonus, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, true);
 	
 	// This condition check that the unit did not move last turn before allowing the bonus to be applied
@@ -895,7 +948,8 @@ static function X2AbilityTemplate WOTC_APA_Bipod_PrototypeBonus()
 	HitModEffect.BuildPersistentEffect(1, true, false, false);
 	HitModEffect.RequiredEffectNames.AddItem('WOTC_APA_PrototypeBipodEffect');
 	HitModEffect.bLimitToLongRange = true;
-	HitModEffect.RangePenaltyPercentNegated = default.BIPOD_PROTOTYPE_RANGE_ACCURACY_MOD;
+	HitModEffect.RangePenaltyPercentNegated = default.BIPOD_PROTOTYPE_RANGE_ACCURACY_MOD
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.RANGE_ACCURACY_EMPOWER_BONUS : 0.0);
 	HitModEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocLongDescription, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitModEffect);
 
@@ -909,7 +963,8 @@ static function X2AbilityTemplate WOTC_APA_Bipod_PrototypeBonus()
 	StatChangeEffect = new class'X2Effect_WOTC_APA_RemovedOnMoveStatChange';
 	StatChangeEffect.EffectName = 'WOTC_APA_PrototypeBipodEffect';
 	StatChangeEffect.BuildPersistentEffect(1, false, true, false, eGameRule_PlayerTurnBegin);
-	StatChangeEffect.AddPersistentStatChange(eStat_SightRadius, default.BIPOD_TILE_RANGE_BONUS);
+	StatChangeEffect.AddPersistentStatChange(eStat_SightRadius, default.BIPOD_TILE_RANGE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0));
 	StatChangeEffect.SetDisplayInfo(ePerkBuff_Bonus, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, true);
 	
 	// This condition check that the unit did not move last turn before allowing the bonus to be applied
@@ -942,7 +997,8 @@ static function X2AbilityTemplate WOTC_APA_Suppressor_BasicBonus()
 	// Create a persistent stat change effect that changes Crit Chance based on concealment
 	CritEffect = new class'X2Effect_WOTC_APA_SuppressorCritModifiers';
 	CritEffect.BuildPersistentEffect(1, true, false, false);
-	CritEffect.ConcealedCritModifier = default.SUPPRESSOR_BASIC_CONCEALED_CRIT_CHANCE;
+	CritEffect.ConcealedCritModifier = default.SUPPRESSOR_BASIC_CONCEALED_CRIT_CHANCE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	CritEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(CritEffect);
 
@@ -960,7 +1016,8 @@ static function X2AbilityTemplate WOTC_APA_Suppressor_AdvancedBonus()
 	// Create a persistent stat change effect that changes Crit Chance based on concealment
 	CritEffect = new class'X2Effect_WOTC_APA_SuppressorCritModifiers';
 	CritEffect.BuildPersistentEffect(1, true, false, false);
-	CritEffect.ConcealedCritModifier = default.SUPPRESSOR_ADVANCED_CONCEALED_CRIT_CHANCE;
+	CritEffect.ConcealedCritModifier = default.SUPPRESSOR_ADVANCED_CONCEALED_CRIT_CHANCE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	CritEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(CritEffect);
 
@@ -997,7 +1054,8 @@ static function X2AbilityTemplate WOTC_APA_Suppressor_PrototypeBonus()
 	// Create a persistent stat change effect that changes Crit Chance based on concealment
 	CritEffect = new class'X2Effect_WOTC_APA_SuppressorCritModifiers';
 	CritEffect.BuildPersistentEffect(1, true, false, false);
-	CritEffect.ConcealedCritModifier = default.SUPPRESSOR_PROTOTYPE_CONCEALED_CRIT_CHANCE;
+	CritEffect.ConcealedCritModifier = default.SUPPRESSOR_PROTOTYPE_CONCEALED_CRIT_CHANCE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	CritEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(CritEffect);
 
@@ -1018,8 +1076,10 @@ static function X2AbilityTemplate WOTC_APA_Foregrip_BasicBonus()
 	AimEffect = new class'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.AimModifier = default.FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS;
-	AimEffect.TileLimitCeiling = default.FOREGRIP_EFFECTIVE_TILE_RANGE;
+	AimEffect.AimModifier = default.FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
+	AimEffect.TileLimitCeiling = default.FOREGRIP_EFFECTIVE_TILE_RANGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -1039,16 +1099,20 @@ static function X2AbilityTemplate WOTC_APA_Foregrip_AdvancedBonus()
 	AimEffect = new class'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.AimModifier = default.FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS;
-	AimEffect.TileLimitCeiling = default.FOREGRIP_EFFECTIVE_TILE_RANGE;
+	AimEffect.AimModifier = default.FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
+	AimEffect.TileLimitCeiling = default.FOREGRIP_EFFECTIVE_TILE_RANGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
 	// Create a persistent effect to increase short range accuracy
 	RangeEffect = new class'X2Effect_WOTC_APA_ForegripRangeModifier';
 	RangeEffect.BuildPersistentEffect(1, true, false, false);
-	RangeEffect.RangePenaltyPercentNegated = default.FOREGRIP_ADVANCED_RANGE_ACCURACY_MOD;
-	RangeEffect.ShortRangeTileCutoff = default.FOREGRIP_EFFECTIVE_TILE_RANGE;
+	RangeEffect.RangePenaltyPercentNegated = default.FOREGRIP_ADVANCED_RANGE_ACCURACY_MOD
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.RANGE_ACCURACY_EMPOWER_BONUS : 0.0);
+	RangeEffect.ShortRangeTileCutoff = default.FOREGRIP_EFFECTIVE_TILE_RANGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0);
 	RangeEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(RangeEffect);
 
@@ -1089,16 +1153,20 @@ static function X2AbilityTemplate WOTC_APA_Foregrip_PrototypeBonus()
 	AimEffect = new class'X2Effect_WOTC_APA_WeaponHitModifier';
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToReactionShots = true;
-	AimEffect.AimModifier = default.FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS;
-	AimEffect.TileLimitCeiling = default.FOREGRIP_EFFECTIVE_TILE_RANGE + 2;
+	AimEffect.AimModifier = default.FOREGRIP_BASIC_REACTION_SHOT_AIM_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.AIM_EMPOWER_BONUS : 0);
+	AimEffect.TileLimitCeiling = default.FOREGRIP_EFFECTIVE_TILE_RANGE + 2
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
 	// Create a persistent effect to increase short range accuracy
 	RangeEffect = new class'X2Effect_WOTC_APA_ForegripRangeModifier';
 	RangeEffect.BuildPersistentEffect(1, true, false, false);
-	RangeEffect.RangePenaltyPercentNegated = default.FOREGRIP_PROTOTYPE_RANGE_ACCURACY_MOD;
-	RangeEffect.ShortRangeTileCutoff = default.FOREGRIP_EFFECTIVE_TILE_RANGE + 2;
+	RangeEffect.RangePenaltyPercentNegated = default.FOREGRIP_PROTOTYPE_RANGE_ACCURACY_MOD
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.RANGE_ACCURACY_EMPOWER_BONUS : 0.0);
+	RangeEffect.ShortRangeTileCutoff = default.FOREGRIP_EFFECTIVE_TILE_RANGE + 2
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.TILE_RANGE_EMPOWER_BONUS : 0);
 	RangeEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(RangeEffect);
 
@@ -1127,14 +1195,16 @@ static function X2AbilityTemplate WOTC_APA_HeavyCannonBarrel()
 	HitModEffect.BuildPersistentEffect(1, true, false, false);
 	HitModEffect.RequiredEffectNames.AddItem('WOTC_APA_AdvancedBipodEffect');
 	HitModEffect.bLimitToLongRange = true;
-	HitModEffect.RangePenaltyPercentNegated = default.BIPOD_ADVANCED_RANGE_ACCURACY_MOD;
+	HitModEffect.RangePenaltyPercentNegated = default.BIPOD_ADVANCED_RANGE_ACCURACY_MOD
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.RANGE_ACCURACY_EMPOWER_BONUS : 0.0);
 	HitModEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocLongDescription, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitModEffect);
 
 	ShredderEffect = new class'X2Effect_WOTC_APA_Shredder';
 	ShredderEffect.BuildPersistentEffect(1, true, false, false);
 	ShredderEffect.SetDisplayInfo(ePerkBuff_Bonus, Template.LocFriendlyName, Template.GetMyHelpText(), Template.IconImage, false);
-	ShredderEffect.Shred = default.HEAVY_CANNON_BARREL_SHRED_BONUS;
+	ShredderEffect.Shred = default.HEAVY_CANNON_BARREL_SHRED_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.SHRED_EMPOWER_BONUS : 0);
 	Template.AddShooterEffect(ShredderEffect);
 
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, default.HEAVY_CANNON_BARREL_MOBILITY_PENALTY);
@@ -1185,7 +1255,8 @@ static function X2AbilityTemplate WOTC_APA_FullboreBarrel()
 	AimEffect.BuildPersistentEffect(1, true, false, false);
 	AimEffect.bApplyToDirectShots = true;
 	AimEffect.AimModifier = 0;
-	AimEffect.CritModifier = default.LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS;
+	AimEffect.CritModifier = default.LASER_SIGHT_ADVANCED_CRIT_CHANCE_BONUS
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	AimEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(AimEffect);
 
@@ -1242,8 +1313,10 @@ static function X2AbilityTemplate WOTC_APA_WildcatCartridges_BasicBonus()
 	HitEffect = new class'X2Effect_WOTC_APA_WildcatCartridges';
 	HitEffect.BuildPersistentEffect(1, true, false, false);
 	HitEffect.BonusDmg = 0;
-	HitEffect.BonusCritDmg = default.WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE;
-	HitEffect.BonusChance = default.WILDCAT_CARTRIDGE_BASIC_CRIT_DAMAGE_CHANCE;
+	HitEffect.BonusCritDmg = default.WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DAMAGE_EMPOWER_BONUS : 0);
+	HitEffect.BonusChance = default.WILDCAT_CARTRIDGE_BASIC_CRIT_DAMAGE_CHANCE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	HitEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitEffect);
 
@@ -1262,8 +1335,10 @@ static function X2AbilityTemplate WOTC_APA_WildcatCartridges_AdvancedBonus()
 	HitEffect = new class'X2Effect_WOTC_APA_WildcatCartridges';
 	HitEffect.BuildPersistentEffect(1, true, false, false);
 	HitEffect.BonusDmg = 0;
-	HitEffect.BonusCritDmg = default.WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE;
-	HitEffect.BonusChance = default.WILDCAT_CARTRIDGE_ADVANCED_CRIT_DAMAGE_CHANCE;
+	HitEffect.BonusCritDmg = default.WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DAMAGE_EMPOWER_BONUS : 0);
+	HitEffect.BonusChance = default.WILDCAT_CARTRIDGE_ADVANCED_CRIT_DAMAGE_CHANCE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	HitEffect.GrazeChanceModifier = default.WILDCAT_CARTRIDGE_ADVANCED_GRAZE_CHANCE;
 	HitEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitEffect);
@@ -1283,8 +1358,10 @@ static function X2AbilityTemplate WOTC_APA_WildcatCartridges_SuperiorBonus()
 	HitEffect = new class'X2Effect_WOTC_APA_WildcatCartridges';
 	HitEffect.BuildPersistentEffect(1, true, false, false);
 	HitEffect.BonusDmg = 0;
-	HitEffect.BonusCritDmg = default.WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE;
-	HitEffect.BonusChance = default.WILDCAT_CARTRIDGE_ADVANCED_CRIT_DAMAGE_CHANCE;
+	HitEffect.BonusCritDmg = default.WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DAMAGE_EMPOWER_BONUS : 0);
+	HitEffect.BonusChance = default.WILDCAT_CARTRIDGE_ADVANCED_CRIT_DAMAGE_CHANCE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	HitEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitEffect);
 
@@ -1302,9 +1379,12 @@ static function X2AbilityTemplate WOTC_APA_WildcatCartridges_PrototypeBonus()
 	// Create a persistent stat change effect that adds chance to increase Crit damage
 	HitEffect = new class'X2Effect_WOTC_APA_WildcatCartridges';
 	HitEffect.BuildPersistentEffect(1, true, false, false);
-	HitEffect.BonusDmg = default.WILDCAT_CARTRIDGE_BONUS_DAMAGE;
-	HitEffect.BonusCritDmg = default.WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE;
-	HitEffect.BonusChance = default.WILDCAT_CARTRIDGE_PROTOTYPE_CRIT_DAMAGE_CHANCE;
+	HitEffect.BonusDmg = default.WILDCAT_CARTRIDGE_BONUS_DAMAGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DAMAGE_EMPOWER_BONUS : 0);
+	HitEffect.BonusCritDmg = default.WILDCAT_CARTRIDGE_BONUS_CRIT_DAMAGE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DAMAGE_EMPOWER_BONUS : 0);
+	HitEffect.BonusChance = default.WILDCAT_CARTRIDGE_PROTOTYPE_CRIT_DAMAGE_CHANCE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CRIT_EMPOWER_BONUS : 0);
 	HitEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
 	Template.AddTargetEffect(HitEffect);
 
@@ -1338,7 +1418,8 @@ static function X2AbilityTemplate WOTC_APA_HairTrigger_BasicBonus()
 
 	// + Damage with Reaction Fire:
 	BonusEffect = new class'X2Effect_WOTC_APA_BonusReactionFireDamage';
-	BonusEffect.BonusDmg = default.HAIRTRIGGER_BASIC_DAMAGE_VALUE;
+	BonusEffect.BonusDmg = default.HAIRTRIGGER_BASIC_DAMAGE_VALUE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DAMAGE_EMPOWER_BONUS : 0);
 	BonusEffect.BuildPersistentEffect(1, true, false, false);
 	BonusEffect.DuplicateResponse = eDupe_Allow;
 	BonusEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
@@ -1374,7 +1455,8 @@ static function X2AbilityTemplate WOTC_APA_HairTrigger_AdvancedBonus()
 
 	// + Damage with Reaction Fire:
 	BonusEffect = new class'X2Effect_WOTC_APA_BonusReactionFireDamage';
-	BonusEffect.BonusDmg = default.HAIRTRIGGER_ADVANCED_DAMAGE_VALUE;
+	BonusEffect.BonusDmg = default.HAIRTRIGGER_ADVANCED_DAMAGE_VALUE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DAMAGE_EMPOWER_BONUS : 0);
 	BonusEffect.BuildPersistentEffect(1, true, false, false);
 	BonusEffect.DuplicateResponse = eDupe_Allow;
 	BonusEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);
@@ -1446,7 +1528,8 @@ static function X2AbilityTemplate WOTC_APA_HairTrigger_PrototypeBonus()
 
 	// + Damage with Reaction Fire:
 	BonusEffect = new class'X2Effect_WOTC_APA_BonusReactionFireDamage';
-	BonusEffect.BonusDmg = default.HAIRTRIGGER_PROTOTYPE_DAMAGE_VALUE;
+	BonusEffect.BonusDmg = default.HAIRTRIGGER_PROTOTYPE_DAMAGE_VALUE
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.DAMAGE_EMPOWER_BONUS : 0);
 	BonusEffect.BuildPersistentEffect(1, true, false, false);
 	BonusEffect.DuplicateResponse = eDupe_Allow;
 	BonusEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocHelpText, Template.IconImage, false,, Template.AbilitySourceName);

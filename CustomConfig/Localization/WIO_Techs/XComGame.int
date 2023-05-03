@@ -1,3 +1,22 @@
+[WOTC_APA_AlloyIntegration X2TechTemplate]
+DisplayName="Alien Alloy Integration"
+CodeName="Herodotus"
+Summary="Now that we have a secure means of communication in-place with which to exchange information with key resistance contacts throughout the region, we can devote time and resources toward integrating the ultra-strong and light alloy material ADVENT use so heavily into our own weapon and armor designs to improve their capabilities. Understanding how we can use these alloys in existing equipment will be the first step towards developing new, improved designs based around this material and its potential."
+LongDescription="The properties of these alien alloys have endless potential to enhance our current equipment, and we've discovered a lot of practical modifications we can make now while we continue to develop new weapon and armor systems to take full advantage of its capabilities in the future. Replacing key components with lighter, stronger alloy versions in our conventional firearms can support larger propellant loads and supplementing our armor with alloy plate and weave inserts can increase the protection offered by our armor and allow our troops to comfortably carry more equipment into battle. This experimentation has been key in helping us understand how to work with the alien's basic materials and technology, making it possible to begin developing our own designs in ernest, and, perhaps most importantly, gives us a fighting chance to survive long enough to see it through. L. Shen.<br/><br/><br/><font color='#E1BDFF'>XCOM Conventional Weapons gain +1 Damage and Conventional Armors gain +1 HP. Standard Kevlar Armor gains access to an additional Utility Slot."
+
+[WOTC_APA_EleriumIntegration X2TechTemplate]
+DisplayName="Elerium Power Integration"
+CodeName="Pliny"
+Summary="With access to data from the ADVENT network, we've made some major breakthroughs in our understanding of the Elerium power sources used throughout so much of the aliens' technology. We will begin by attempting to integrate these power sources into our existing magnetic designs on a small scale before using this knowledge to begin developing energy weapons and armor of our own."
+LongDescription="The power potential of Elerium has proven to be a significant improvement over the more conventional battery designs used in our current magnetic weapons and armor. Integrating basic Elerium power sources can increase the power output of our weapons and provide more reliable system power for our armors. The Engineering Team is working on retrofits for our current equipment while the Science Team begins to look at scaling up our Elerium power designs that will be needed to facilitate true energy-based weaponry. R. Tygan.<br/><br/><br/><font color='#E1BDFF'>XCOM Magnetic Weapons gain +1 Damage and Plated Armors gain +1 HP."
+
+[WOTC_APA_PlasmaIntegration X2TechTemplate]
+DisplayName="Alien Schematic Integration"
+CodeName="Suetonius"
+Summary="Included in all the data we recovered from tapping into the Codex data-vaults, we have discovered several schematics for alien weapon and armor components. If we devote some time to parsing through and reconstructing more of the data, I'm confident we will find many more examples that will help us to refine our current energy designs."
+LongDescription="Access to direct schematics, even if it was only assorted components, has given our team a refined understanding of the aliens' technology and provided small insights it would have taken years to work out otherwise. We've been hard at work revising our designs and updating our equipment with improvements that finally put our weapon and armor technology on-par with the best we've seen from the aliens' arsenal. Their days on this planet are numbered. L. Shen.<br/><br/><br/><font color='#E1BDFF'>XCOM Plasma Weapons gain +1 Damage and Powered Armors gain +1 HP."
+
+
 [BreakthroughCoilWeaponDamage X2TechTemplate]
 DisplayName="Improved Coil Weapons"
 Summary="By integrating new components devised during our recent breakthrough, we've increased the damage output of all Coil Weapons by +1."
@@ -13,38 +32,6 @@ Summary="Our recent breakthrough has led to immediate improvements in the effica
 [BreakthroughNanoMedikitBonus X2TechTemplate]
 DisplayName="Further Improved Medikits"
 Summary="Our recent breakthrough has led to immediate improvements in the efficacy of Medikits, improving their healing by +1."
-
-[BreakthroughMediumArmorHealth X2TechTemplate]
-DisplayName="Reinforced Medium Armor"
-Summary="A previously unrealized breakthrough in our Medium Armor development will allow our standard variants to provide +1 HP going forward."
-
-[BreakthroughSparkArmorHealth X2TechTemplate]
-DisplayName="Reinforced SPARK Armor"
-Summary="A previously unrealized breakthrough in our SPARK Armor development will provide SPARKs +1 HP going forward."
-
-[BreakthroughReaperArmorHealth X2TechTemplate]
-DisplayName="Reinforced Reaper Armor"
-Summary="A previously unrealized breakthrough in our Reaper Armor development will provide Reapers +1 HP going forward."
-
-[BreakthroughSkirmisherArmorHealth X2TechTemplate]
-DisplayName="Reinforced Skirmisher Armor"
-Summary="A previously unrealized breakthrough in our Skirmisher Armor development will provide Skirmishers +1 HP going forward."
-
-[BreakthroughTemplarArmorHealth X2TechTemplate]
-DisplayName="Reinforced Templar Armor"
-Summary="A previously unrealized breakthrough in our Templar Armor development will provide Templars +1 HP going forward."
-
-[BreakthroughConventionalArmorHealth X2TechTemplate]
-DisplayName="Reinforced Conventional Armor"
-Summary="A previously unrealized breakthrough in our Medium Armor development will allow our conventional variants to provide +1 HP going forward."
-
-[BreakthroughPlatedArmorHealth X2TechTemplate]
-DisplayName="Reinforced Plated Armor"
-Summary="A previously unrealized breakthrough in our Plated Armor development will allow our plated variants to provide +1 HP going forward."
-
-[BreakthroughPoweredArmorHealth X2TechTemplate]
-DisplayName="Reinforced Powered Armor"
-Summary="A previously unrealized breakthrough in our Powered Armor development will allow our powered variants to provide +1 HP going forward."
 
 [BreakthroughSparkRifleDamage X2TechTemplate]
 DisplayName="Improved Heavy Autocannons"
@@ -74,42 +61,45 @@ Summary="Breakthroughs in both our manufacturing and finishing processes should 
 DisplayName="Improved Heavy Weapons"
 Summary="Breakthroughs in both our manufacturing and finishing processes should further improve the balance of our heavy weapons, increasing their damage by +2."
 
-[BreakthroughLightArmorHealth X2TechTemplate]
+
+[BreakthroughLightArmorBonus X2TechTemplate]
 DisplayName="Reinforced Light Armor"
-Summary="A previously unrealized breakthrough in our Light Armor development will allow our lightest variants to provide +1 Armor going forward."
+Summary="A previously unrealized breakthrough in our Light Armor development will allow our lightest variants to provide +15 Dodge going forward."
 
-[BreakthroughHeavyArmorHealth X2TechTemplate]
-DisplayName="Reinforced Heavy Armor"
-Summary="Our research breakthrough has yielded a new means of reinforcing the durability of our Heavy Armor without increasing weight, providing an increase of +1 Armor."
-
-[BreakthroughMediumArmorHealth X2TechTemplate]
+[BreakthroughMediumArmorBonus X2TechTemplate]
 DisplayName="Reinforced Medium Armor"
-Summary="A previously unrealized breakthrough in our Medium Armor development will allow our standard variants to provide +1 Armor going forward."
+Summary="A previously unrealized breakthrough in our Medium Armor development will allow our standard variants to provide +0 Defense going forward."
 
-[BreakthroughSparkArmorHealth X2TechTemplate]
+[BreakthroughHeavyArmorBonus X2TechTemplate]
+DisplayName="Reinforced Heavy Armor"
+Summary="Our research breakthrough has yielded a new means of reinforcing the durability of our Heavy Armor without increasing weight, providing an increase of +2 Shields."
+
+
+[BreakthroughSparkArmorBonus X2TechTemplate]
 DisplayName="Reinforced SPARK Armor"
-Summary="Our research breakthrough has yielded a new means of reinforcing the durability of our SPARK Armor without increasing weight, providing an increase of +1 Armor."
+Summary="Our research breakthrough has yielded a new means of reinforcing the durability of our SPARK Armor without increasing weight, providing an increase of +10 Defense."
 
-[BreakthroughReaperArmorHealth X2TechTemplate]
+[BreakthroughReaperArmorBonus X2TechTemplate]
 DisplayName="Reinforced Reaper Armor"
-Summary="A previously unrealized breakthrough in our Reaper Armor development will provide Reapers +1 Armor going forward."
+Summary="A previously unrealized breakthrough in our Reaper Armor development will provide Reapers +5 Crit Chance going forward."
 
-[BreakthroughSkirmisherArmorHealth X2TechTemplate]
+[BreakthroughSkirmisherArmorBonus X2TechTemplate]
 DisplayName="Reinforced Skirmisher Armor"
-Summary="A previously unrealized breakthrough in our Skirmisher Armor development will provide Skirmishers +1 Armor going forward."
+Summary="A previously unrealized breakthrough in our Skirmisher Armor development will provide Skirmishers +10 Dodge going forward."
 
-[BreakthroughTemplarArmorHealth X2TechTemplate]
+[BreakthroughTemplarArmorBonus X2TechTemplate]
 DisplayName="Reinforced Templar Armor"
-Summary="A previously unrealized breakthrough in our Templar Armor development will provide Templars +1 Armor going forward."
+Summary="A previously unrealized breakthrough in our Templar Armor development will provide Templars +2 Mobility going forward."
 
-[BreakthroughConventionalArmorHealth X2TechTemplate]
+
+[BreakthroughConventionalArmorBonus X2TechTemplate]
 DisplayName="Reinforced Conventional Armor"
-Summary="A previously unrealized breakthrough in our Medium Armor development will allow our conventional variants to provide +1 Armor going forward."
+Summary="A previously unrealized breakthrough in our Medium Armor development will allow our conventional variants to provide +1 Shields going forward."
 
-[BreakthroughPlatedArmorHealth X2TechTemplate]
+[BreakthroughPlatedArmorBonus X2TechTemplate]
 DisplayName="Reinforced Plated Armor"
-Summary="A previously unrealized breakthrough in our Plated Armor development will allow our plated variants to provide +1 Armor going forward."
+Summary="A previously unrealized breakthrough in our Plated Armor development will allow our plated variants to provide +2 Shields going forward."
 
-[BreakthroughPoweredArmorHealth X2TechTemplate]
+[BreakthroughPoweredArmorBonus X2TechTemplate]
 DisplayName="Reinforced Powered Armor"
-Summary="A previously unrealized breakthrough in our Powered Armor development will allow our powered variants to provide +1 Armor going forward."
+Summary="A previously unrealized breakthrough in our Powered Armor development will allow our powered variants to provide +3 Shields going forward."

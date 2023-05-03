@@ -286,13 +286,53 @@ static function ReviseLootTables()
 		class'X2LootTableManager'.static.AddEntryStatic('PrototypeWeaponUpgrades', TableEntry, false);
 	}
 
-	
-	// Remove and Redistribute chances for each Tier in Enemy and Blackmarket LootTables
+	UpdateLootTables('BasicWeaponUpgrades', 'AdvancedWeaponUpgrades', 'SuperiorWeaponUpgrades');
+	UpdateLootTables('MeleeUpgradeDropBsc', 'MeleeUpgradeDropAdv', 'MeleeUpgradeDropSup');
+	UpdateLootTables('ShieldUpgradeDropBsc', 'ShieldUpgradeDropAdv', 'ShieldUpgradeDropSup');
+	UpdateLootTables('ChemUpgradeDropBsc', 'ChemUpgradeDropAdv', 'ChemUpgradeDropSup');
+
+	// Assign Prototype Weapon Upgrades to Enemy and Blackmarket LootTables
+	TableEntry.TableRef='PrototypeWeaponUpgrades';
+	TableEntry.ChanceModPerExistingItem = 1.0;
+	TableEntry.Chance = 2;
+	TableEntry.RollGroup = 3;
+	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_02', TableEntry, false);
+
+	TableEntry.Chance = 2;
+	TableEntry.RollGroup = 2;
+	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_03', TableEntry, false);
+	TableEntry.Chance = 5;
+	TableEntry.RollGroup = 3;
+	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_03', TableEntry, false);
+
+	// Recalculate all tables
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('BasicWeaponUpgrades');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('AdvancedWeaponUpgrades');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('SuperiorWeaponUpgrades');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('PrototypeWeaponUpgrades');
+
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('BlackMarketUpgrades_01');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('BlackMarketUpgrades_02');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('BlackMarketUpgrades_03');
+
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('EarlyADVENTWeaponUpgrades');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('MidADVENTWeaponUpgrades');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('LateADVENTWeaponUpgrades');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('EarlyAlienWeaponUpgrades');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('MidAlienWeaponUpgrades');
+	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('LateAlienWeaponUpgrades');
+}
+
+static function UpdateLootTables(name basicEntry, name advancedEntry, name superiorEntry)
+{
+	local LootTableEntry			TableEntry;
+	local int						i;
+
 	TableEntry.TemplateName = '';
 	for (i = 0; i < 6; i++)
 	{
 		TableEntry.RollGroup = i;
-		TableEntry.TableRef='BasicWeaponUpgrades';
+		TableEntry.TableRef=basicEntry;
 		class'X2LootTableManager'.static.RemoveEntryStatic('EarlyADVENTWeaponUpgrades', TableEntry, false);
 		class'X2LootTableManager'.static.RemoveEntryStatic('MidADVENTWeaponUpgrades', TableEntry, false);
 		class'X2LootTableManager'.static.RemoveEntryStatic('LateADVENTWeaponUpgrades', TableEntry, false);
@@ -300,7 +340,7 @@ static function ReviseLootTables()
 		class'X2LootTableManager'.static.RemoveEntryStatic('MidAlienWeaponUpgrades', TableEntry, false);
 		class'X2LootTableManager'.static.RemoveEntryStatic('LateAlienWeaponUpgrades', TableEntry, false);
 
-		TableEntry.TableRef='AdvancedWeaponUpgrades';
+		TableEntry.TableRef=advancedEntry;
 		class'X2LootTableManager'.static.RemoveEntryStatic('EarlyADVENTWeaponUpgrades', TableEntry, false);
 		class'X2LootTableManager'.static.RemoveEntryStatic('MidADVENTWeaponUpgrades', TableEntry, false);
 		class'X2LootTableManager'.static.RemoveEntryStatic('LateADVENTWeaponUpgrades', TableEntry, false);
@@ -308,7 +348,7 @@ static function ReviseLootTables()
 		class'X2LootTableManager'.static.RemoveEntryStatic('MidAlienWeaponUpgrades', TableEntry, false);
 		class'X2LootTableManager'.static.RemoveEntryStatic('LateAlienWeaponUpgrades', TableEntry, false);
 
-		TableEntry.TableRef='SuperiorWeaponUpgrades';
+		TableEntry.TableRef=superiorEntry;
 		class'X2LootTableManager'.static.RemoveEntryStatic('EarlyADVENTWeaponUpgrades', TableEntry, false);
 		class'X2LootTableManager'.static.RemoveEntryStatic('MidADVENTWeaponUpgrades', TableEntry, false);
 		class'X2LootTableManager'.static.RemoveEntryStatic('LateADVENTWeaponUpgrades', TableEntry, false);
@@ -321,7 +361,7 @@ static function ReviseLootTables()
 	TableEntry.RollGroup = 1;
 
 	// Assign Basic Weapon Upgrades to Enemy and Blackmarket LootTables
-	TableEntry.TableRef='BasicWeaponUpgrades';
+	TableEntry.TableRef=basicEntry;
 	TableEntry.Chance = 80;
 	class'X2LootTableManager'.static.AddEntryStatic('EarlyADVENTWeaponUpgrades', TableEntry, false);
 	class'X2LootTableManager'.static.AddEntryStatic('EarlyAlienWeaponUpgrades', TableEntry, false);
@@ -361,7 +401,7 @@ static function ReviseLootTables()
 	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_03', TableEntry, false);
 
 	// Assign Advanced Weapon Upgrades to Enemy and Blackmarket LootTables
-	TableEntry.TableRef='AdvancedWeaponUpgrades';
+	TableEntry.TableRef=advancedEntry;
 	TableEntry.RollGroup = 1;
 	TableEntry.Chance = 20;
 	class'X2LootTableManager'.static.AddEntryStatic('EarlyADVENTWeaponUpgrades', TableEntry, false);
@@ -398,7 +438,7 @@ static function ReviseLootTables()
 	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_03', TableEntry, false);
 
 	// Assign Superior Weapon Upgrades to Enemy and Blackmarket LootTables
-	TableEntry.TableRef='SuperiorWeaponUpgrades';
+	TableEntry.TableRef=superiorEntry;
 	TableEntry.Chance = 10;
 	TableEntry.RollGroup = 3;
 	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_02', TableEntry, false);
@@ -409,36 +449,6 @@ static function ReviseLootTables()
 	TableEntry.Chance = 25;
 	TableEntry.RollGroup = 3;
 	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_03', TableEntry, false);
-
-	// Assign Prototype Weapon Upgrades to Enemy and Blackmarket LootTables
-	TableEntry.TableRef='PrototypeWeaponUpgrades';
-	TableEntry.Chance = 2;
-	TableEntry.RollGroup = 3;
-	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_02', TableEntry, false);
-
-	TableEntry.Chance = 2;
-	TableEntry.RollGroup = 2;
-	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_03', TableEntry, false);
-	TableEntry.Chance = 5;
-	TableEntry.RollGroup = 3;
-	class'X2LootTableManager'.static.AddEntryStatic('BlackMarketUpgrades_03', TableEntry, false);
-
-	// Recalculate all tables
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('BasicWeaponUpgrades');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('AdvancedWeaponUpgrades');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('SuperiorWeaponUpgrades');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('PrototypeWeaponUpgrades');
-
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('BlackMarketUpgrades_01');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('BlackMarketUpgrades_02');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('BlackMarketUpgrades_03');
-
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('EarlyADVENTWeaponUpgrades');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('MidADVENTWeaponUpgrades');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('LateADVENTWeaponUpgrades');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('EarlyAlienWeaponUpgrades');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('MidAlienWeaponUpgrades');
-	class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('LateAlienWeaponUpgrades');
 }
 
 static function PatchFreeReloadAbility()

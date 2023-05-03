@@ -12,8 +12,7 @@ struct TechReqEntry
 var config array<TechReqEntry>		TECH_REQUIREMENT_CHANGES;
 
 static event OnLoadedSavedGame()
-{
-	UpdateTechRequirements();
+{	
 	AddNewBreakthroughsToHistory();
 	if (default.bRemoveAvengerBreakthroughs) {
 		RemoveAvengerBreakthroughs();
@@ -47,6 +46,7 @@ static event OnPostTemplatesCreated()
 	DisableTech('BreakthroughPoweredArmorHealth');
 
 	UpdateArmorTemplates();
+	UpdateTechRequirements();
 }
 
 static function DisableTech(name TechName)
@@ -240,86 +240,86 @@ static function UpdateTechRequirements()
 			TechTemplate.Requirements.RequiredObjectives.AddItem('T2_M0_CompleteGuerillaOps');
 	}	}
 
-	// Add visibility to weapon/armor research after bridge techs have been completed to see autopsy requirements
-	StrategyTemplateMgr.FindDataTemplateAllDifficulties('CoilGunTech_LW', DataTemplates);
-	foreach DataTemplates(DataTemplate)
-	{
-		TechTemplate = X2TechTemplate(DataTemplate);
-		if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
-		{
-			TechTemplate.Requirements.SpecialRequirementsFn = IsT2BridgeTechComplete;
-			TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
-	}	}
+	// // Add visibility to weapon/armor research after bridge techs have been completed to see autopsy requirements
+	// StrategyTemplateMgr.FindDataTemplateAllDifficulties('CoilGunTech_LW', DataTemplates);
+	// foreach DataTemplates(DataTemplate)
+	// {
+	// 	TechTemplate = X2TechTemplate(DataTemplate);
+	// 	if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
+	// 	{
+	// 		TechTemplate.Requirements.SpecialRequirementsFn = IsT2BridgeTechComplete;
+	// 		TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
+	// }	}
 
-	StrategyTemplateMgr.FindDataTemplateAllDifficulties('AdvancedCoilGunTech_LW', DataTemplates);
-	foreach DataTemplates(DataTemplate)
-	{
-		TechTemplate = X2TechTemplate(DataTemplate);
-		if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
-		{
-			TechTemplate.Requirements.SpecialRequirementsFn = IsMagWeaponsComplete;
-			TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
-	}	}
+	// StrategyTemplateMgr.FindDataTemplateAllDifficulties('AdvancedCoilGunTech_LW', DataTemplates);
+	// foreach DataTemplates(DataTemplate)
+	// {
+	// 	TechTemplate = X2TechTemplate(DataTemplate);
+	// 	if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
+	// 	{
+	// 		TechTemplate.Requirements.SpecialRequirementsFn = IsMagWeaponsComplete;
+	// 		TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
+	// }	}
 
-	StrategyTemplateMgr.FindDataTemplateAllDifficulties('PlatedArmor', DataTemplates);
-	foreach DataTemplates(DataTemplate)
-	{
-		TechTemplate = X2TechTemplate(DataTemplate);
-		if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
-		{
-			TechTemplate.Requirements.SpecialRequirementsFn = IsT2BridgeTechComplete;
-			TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
-	}	}
+	// StrategyTemplateMgr.FindDataTemplateAllDifficulties('PlatedArmor', DataTemplates);
+	// foreach DataTemplates(DataTemplate)
+	// {
+	// 	TechTemplate = X2TechTemplate(DataTemplate);
+	// 	if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
+	// 	{
+	// 		TechTemplate.Requirements.SpecialRequirementsFn = IsT2BridgeTechComplete;
+	// 		TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
+	// }	}
 
-	StrategyTemplateMgr.FindDataTemplateAllDifficulties('PlasmaRifle', DataTemplates);
-	foreach DataTemplates(DataTemplate)
-	{
-		TechTemplate = X2TechTemplate(DataTemplate);
-		if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
-		{
-			TechTemplate.Requirements.SpecialRequirementsFn = IsT3BridgeTechComplete;
-			TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
-	}	}
+	// StrategyTemplateMgr.FindDataTemplateAllDifficulties('PlasmaRifle', DataTemplates);
+	// foreach DataTemplates(DataTemplate)
+	// {
+	// 	TechTemplate = X2TechTemplate(DataTemplate);
+	// 	if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
+	// 	{
+	// 		TechTemplate.Requirements.SpecialRequirementsFn = IsT3BridgeTechComplete;
+	// 		TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
+	// }	}
 
-	StrategyTemplateMgr.FindDataTemplateAllDifficulties('PlasmaSniper', DataTemplates);
-	foreach DataTemplates(DataTemplate)
-	{
-		TechTemplate = X2TechTemplate(DataTemplate);
-		if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
-		{
-			TechTemplate.Requirements.SpecialRequirementsFn = IsPlasmaWeaponsComplete;
-			TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
-	}	}
+	// StrategyTemplateMgr.FindDataTemplateAllDifficulties('PlasmaSniper', DataTemplates);
+	// foreach DataTemplates(DataTemplate)
+	// {
+	// 	TechTemplate = X2TechTemplate(DataTemplate);
+	// 	if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
+	// 	{
+	// 		TechTemplate.Requirements.SpecialRequirementsFn = IsPlasmaWeaponsComplete;
+	// 		TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
+	// }	}
 
-	StrategyTemplateMgr.FindDataTemplateAllDifficulties('HeavyPlasma', DataTemplates);
-	foreach DataTemplates(DataTemplate)
-	{
-		TechTemplate = X2TechTemplate(DataTemplate);
-		if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
-		{
-			TechTemplate.Requirements.SpecialRequirementsFn = IsPlasmaWeaponsComplete;
-			TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
-	}	}
+	// StrategyTemplateMgr.FindDataTemplateAllDifficulties('HeavyPlasma', DataTemplates);
+	// foreach DataTemplates(DataTemplate)
+	// {
+	// 	TechTemplate = X2TechTemplate(DataTemplate);
+	// 	if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
+	// 	{
+	// 		TechTemplate.Requirements.SpecialRequirementsFn = IsPlasmaWeaponsComplete;
+	// 		TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
+	// }	}
 
-	StrategyTemplateMgr.FindDataTemplateAllDifficulties('AlloyCannon', DataTemplates);
-	foreach DataTemplates(DataTemplate)
-	{
-		TechTemplate = X2TechTemplate(DataTemplate);
-		if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
-		{
-			TechTemplate.Requirements.SpecialRequirementsFn = IsPlasmaWeaponsComplete;
-			TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
-	}	}
+	// StrategyTemplateMgr.FindDataTemplateAllDifficulties('AlloyCannon', DataTemplates);
+	// foreach DataTemplates(DataTemplate)
+	// {
+	// 	TechTemplate = X2TechTemplate(DataTemplate);
+	// 	if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
+	// 	{
+	// 		TechTemplate.Requirements.SpecialRequirementsFn = IsPlasmaWeaponsComplete;
+	// 		TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
+	// }	}
 
-	StrategyTemplateMgr.FindDataTemplateAllDifficulties('PoweredArmor', DataTemplates);
-	foreach DataTemplates(DataTemplate)
-	{
-		TechTemplate = X2TechTemplate(DataTemplate);
-		if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
-		{
-			TechTemplate.Requirements.SpecialRequirementsFn = IsT3BridgeTechComplete;
-			TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
-	}	}
+	// StrategyTemplateMgr.FindDataTemplateAllDifficulties('PoweredArmor', DataTemplates);
+	// foreach DataTemplates(DataTemplate)
+	// {
+	// 	TechTemplate = X2TechTemplate(DataTemplate);
+	// 	if (TechTemplate != none && TechTemplate.Requirements.SpecialRequirementsFn == none)
+	// 	{
+	// 		TechTemplate.Requirements.SpecialRequirementsFn = IsT3BridgeTechComplete;
+	// 		TechTemplate.Requirements.bVisibleIfTechsNotMet = true;
+	// }	}
 }
 
 static function bool IsT2BridgeTechComplete()

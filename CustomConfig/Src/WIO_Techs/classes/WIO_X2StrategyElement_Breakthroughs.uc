@@ -37,8 +37,6 @@ static function array<X2DataTemplate> CreateTemplates()
 	Techs.AddItem(WOTC_APA_MGWeaponBreakthrough());
 	Techs.AddItem(WOTC_APA_BMWeaponBreakthrough());
 
-	Techs.AddItem(CreateBreakthroughMedikitBonusTemplate());
-	Techs.AddItem(CreateBreakthroughNanoMedikitBonusTemplate());
 	Techs.AddItem(CreateBreakthroughSparkRifleDamageTemplate());
 	Techs.AddItem(CreateBreakthroughSparkRifleWeaponUpgradeTemplate());
 	//Techs.AddItem(CreateBreakthroughClaymoreDamageTemplate());

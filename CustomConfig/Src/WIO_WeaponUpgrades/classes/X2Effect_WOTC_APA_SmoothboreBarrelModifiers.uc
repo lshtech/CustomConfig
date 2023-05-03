@@ -93,7 +93,8 @@ function GetToHitModifiers(XComGameState_Effect EffectState, XComGameState_Unit 
 			// Add appropriate Graze/Crit modifiers
 			ShotMod.ModType = eHit_Graze;
 			ShotMod.Reason = FriendlyName;
-			ShotMod.Value = ArmorMitigation * class'X2Ability_WOTC_APA_WeaponUpgradeAbilitySet'.default.SMOOTHBORE_BARREL_CHANCE_MOD_PER_ARMOR;
+			ShotMod.Value = ArmorMitigation * (class'X2Ability_WOTC_APA_WeaponUpgradeAbilitySet'.default.SMOOTHBORE_BARREL_CHANCE_MOD_PER_ARMOR
+				+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? class'X2Ability_WOTC_APA_WeaponUpgradeAbilitySet'.default.CHANCE_PER_ARMOR_EMPOWER_BONUS : 0));
 			ShotModifiers.AddItem(ShotMod);
 
 			ShotMod.ModType = eHit_Crit;

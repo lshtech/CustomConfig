@@ -23,6 +23,9 @@ var config array<WeaponAttachment>		WILDCAT_CARTRIDGES_WEAPON_ATTACHMENTS;
 
 var config array<WeaponAttachment>		HAIR_TRIGGER_WEAPON_ATTACHMENTS;
 
+var int 								RELOAD_EMPOWER_BONUS;
+var int 								CLIP_SIZE_EMPOWER_BONUS;
+
 delegate bool CanApplyUpgradeToWeaponDelegate(X2WeaponUpgradeTemplate UpgradeTemplate, XComGameState_Item Weapon, int SlotIndex);
 
 static function array<X2DataTemplate> CreateTemplates()
@@ -1193,7 +1196,8 @@ static function SetUpSpeedloaderUpgrade(out X2WeaponUpgradeTemplate Template)
 
 static function int GetReloadBonusAmount(X2WeaponUpgradeTemplate UpgradeTemplate)
 {
-	return UpgradeTemplate.NumFreeReloads;
+	return UpgradeTemplate.NumFreeReloads
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.RELOAD_EMPOWER_BONUS : 0);
 }
 
 static function bool FreeReloadCost(X2WeaponUpgradeTemplate UpgradeTemplate, XComGameState_Ability ReloadAbility, XComGameState_Unit UnitState)
@@ -1327,7 +1331,8 @@ static function SetUpExpandedMagUpgrade(out X2WeaponUpgradeTemplate Template)
 
 static function int GetClipSizeBonusAmount(X2WeaponUpgradeTemplate UpgradeTemplate)
 {
-	return UpgradeTemplate.ClipSizeBonus;
+	return UpgradeTemplate.ClipSizeBonus
+		+ (class'X2Item_DefaultUpgrades'.static.AreUpgradesEmpowered() ? default.CLIP_SIZE_EMPOWER_BONUS : 0);
 }
 
 static function bool AdjustClipSize(X2WeaponUpgradeTemplate UpgradeTemplate, XComGameState_Item Weapon, const int CurrentClipSize, out int AdjustedClipSize)
@@ -1550,7 +1555,11 @@ static function bool CanApplyUpgradeToWeaponPatched(X2WeaponUpgradeTemplate Upgr
 	local array<name> DefaultRangedWeaponCategories;
 
 	WeaponTemplate = X2WeaponTemplate(Weapon.GetMyTemplate());
-	`LOG("CanApplyUpgradeToWeaponPatched: " $ WeaponTemplate.Name,,'CC');
+	if (WeaponTemplate == none)
+		return class'X2Item_DefaultUpgrades'.static.CanApplyUpgradeToWeapon(UpgradeTemplate, Weapon, SlotIndex);
+		
+	`LOG("CanApplyUpgradeToWeaponPatched:" @ WeaponTemplate.Name @ "|" @ WeaponTemplate.WeaponCat,,'CC');
+	DefaultRangedWeaponCategories.AddItem('');
 	DefaultRangedWeaponCategories.AddItem('pistol');
 	DefaultRangedWeaponCategories.AddItem('rifle');
 	DefaultRangedWeaponCategories.AddItem('shotgun');
