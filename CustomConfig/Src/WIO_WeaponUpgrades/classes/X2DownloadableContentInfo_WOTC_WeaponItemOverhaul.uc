@@ -7,7 +7,7 @@ struct DefaultAttachmentsEntry
 };
 
 // Moved to another config file to declutter main config variables
-var config(WOTC_APA_WeaponAttachments) array<DefaultAttachmentsEntry> WEAPON_DEFAULT_ATTACHMENTS;
+var config array<DefaultAttachmentsEntry> WEAPON_DEFAULT_ATTACHMENTS;
 
 var config array<name>				BASIC_WEAPON_UPGRADES_TO_REMOVE;
 var config array<name>				ADVANCED_WEAPON_UPGRADES_TO_REMOVE;
