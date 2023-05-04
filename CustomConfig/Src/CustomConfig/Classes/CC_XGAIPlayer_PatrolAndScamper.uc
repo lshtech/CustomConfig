@@ -1,6 +1,5 @@
 class CC_XGAIPlayer_PatrolAndScamper extends XGAIPlayer;
 
-
 // Update - green alert units should do their patrol movement.
 function bool ShouldUnitPatrol( XComGameState_Unit UnitState )
 {

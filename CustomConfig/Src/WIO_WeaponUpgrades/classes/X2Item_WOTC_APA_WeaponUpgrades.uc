@@ -1,4 +1,4 @@
-class X2Item_WOTC_APA_WeaponUpgrades extends X2Item_DefaultUpgrades config(WOTC_APA_WeaponUpgrades);
+class X2Item_WOTC_APA_WeaponUpgrades extends X2Item_DefaultUpgrades config(WIO_WeaponUpgrades);
 
 var	config array<name>					BODY_MUTUALLY_EXCLUSIVE_WEAPON_UPGRADES;
 var	config array<name>					OPTIC_MUTUALLY_EXCLUSIVE_WEAPON_UPGRADES;

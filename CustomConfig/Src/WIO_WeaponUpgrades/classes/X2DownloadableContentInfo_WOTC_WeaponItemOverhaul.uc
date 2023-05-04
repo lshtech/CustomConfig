@@ -1,4 +1,4 @@
-class X2DownloadableContentInfo_WOTC_WeaponItemOverhaul extends X2DownloadableContentInfo config(WOTC_APA_WeaponUpgrades);
+class X2DownloadableContentInfo_WOTC_WeaponItemOverhaul extends X2DownloadableContentInfo config(WIO_WeaponUpgrades);
 
 struct DefaultAttachmentsEntry
 {
