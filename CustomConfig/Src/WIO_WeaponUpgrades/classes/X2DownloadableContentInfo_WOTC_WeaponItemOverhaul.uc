@@ -287,9 +287,9 @@ static function ReviseLootTables()
 	}
 
 	UpdateLootTables('BasicWeaponUpgrades', 'AdvancedWeaponUpgrades', 'SuperiorWeaponUpgrades');
-	UpdateLootTables('MeleeUpgradeDropBsc', 'MeleeUpgradeDropAdv', 'MeleeUpgradeDropSup');
-	UpdateLootTables('ShieldUpgradeDropBsc', 'ShieldUpgradeDropAdv', 'ShieldUpgradeDropSup');
-	UpdateLootTables('ChemUpgradeDropBsc', 'ChemUpgradeDropAdv', 'ChemUpgradeDropSup');
+	//UpdateLootTables('MeleeUpgradeDropBsc', 'MeleeUpgradeDropAdv', 'MeleeUpgradeDropSup');
+	//UpdateLootTables('ShieldUpgradeDropBsc', 'ShieldUpgradeDropAdv', 'ShieldUpgradeDropSup');
+	//UpdateLootTables('ChemUpgradeDropBsc', 'ChemUpgradeDropAdv', 'ChemUpgradeDropSup');
 
 	// Assign Prototype Weapon Upgrades to Enemy and Blackmarket LootTables
 	TableEntry.TableRef='PrototypeWeaponUpgrades';

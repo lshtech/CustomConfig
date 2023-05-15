@@ -68,15 +68,15 @@ function ScamperRestoreMovementOrActions()
     {
 		// If the unit belongs to the player and isn't removed from play, dead, panicked, mind controlled, or incapacitated, then restore APs
         if ( Unit.IsPlayerControlled() && !Unit.bRemovedFromPlay && Unit.IsAlive() && 
-		!Unit.bPanicked && !Unit.IsMindControlled() && !Unit.IsIncapacitated() )
+		!Unit.bPanicked && !Unit.IsMindControlled() && !Unit.IsIncapacitated() && !Unit.IsHunkeredDown())
          {
 			// Restore one movement point to the XCOM player unit if they aren't already maxed out on points.
-			if (Unit.NumActionPoints(class'X2CharacterTemplateManager'.default.StandardActionPoint) < class'X2CharacterTemplateManager'.default.StandardActionsPerTurn)
+			if (Unit.ActionPoints.length == 0 && Unit.ReserveActionPoints.length == 0)
 			{
                 `Log("Awarding 1 movement point");
                 `RedScreen("Awarding 1 movement point");
-                Unit.ActionPoints.AddItem(class'X2CharacterTemplateManager'.default.MoveActionPoint);
-                Unit.ActionPoints.AddItem(class'X2CharacterTemplateManager'.default.DeepCoverActionPoint);
+                //Unit.ActionPoints.AddItem(class'X2CharacterTemplateManager'.default.MoveActionPoint);
+                Unit.ActionPoints.AddItem('scamper');
 			}
          }
     }		

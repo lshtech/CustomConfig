@@ -2,6 +2,7 @@ class X2DownloadableContentInfo_CustomConfig extends X2DownloadableContentInfo;
 
 static event OnPostTemplatesCreated()
 {
+	UpdateForScamper();
 	UpdateKineticVests();
 	AssignAmmoSlotToAmmo();
 	AssignVestSlotToVest();
@@ -41,6 +42,29 @@ static function DisableVests()
 				WeaponUpgradeTemplate.StartingItem = false;
 			}
 		}
+	}
+}
+
+static function UpdateForScamper()
+{
+	local X2AbilityTemplateManager						AbilityMgr;
+	local X2AbilityTemplate								AbilityTemplate;
+	local X2AbilityCost_ActionPoints					ActionPointCost;
+
+	AbilityMgr = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
+
+	AbilityTemplate = AbilityMgr.FindAbilityTemplate('StandardMove');
+	if (AbilityTemplate != none)
+	{
+		ActionPointCost = X2AbilityCost_ActionPoints(AbilityTemplate.AbilityCosts[0]);
+		ActionPointCost.AllowedTypes.AddItem('scamper');
+	}
+
+	AbilityTemplate = AbilityMgr.FindAbilityTemplate('HunkerDown');
+	if (AbilityTemplate != none)
+	{
+		ActionPointCost = X2AbilityCost_ActionPoints(AbilityTemplate.AbilityCosts[0]);
+		ActionPointCost.AllowedTypes.AddItem('scamper');
 	}
 }
 

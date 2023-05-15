@@ -3,12 +3,7 @@ class WIO_X2StrategyElement_Breakthroughs extends X2StrategyElement_XpackTechs c
 static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> Techs;
-
-	Techs.AddItem(CreateBreakthroughCoilWeaponDamageTemplate());
-	Techs.AddItem(CreateBreakthroughLaserWeaponDamageTemplate());
-	Techs.AddItem(CreateBreakthroughMedikitBonusTemplate());
-	Techs.AddItem(CreateBreakthroughNanoMedikitBonusTemplate());
-
+	
 	Techs.AddItem(CreateBreakthroughLightArmorBonusTemplate());
 	Techs.AddItem(CreateBreakthroughMediumArmorBonusTemplate());
 	Techs.AddItem(CreateBreakthroughHeavyArmorBonusTemplate());
@@ -37,8 +32,13 @@ static function array<X2DataTemplate> CreateTemplates()
 	Techs.AddItem(WOTC_APA_MGWeaponBreakthrough());
 	Techs.AddItem(WOTC_APA_BMWeaponBreakthrough());
 
+	Techs.AddItem(CreateBreakthroughCoilWeaponDamageTemplate());
+	Techs.AddItem(CreateBreakthroughLaserWeaponDamageTemplate());
 	Techs.AddItem(CreateBreakthroughSparkRifleDamageTemplate());
 	Techs.AddItem(CreateBreakthroughSparkRifleWeaponUpgradeTemplate());
+
+	Techs.AddItem(CreateBreakthroughMedikitBonusTemplate());
+	Techs.AddItem(CreateBreakthroughNanoMedikitBonusTemplate());	
 	//Techs.AddItem(CreateBreakthroughClaymoreDamageTemplate());
 	Techs.AddItem(CreateBreakthroughWristBladeDamageTemplate());
 	Techs.AddItem(CreateBreakthroughGauntletDamageTemplate());
@@ -298,8 +298,10 @@ static function X2DataTemplate CreateBreakthroughMedikitBonusTemplate()
 	local WIO_X2BreakthroughCondition_Medikit TechCondition;
 
 	Template = CreateBreakthroughTechTemplate('BreakthroughMedikitBonus');
-	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.Inv_Medkit";
+	Template.strImage = "img:///UILibrary_XPACK_Common.BT_AWC";
 	Template.ResearchCompletedFn = BreakthroughItemTacticalBonusCompleted;
+
+	Template.Requirements.RequiredTechs.AddItem('AlienBiotech');
 
 	TechCondition = new class'WIO_X2BreakthroughCondition_Medikit';
 	Template.BreakthroughCondition = TechCondition;
@@ -315,7 +317,7 @@ static function X2DataTemplate CreateBreakthroughNanoMedikitBonusTemplate()
 	local WIO_X2BreakthroughCondition_Medikit TechCondition;
 
 	Template = CreateBreakthroughTechTemplate('BreakthroughNanoMedikitBonus');
-	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.Inv_Medkit";
+	Template.strImage = "img:///UILibrary_XPACK_Common.BT_AWC2";
 	Template.ResearchCompletedFn = BreakthroughItemTacticalBonusCompleted;
 
 	Template.Requirements.RequiredTechs.AddItem('BreakthroughMedikitBonus');
@@ -620,8 +622,6 @@ static function X2DataTemplate CreateBreakthroughClaymoreDamageTemplate()
 	Template = CreateBreakthroughTechTemplate('BreakthroughClaymoreDamage');
 	Template.strImage = "img:///UILibrary_MoreBreakthroughs.BT_dmggrenades";
 	Template.ResearchCompletedFn = BreakthroughItemTacticalBonusCompleted;
-
-	Template.Requirements.RequiredSoldierClass = 'Reaper';
 
 	WeaponTypeCondition = new class'X2BreakthroughCondition_WeaponType';
 	WeaponTypeCondition.WeaponTypeMatch = 'claymore';
