@@ -32,7 +32,7 @@ static function EventListenerReturn ModifyMedikitHeal(Object EventData, Object E
 	local XComGameState_Unit					TargetUnit, SourceUnit, ExpectedSourceUnit;
 	local XComGameState_Effect					EffectState;
 	local XComGameStateContext_Ability			AbilityContext;
-	local WIO_X2Effect_ModifyHealAmount	Effect;
+	local WIO_X2Effect_ModifyHealAmount			Effect;
 	local bool									bLog;
 
 	`LOG("On Modify Heal - Event Fired", bLog);
@@ -78,7 +78,7 @@ static function EventListenerReturn ModifyMedikitHeal(Object EventData, Object E
 static function ModifyHealAmount_BuildVisualization(XComGameState VisualizeGameState)
 {
 	local XComGameStateContext_Ability			AbilityContext;
-	local WIO_X2Effect_ModifyHealAmount				Effect;
+	local WIO_X2Effect_ModifyHealAmount			Effect;
 	local XComGameState_Effect					EffectState;
 	local int									HealerID;
 	local VisualizationActionMetadata			Metadata;
@@ -107,7 +107,6 @@ static function ModifyHealAmount_BuildVisualization(XComGameState VisualizeGameS
 	SoundAndFlyOver = X2Action_PlaySoundAndFlyOver(class'X2Action_PlaySoundAndFlyover'.static.AddToVisualizationTree(Metadata, AbilityContext));
 	SoundAndFlyOver.SetSoundAndFlyOverParameters(None, WorldMessage, '', Effect.FlyoverColor, Effect.strFlyoverIcon, `DEFAULTFLYOVERLOOKATTIME * 3, true);
 }
-
 
 defaultproperties
 {

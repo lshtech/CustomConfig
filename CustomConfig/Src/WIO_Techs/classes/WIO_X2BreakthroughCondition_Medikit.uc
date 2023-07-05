@@ -13,9 +13,9 @@ function bool MeetsCondition(XComGameState_BaseObject kTarget)
 		return false;
 
 	// not a weapon
-	//WeaponTemplate = X2WeaponTemplate( ItemState.GetMyTemplate() );
-	//if (WeaponTemplate == none) 
-	//	return false;
+	WeaponTemplate = X2WeaponTemplate( ItemState.GetMyTemplate() );
+	if (WeaponTemplate == none) 
+		return false;
 
 	return WeaponTemplate.WeaponCat == 'medikit' || WeaponTemplate.WeaponCat == 'UtilityCatHeal';
 }

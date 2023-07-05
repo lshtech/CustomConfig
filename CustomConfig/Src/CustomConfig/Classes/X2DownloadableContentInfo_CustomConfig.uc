@@ -25,7 +25,7 @@ static function DisableVests()
 {
 	local X2ItemTemplateManager		ItemMgr;
 	local X2DataTemplate			DataTemplate;
-	local X2WeaponUpgradeTemplate	WeaponUpgradeTemplate;
+	local X2EquipmentTemplate		EquipmentTemplate;
 
 	// Access Item Template Manager
 	ItemMgr = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
@@ -35,11 +35,12 @@ static function DisableVests()
 	{
 		if (DataTemplate.Class.Name == 'X2EquipmentTemplate')
 		{
-			`LOG("Trying to update" @ WeaponUpgradeTemplate.name @ "|" @ WeaponUpgradeTemplate.bInfiniteItem @ "|" @ WeaponUpgradeTemplate.StartingItem,,'CC');
-			if (WeaponUpgradeTemplate != none && (WeaponUpgradeTemplate.Name == 'ReinforcedVest' || WeaponUpgradeTemplate.Name == 'SavLightVest'))
+			EquipmentTemplate = X2EquipmentTemplate(DataTemplate);
+			`LOG("Trying to update" @ EquipmentTemplate.name @ "|" @ EquipmentTemplate.bInfiniteItem @ "|" @ EquipmentTemplate.StartingItem,,'CC');
+			if (EquipmentTemplate != none && (EquipmentTemplate.Name == 'ReinforcedVest' || EquipmentTemplate.Name == 'SavLightVest'))
 			{
-				WeaponUpgradeTemplate.bInfiniteItem = false;
-				WeaponUpgradeTemplate.StartingItem = false;
+				EquipmentTemplate.bInfiniteItem = false;
+				EquipmentTemplate.StartingItem = false;
 			}
 		}
 	}

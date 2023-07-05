@@ -30,7 +30,6 @@ static event OnLoadedSavedGameToStrategy()
 static event OnPostTemplatesCreated()
 {
 	local X2StrategyElementTemplateManager StrategyElementTemplateManager;
-	local X2TechTemplate TechTemplate;
 
 	StrategyElementTemplateManager = class'X2StrategyElementTemplateManager'.static.GetStrategyElementTemplateManager();
 
@@ -192,12 +191,10 @@ static function UpdateTechRequirements()
 {
 	local X2ItemTemplateManager					ItemTemplateManager;
 	local X2StrategyElementTemplateManager		StrategyTemplateMgr;
-	local X2ItemTemplate						ItemTemplate;
 	local X2TechTemplate						TechTemplate;
 	local X2DataTemplate						DataTemplate;
 	local array<X2DataTemplate>					DataTemplates;
 	local TechReqEntry							TechRequirementEntry;
-	local name									TemplateName;
 
 	StrategyTemplateMgr = class'X2StrategyElementTemplateManager'.static.GetStrategyElementTemplateManager();
 	ItemTemplateManager = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
