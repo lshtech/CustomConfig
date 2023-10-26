@@ -14,11 +14,13 @@ static event OnPostTemplatesCreated()
 static event InstallNewCampaign(XComGameState StartState)
 {
 	DisableVests();
+	UpdateCrates();
 }
 
 static event OnLoadedSavedGame()
 {
 	DisableVests();
+	UpdateCrates();
 }
 
 static function DisableVests()
@@ -205,6 +207,38 @@ static function HideItem(name TemplateName)
 		{
 			SchematicTemplate.CanBeBuilt = false;	
 			Template.CreatorTemplateName = '';
+		}
+	}
+}
+
+static function UpdateCrates()
+{
+	local X2StrategyElementTemplateManager	StrategyMgr;
+	local X2DataTemplate					DataTemplate;
+	local X2TechTemplate					TechTemplate;
+	local int								i;
+
+	// Access Item Template Manager
+	StrategyMgr = class'X2StrategyElementTemplateManager'.static.GetStrategyElementTemplateManager();
+
+	// Access all Data Templates
+	foreach StrategyMgr.IterateTemplates(DataTemplate, none)
+	{
+		if (DataTemplate.Name == 'SAVAdventCrateUnlock' || DataTemplate.Name == 'SAVAdventHeavyCrateUnlock')
+		{
+			TechTemplate = X2TechTemplate(DataTemplate);
+
+			for (i = 0; i < TechTemplate.ItemRewards.Length; i++)
+			{
+				if (TechTemplate.ItemRewards[i] == 'NanoScaleVest')
+					TechTemplate.ItemRewards[i] = 'TRArmorUpgrade_NanoScaleVest';
+				else if (TechTemplate.ItemRewards[i] == 'PlatedVest')
+					TechTemplate.ItemRewards[i] = 'TRArmorUpgrade_PlatedVest';
+				else if (TechTemplate.ItemRewards[i] == 'HazmatVest')
+					TechTemplate.ItemRewards[i] = 'TRArmorUpgrade_HazmatVest';
+				else if (TechTemplate.ItemRewards[i] == 'AlloyweveVest')
+					TechTemplate.ItemRewards[i] = 'TRArmorUpgrade_AlloyweveVest';
+			}
 		}
 	}
 }
